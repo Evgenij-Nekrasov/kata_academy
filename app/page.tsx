@@ -1,9 +1,22 @@
+import Typography from "@/components/atoms/Typography";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
    return (
-      <div className="w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px]">
+      <div className="w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px] bg-[#777]">
+         {/* <Typography  preset="common1" color="whited" component="p">
+            some text
+         </Typography>
+           <Typography  preset="header1" color="whited" component="h1">
+            some text
+         </Typography> */}
+
+         {/* <Plug>
+            <Typography>
+               kekke
+            </Typography>
+         </Plug> */}
          <div className="mb-[80px] mt-[78px] max-lg:mt-[0px] absolute left-0 top-0 w-full h-full z-[-1]">
             <Image
                src="/assets/image/main-background.jpeg"
