@@ -1,15 +1,30 @@
+import clsx from 'clsx';
+import React from 'react';
 import { ReactNode, FC } from 'react';
 
-interface ButtonProps {
-  children: ReactNode;
-}
+const colors = {
+  swamp: 'bg-[#92c29c]',
+  transparent: 'bg-[transparent]',
+};
 
-const Button: FC<ButtonProps> = ({ children }) => {
-  return (
-    <div className="font-bold text-[12px] leading-[14px] text-center border-2 border-solid border-white w-[293px] max-w-full h-[75px] flex items-center justify-center uppercase">
-      {children}
-    </div>
+type PlugProps = {
+  component?: React.ElementType;
+
+  children: ReactNode;
+  background: keyof typeof colors;
+};
+
+const Button: FC<PlugProps> = ({
+  children,
+  background,
+  component = 'button',
+}) => {
+  const className = clsx(
+    colors[background],
+    'w-[293px] max-lg:w-[280px] max-md:w-[270px]',
   );
+
+  return React.createElement(component, { className }, children);
 };
 
 export default Button;

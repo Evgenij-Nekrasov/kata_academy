@@ -25,18 +25,18 @@ export default function Home() {
           width={2200}
           height={1275}
           alt="main-background"
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full max-md:w-[900px] max-md:h-[700px] max-sm:w-[700px] max-sm:h-[500px]"
         />
       </div>
-      <div className="max-w-[1360px] w-full mx-auto px-[40px] z-[2]">
-        <div className="pt-[176px] pb-[263px] flex-wrap items-center">
+      <div className="max-w-[1360px] w-full mx-auto px-[40px] z-[2] max-sm:px-[30px]">
+        <div className="pt-[190px] pb-[263px] flex-wrap items-center max-lg:pt-[100px] max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[220px]">
           <div className="flex flex-col gap-[30px]">
             <div className="flex flex-col gap-[14px]">
-              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px]  max-md:text-[30px] max-md:text-left">
+              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px] max-sm:text-[40px]  max-md:text-left">
                 Онлайн-курсы программирования
               </h1>
               <div>
-                <p className="font-normal text-[26px]  leading-[1.2] text-white mb-0 max-md:text-[20px] ">
+                <p className="font-normal text-[26px]  leading-[1.4] text-white mb-0 max-md:text-[23px] max-sm:text-[18px] tracking-wider">
                   {' '}
                   с последующим трудоустройством в Москве <br /> или
                   Санкт-Петербурге
@@ -48,29 +48,39 @@ export default function Home() {
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 ">
                 <Link href="/java">
-                  <Plug background="turquoise">
-                    <Typography color="grayed" preset="header1">
+                  <Plug background="lilac">
+                    <Typography color="grayed" preset="plug">
                       Java
                     </Typography>
                   </Plug>
                 </Link>
-                {/* <Link href="/frontend">
-                  <Typography preset="plug" component="li" color="turquoise">
-                    Frontend
-                  </Typography>
+                <Link href="/frontend">
+                  <Plug background="turquoise">
+                    <Typography color="grayed" preset="plug">
+                      Frontend
+                    </Typography>
+                  </Plug>
                 </Link>
                 <Link href="/qa-manual">
-                  <Typography preset="plug" component="li" color="swamp">
-                    QA manual
-                  </Typography>
+                  <Plug background="swamp">
+                    <Typography color="grayed" preset="plug">
+                      QA manual
+                    </Typography>
+                  </Plug>
                 </Link>
                 <Link href="/golang">
-                  <Typography preset="plug" component="li" color="blue">
-                    Golang
-                  </Typography>
-                </Link> */}
+                  <Plug background="blue">
+                    <Typography color="grayed" preset="plug">
+                      Golang
+                    </Typography>
+                  </Plug>
+                </Link>
               </ul>
-              <Button>Поступить в ката</Button>
+              <Button background="swamp">
+                <Typography color="grayed" preset="buttonBig">
+                  Поступить в ката
+                </Typography>
+              </Button>
             </div>
           </div>
         </div>

@@ -16,8 +16,11 @@ type PlugProps = {
   background: keyof typeof colors;
 };
 
-const Plug: FC<PlugProps> = ({ children, background, component = 'div' }) => {
-  const className = clsx(colors[background], 'p-[6px]');
+const Plug: FC<PlugProps> = ({ children, background, component = 'li' }) => {
+  const className = clsx(
+    colors[background],
+    'p-[10px] max-lg:p-[8px]  max-md:p-[6px]',
+  );
 
   return React.createElement(component, { className }, children);
 };

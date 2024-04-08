@@ -16,7 +16,7 @@ const NavbarMobile = ({ isOpen = false }) => {
         }`}
       />
       <div
-        className={`md:hidden  fixed right-2 bg-blue-500 top-[66px] rounded-xl z-20 justify-center w-[140px] h-[135px] sm:w-[156px] py-[8px]  ${
+        className={`md:hidden  fixed right-2 bg-blue-500 top-[85px] max-sm:top-[73px] rounded-xl z-20 justify-center w-[140px] h-[135px] sm:w-[156px] py-[8px]  ${
           isOpen ? 'flex' : 'hidden'
         }`}
       >
