@@ -5,7 +5,7 @@ import { useState } from "react";
 
 import { NavLinks } from "@/constants";
 
-const MobileMenu = ({ isOpen = false }) => {
+const NavbarMobile = ({ isOpen = false }) => {
    const [isActive, setIsActive] = useState("Home");
 
    return (
@@ -41,4 +41,4 @@ const MobileMenu = ({ isOpen = false }) => {
    );
 };
 
-export default MobileMenu;
+export default NavbarMobile;

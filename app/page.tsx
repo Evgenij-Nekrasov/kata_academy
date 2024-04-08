@@ -1,3 +1,4 @@
+import Button from "@/components/atoms/Button";
 import Typography from "@/components/atoms/Typography";
 import Image from "next/image";
 import Link from "next/link";
@@ -76,6 +77,7 @@ export default function Home() {
                            </Link>
                         </li>
                      </ul>
+                     <Button>Поступить в ката</Button>
                   </div>
                </div>
             </div>
