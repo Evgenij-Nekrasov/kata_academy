@@ -1,3 +1,4 @@
+import Button from "@/components/Button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -63,6 +64,7 @@ export default function Home() {
                            </Link>
                         </li>
                      </ul>
+                     <Button>Поступить в ката</Button>
                   </div>
                </div>
             </div>
