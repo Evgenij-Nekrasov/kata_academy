@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+import React from 'react';
 import { ReactNode, FC } from 'react';
 
 const colors = {
@@ -8,12 +10,16 @@ const colors = {
 };
 
 type PlugProps = {
+  component?: React.ElementType;
+
   children: ReactNode;
   background: keyof typeof colors;
 };
 
-const Plug: FC<PlugProps> = ({ children, background }) => {
-  return <li>{children}</li>;
+const Plug: FC<PlugProps> = ({ children, background, component = 'div' }) => {
+  const className = clsx(colors[background], 'p-[6px]');
+
+  return React.createElement(component, { className }, children);
 };
 
 export default Plug;

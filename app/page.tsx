@@ -49,7 +49,9 @@ export default function Home() {
               <ul className="flex flex-wrap gap-[10px] mb-0 ">
                 <Link href="/java">
                   <Plug background="turquoise">
-                    <Typography color="grayed">Java</Typography>
+                    <Typography color="grayed" preset="header1">
+                      Java
+                    </Typography>
                   </Plug>
                 </Link>
                 {/* <Link href="/frontend">

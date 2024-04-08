@@ -10,8 +10,9 @@ const presets = {
   common1: 'text-white hover:text-blue-400 custome-transition',
   header1:
     'font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px]  max-md:text-[30px] max-md:text-left',
-  plug: 'font-semibold leading-[1.2] text-[20px] p-[6px]',
+  plug: 'font-semibold leading-[1.2] text-[20px]',
 };
+
 
 type TypographyProps = {
   children: ReactNode;
@@ -35,9 +36,6 @@ const Typography: React.FC<TypographyProps> = ({
   const className = clsx(
     presets[preset],
     colors[color],
-    //   styles.root,
-    //   styles[color],
-    //   styles[align!],
     classNameFromProps,
   );
 
