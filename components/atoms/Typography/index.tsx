@@ -1,23 +1,23 @@
 import React, { CSSProperties, ReactNode } from 'react';
 
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 
 const colors = {
-  whited: 'text-white',
-  blacked: 'text-black',
+  grayed: 'text-[#29292f]',
 };
 
 const presets = {
   common1: 'text-white hover:text-blue-400 custome-transition',
   header1:
     'font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px]  max-md:text-[30px] max-md:text-left',
+  plug: 'font-semibold leading-[1.2] text-[20px] p-[6px]',
 };
 
 type TypographyProps = {
   children: ReactNode;
   component?: React.ElementType;
+  preset?: keyof typeof presets;
   color: keyof typeof colors;
-  preset: keyof typeof presets;
   style?: CSSProperties;
   align?: 'left' | 'center' | 'right';
   className?: string;
@@ -25,16 +25,16 @@ type TypographyProps = {
 
 const Typography: React.FC<TypographyProps> = ({
   children,
-  color = 'blacked',
-  component = 'p',
-  preset,
+  color = 'grayed',
+  component = 'span',
+  preset = 'plug',
   style,
   align,
   className: classNameFromProps,
 }) => {
   const className = clsx(
-    colors[color],
     presets[preset],
+    colors[color],
     //   styles.root,
     //   styles[color],
     //   styles[align!],
