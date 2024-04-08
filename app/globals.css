@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 * {
-   font-family: "Roboto";
-   scrollbar-width: thin;
-   scrollbar-color: #53abde #293037;
+  font-family: 'Roboto';
+  scrollbar-width: thin;
+  scrollbar-color: #53abde #293037;
 }
 
 .custome-transition {
-   transition-duration: 300ms;
+  transition-duration: 300ms;
 }
