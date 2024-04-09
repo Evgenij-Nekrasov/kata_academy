@@ -17,7 +17,7 @@ const NavbarPC = () => {
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600">
-      <div className="max-w-[1240px] mx-auto lg:py-[20px] sm:py-[15px]  sm:p-[15px]  max-sm:p-[15px] ">
+      <div className="max-w-[1240px] mx-auto lg:py-[20px] sm:py-[15px]  sm:p-[15px]  max-sm:p-[13px] ">
         <div className="flex flex-wrap items-center justify-between">
           {/* Icon */}
           {NavLinks2.map((link) => (
@@ -28,14 +28,14 @@ const NavbarPC = () => {
                 alt={link.name}
                 width={104}
                 height={54}
-                className="cursor-pointer  max-md:w-[95px] max-md:h-[30px] max-sm:w-[90px] max-md:h-[25px] max-sm:ml-[7px]"
+                className="cursor-pointer  max-md:w-[95px] max-md:h-[33px] max-sm:w-[70px]  max-sm:h-[25px] max-sm:ml-[7px]"
               />
             </Link>
           ))}
 
           {/* Nav Links */}
           <div className="max-md:hidden">
-            <ul className="flex gap-24  m-0 items-center text-xl max-lg:text-base max-lg:gap-14">
+            <ul className="flex gap-24  m-0 items-center text-xl max-lg:text-lg max-lg:gap-14">
               {NavLinks.map((link) => (
                 <li
                   key={link.name}

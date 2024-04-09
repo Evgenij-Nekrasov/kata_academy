@@ -12,13 +12,15 @@ const presets = {
   plug: 'font-semibold leading-[1.2] text-[20px]',
   buttonBig:
     'font-bold text-[12px] leading-[1.4] text-center border-2 border-solid  text-wight max-w-full h-[75px] flex items-center justify-center uppercase max-lg:h-[68px] ',
+  advantagesText:
+    'leading-[140%] text-center tracking-wide text-white max-w-[290px] mt-0 mb-auto',
 };
 
 type TypographyProps = {
   children: ReactNode;
   component?: React.ElementType;
   preset?: keyof typeof presets;
-  color: keyof typeof colors;
+  color?: keyof typeof colors;
   style?: CSSProperties;
   align?: 'left' | 'center' | 'right';
   className?: string;

@@ -1,12 +1,15 @@
+import ContentAdvantage from '@/components/atoms/Advantages';
 import Button from '@/components/atoms/Button';
 import Plug from '@/components/atoms/Plug';
 import Typography from '@/components/atoms/Typography';
+import { AdvantagesOfLearning } from '@/constants';
+import AdvantagesWrapper from '@/helpers/Advantages/AdvantagesWrapper';
 import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px] bg-black">
+    <div className=" w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px] bg-black">
       {/* <Typography  preset="common1" color="whited" component="p">
             some text
          </Typography>
@@ -25,26 +28,25 @@ export default function Home() {
           width={2200}
           height={1275}
           alt="main-background"
-          className="object-cover w-full h-full max-md:w-[900px] max-md:h-[700px] max-sm:w-[700px] max-sm:h-[500px]"
+          className="object-cover w-full h-full max-md:w-[900px] max-md:h-[700px] max-sm:w-[800px] max-sm:h-[500px]"
         />
       </div>
       <div className="max-w-[1360px] w-full mx-auto px-[40px] z-[2] max-sm:px-[30px]">
-        <div className="pt-[190px] pb-[263px] flex-wrap items-center max-lg:pt-[100px] max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[220px]">
+        <div className="pt-[190px] pb-[263px] flex-wrap items-center  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[250px] ">
           <div className="flex flex-col gap-[30px]">
-            <div className="flex flex-col gap-[14px]">
-              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px] max-sm:text-[40px]  max-md:text-left">
+            <div className="flex flex-col gap-[14px] max-m:mt-[-45px]">
+              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px] max-sm:text-[30px] max-sm:mt-[20px]  max-md:text-left max-sm:leading-[1]">
                 Онлайн-курсы программирования
               </h1>
               <div>
-                <p className="font-normal text-[26px]  leading-[1.4] text-white mb-0 max-md:text-[23px] max-sm:text-[18px] tracking-wider">
+                <p className="font-normal text-[26px]  leading-[1.4] text-white mb-0 max-md:text-[23px] max-sm:text-[18px]  max-sm:text-[18px] tracking-wider">
                   {' '}
-                  с последующим трудоустройством в Москве <br /> или
-                  Санкт-Петербурге
+                  с последующим трудоустройством в Москве или Санкт-Петербурге
                 </p>
               </div>
             </div>
 
-            {/* Plages */}
+            {/* Plugs */}
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 ">
                 <Link href="/java">
@@ -85,6 +87,56 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="subtitle">
+        <div className="container">
+          <h2 className="h2">
+            Обучение проходит онлайн и нацелено на результат
+          </h2>
+          <p>
+            У нас с тобой общие цели: твоё трудоустройство веб-разработчиком и
+            твой карьерный рост.
+          </p>
+        </div>
+      </div>
+      <AdvantagesWrapper>
+        <div className="w-[calc(33.3% - 160px)] mr-[160px]">
+          <div className="w-[110px] mt-0 mx-auto mb-[30px]">
+            <Image
+              width={102}
+              height={111}
+              src="/assets/icons/communication.svg"
+              alt="communication"
+            />
+          </div>
+          <Typography preset="advantagesText">
+            Интенсивная подготовка с ментором
+          </Typography>
+        </div>
+        <div className="w-[calc(33.3% - 160px)] mr-[160px]">
+          <div className="w-[110px] mt-0 mx-auto mb-[30px]">
+            <Image
+              width={93}
+              height={111}
+              src="/assets/icons/dollar.svg"
+              alt="dollar"
+            />
+          </div>
+          <Typography preset="advantagesText">
+            Опыт в реальном проекте
+          </Typography>
+        </div>
+        <div className="w-[calc(33.3% - 160px)] mr-[160px]">
+          <div className="w-[110px] mt-0 mx-auto mb-[30px]">
+            <Image
+              width={80}
+              height={111}
+              src="/assets/icons/support.svg"
+              alt="support"
+            />
+          </div>
+          <Typography preset="advantagesText">Поддержка сообщества</Typography>
+        </div>
+      </AdvantagesWrapper>
     </div>
   );
 }

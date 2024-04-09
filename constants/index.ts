@@ -26,14 +26,17 @@ export const NavLinks2 = [
 
 export const AdvantagesOfLearning = [
   {
+    name: 'communication',
     src: '/assets/icons/communication.svg',
     content: 'Интенсивная подготовка с ментором',
   },
   {
+    name: 'dollar',
     src: '/assets/icons/dollar.svg',
     content: 'Опыт в реальном проекте',
   },
   {
+    name: 'support',
     src: '/assets/icons/support.svg',
     content: 'Поддержка сообщества',
   },

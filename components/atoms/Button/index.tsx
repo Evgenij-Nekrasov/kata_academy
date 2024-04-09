@@ -21,7 +21,7 @@ const Button: FC<PlugProps> = ({
 }) => {
   const className = clsx(
     colors[background],
-    'w-[293px] max-lg:w-[280px] max-md:w-[270px]',
+    'w-[293px] max-lg:w-[280px] max-md:w-[270px] max-sm:w-[270px] max-sm:mt-[-10px]  max-m:mt-[-30px] hover:bg-[#a0ece6] custome-transition',
   );
 
   return React.createElement(component, { className }, children);
