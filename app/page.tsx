@@ -32,7 +32,7 @@ export default function Home() {
         />
       </div>
       <div className="max-w-[1360px] w-full mx-auto px-[40px] z-[2] max-sm:px-[30px]">
-        <div className="pt-[190px] pb-[263px] flex-wrap items-center  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[250px] ">
+        <div className="pt-[190px] pb-[263px] flex-wrap items-center max-lg:pt-[120px]  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[250px] ">
           <div className="flex flex-col gap-[30px]">
             <div className="flex flex-col gap-[14px] max-m:mt-[-45px]">
               <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px] max-sm:text-[30px] max-sm:mt-[20px]  max-md:text-left max-sm:leading-[1]">
@@ -87,9 +87,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="subtitle">
+      <div className="subtitle max-lg:mt-[-20px] max-md:mt-[-90px] max-sm:mt-[-220px] max-sm:text-[18px] max-md:text-[18px]">
         <div className="container">
-          <h2 className="h2">
+          <h2 className="h2 max-md:text-[30px]">
             Обучение проходит онлайн и нацелено на результат
           </h2>
           <p>
@@ -99,39 +99,42 @@ export default function Home() {
         </div>
       </div>
       <AdvantagesWrapper>
-        <div className="w-[calc(33.3% - 160px)] mr-[160px]">
+        <div className="w-[calc(33.3% - 160px)] ">
           <div className="w-[110px] mt-0 mx-auto mb-[30px]">
             <Image
               width={102}
               height={111}
               src="/assets/icons/communication.svg"
               alt="communication"
+              className="max-sm:w-[90px]"
             />
           </div>
           <Typography preset="advantagesText">
             Интенсивная подготовка с ментором
           </Typography>
         </div>
-        <div className="w-[calc(33.3% - 160px)] mr-[160px]">
+        <div className="w-[calc(33.3% - 160px)] ">
           <div className="w-[110px] mt-0 mx-auto mb-[30px]">
             <Image
               width={93}
               height={111}
               src="/assets/icons/dollar.svg"
               alt="dollar"
+              className="max-sm:w-[80px]"
             />
           </div>
           <Typography preset="advantagesText">
             Опыт в реальном проекте
           </Typography>
         </div>
-        <div className="w-[calc(33.3% - 160px)] mr-[160px]">
+        <div className="w-[calc(33.3% - 160px)] ">
           <div className="w-[110px] mt-0 mx-auto mb-[30px]">
             <Image
               width={80}
               height={111}
               src="/assets/icons/support.svg"
               alt="support"
+              className="max-sm:w-[70px]"
             />
           </div>
           <Typography preset="advantagesText">Поддержка сообщества</Typography>

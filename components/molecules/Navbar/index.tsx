@@ -28,7 +28,7 @@ const NavbarPC = () => {
                 alt={link.name}
                 width={104}
                 height={54}
-                className="cursor-pointer  max-md:w-[95px] max-md:h-[33px] max-sm:w-[70px]  max-sm:h-[25px] max-sm:ml-[7px]"
+                className="cursor-pointer  max-md:w-[95px] max-md:h-[30px] max-sm:w-[70px]  max-sm:h-[25px] max-sm:ml-[7px]"
               />
             </Link>
           ))}
