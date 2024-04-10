@@ -21,6 +21,15 @@ h2 {
   letter-spacing: -0.01em;
   color: #fff;
 }
+
+.h2 span,
+h2 span {
+  line-height: 34px;
+  color: #29292f;
+  background: #89e1f3;
+  padding: 3px;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;

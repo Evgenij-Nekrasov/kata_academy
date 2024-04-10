@@ -3,6 +3,7 @@ import { clsx } from 'clsx';
 
 const colors = {
   grayed: 'text-[#29292f]',
+  whited: 'text-white',
 };
 
 const presets = {

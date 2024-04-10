@@ -7,6 +7,7 @@ import { adventuresList } from '@/constants/pages/mainPage';
 import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
 import Image from 'next/image';
 import Link from 'next/link';
+import Prize from '@/components/atoms/Prize';
 
 export default function Home() {
   return (
@@ -117,6 +118,7 @@ export default function Home() {
           </div>
         ))}
       </AdvantagesWrapper>
+      <Prize />
     </div>
   );
 }

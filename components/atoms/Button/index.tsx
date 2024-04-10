@@ -4,7 +4,7 @@ import { ReactNode, FC } from 'react';
 
 const colors = {
   swamp: 'bg-[#92c29c]',
-  transparent: 'bg-[transparent]',
+  transparent: 'backdrop-opacity-0',
 };
 
 type PlugProps = {
@@ -12,14 +12,17 @@ type PlugProps = {
 
   children: ReactNode;
   background: keyof typeof colors;
+  className?: string;
 };
 
 const Button: FC<PlugProps> = ({
   children,
   background,
   component = 'button',
+  className: classNameFromProps,
 }) => {
   const className = clsx(
+    classNameFromProps,
     colors[background],
     'w-[293px] max-lg:w-[280px] max-md:w-[270px] max-sm:w-[270px]  max-sm:mt-[-10px]  max-m:mt-[-30px] hover:bg-[#a0ece6] custome-transition',
   );
