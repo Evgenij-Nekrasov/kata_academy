@@ -28,11 +28,7 @@ const ContentAdvantage: FC<ImageProps> = ({
   name,
   component = 'div',
 }) => {
-  const className = clsx(
-    images[image],
-    alt[name],
-    'w-[110px] mt-0 mx-auto mb-[30px]',
-  );
+  const className = clsx(images[image], alt[name]);
 
   return React.createElement(component, { className }, children);
 };

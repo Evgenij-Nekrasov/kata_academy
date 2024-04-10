@@ -5,13 +5,13 @@ export const adventuresList = [
     underTitle: 'Интенсивная подготовка с ментором',
   },
   {
-    src: 'communication',
-    alt: 'communication',
-    underTitle: 'Интенсивная подготовка с ментором',
+    src: 'dollar',
+    alt: 'dollar',
+    underTitle: 'Опыт в реальном проекте',
   },
   {
-    src: 'communication',
-    alt: 'communication',
-    underTitle: 'Интенсивная подготовка с ментором',
+    src: 'support',
+    alt: 'support',
+    underTitle: 'Поддержка сообщества',
   },
 ] as const;

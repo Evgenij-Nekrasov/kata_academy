@@ -23,20 +23,20 @@ export default function Home() {
                kekke
             </Typography>
          </Plug> */}
-      <div className="mb-[80px] mt-[78px] max-lg:mt-[0px] absolute left-0 top-0 w-full h-full">
+      <div className="mb-[80px] max-lg:mt-[0px] relative left-0 top-0 w-full h-full">
         <Image
           src="/assets/image/main-background.jpeg"
           width={2200}
           height={1275}
           alt="main-background"
-          className="object-cover w-full h-full max-md:w-[900px] max-md:h-[700px] max-sm:w-[800px] max-sm:h-[500px]"
+          className="object-cover w-full h-full max-g:w-[900px] max-g:h-[650px] max-sm:w-[800px] max-sm:h-[500px]"
         />
       </div>
-      <div className="max-w-[1360px] w-full mx-auto px-[40px] z-[2] max-sm:px-[30px]">
-        <div className="pt-[190px] pb-[263px] flex-wrap items-center max-lg:pt-[120px]  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[250px] ">
+      <div className="max-w-[1360px] w-full mx-auto px-[40px] max-sm:px-[20px] absolute  z-[2] max-sm:px-[30px]">
+        <div className="pt-[200px] pb-[263px] flex-wrap items-center max-lg:pt-[120px]  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[250px] ">
           <div className="flex flex-col gap-[30px]">
             <div className="flex flex-col gap-[14px] max-m:mt-[-45px]">
-              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[50px] max-sm:text-[30px] max-sm:mt-[20px]  max-md:text-left max-sm:leading-[1]">
+              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[45px] max-sm:text-[30px] max-sm:mt-[20px]  max-md:text-left max-sm:leading-[1]">
                 Онлайн-курсы программирования
               </h1>
               <div>
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="subtitle max-lg:mt-[-20px] max-md:mt-[-90px] max-sm:mt-[-220px] max-sm:text-[18px] max-md:text-[18px]">
+      <div className="subtitle  max-g:mt-[-10px]  max-sm:mt-[30px] max-sm:text-[18px]  max-md:text-[18px]">
         <div className="container">
           <h2 className="h2 max-md:text-[30px]">
             Обучение проходит онлайн и нацелено на результат
@@ -101,14 +101,14 @@ export default function Home() {
       </div>
       <AdvantagesWrapper>
         {adventuresList.map((adventureItem, index) => (
-          <div key={index} className="w-[calc(33.3% - 160px)]">
+          <div key={index} className="grid grid-cols-1">
             <div className="w-[110px] mt-0 mx-auto mb-[30px]">
               <Image
                 width={102}
-                height={111}
+                height={120}
                 src={`/assets/icons/${adventureItem.src}.svg`}
                 alt={adventureItem.alt}
-                className="max-sm:w-[90px]"
+                className="w-[110px] h-[110px] max-sm:w-[80px] max-lg:w-[90px] max-lg:h-[90px]"
               />
             </div>
             <Typography preset="advantagesText">
@@ -116,33 +116,6 @@ export default function Home() {
             </Typography>
           </div>
         ))}
-
-        {/* <div className="w-[calc(33.3% - 160px)] ">
-          <div className="w-[110px] mt-0 mx-auto mb-[30px]">
-            <Image
-              width={93}
-              height={111}
-              src="/assets/icons/dollar.svg"
-              alt="dollar"
-              className="max-sm:w-[80px]"
-            />
-          </div>
-          <Typography preset="advantagesText">
-            Опыт в реальном проекте
-          </Typography>
-        </div>
-        <div className="w-[calc(33.3% - 160px)] ">
-          <div className="w-[110px] mt-0 mx-auto mb-[30px]">
-            <Image
-              width={80}
-              height={111}
-              src="/assets/icons/support.svg"
-              alt="support"
-              className="max-sm:w-[70px]"
-            />
-          </div>
-          <Typography preset="advantagesText">Поддержка сообщества</Typography>
-        </div> */}
       </AdvantagesWrapper>
     </div>
   );
