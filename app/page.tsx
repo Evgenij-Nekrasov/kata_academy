@@ -3,7 +3,8 @@ import Button from '@/components/atoms/Button';
 import Plug from '@/components/atoms/Plug';
 import Typography from '@/components/atoms/Typography';
 import { AdvantagesOfLearning } from '@/constants';
-import AdvantagesWrapper from '@/helpers/Advantages/AdvantagesWrapper';
+import { adventuresList } from '@/constants/pages/mainPage';
+import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -99,21 +100,24 @@ export default function Home() {
         </div>
       </div>
       <AdvantagesWrapper>
-        <div className="w-[calc(33.3% - 160px)] ">
-          <div className="w-[110px] mt-0 mx-auto mb-[30px]">
-            <Image
-              width={102}
-              height={111}
-              src="/assets/icons/communication.svg"
-              alt="communication"
-              className="max-sm:w-[90px]"
-            />
+        {adventuresList.map((adventureItem, index) => (
+          <div key={index} className="w-[calc(33.3% - 160px)]">
+            <div className="w-[110px] mt-0 mx-auto mb-[30px]">
+              <Image
+                width={102}
+                height={111}
+                src={`/assets/icons/${adventureItem.src}.svg`}
+                alt={adventureItem.alt}
+                className="max-sm:w-[90px]"
+              />
+            </div>
+            <Typography preset="advantagesText">
+              {adventureItem.underTitle}
+            </Typography>
           </div>
-          <Typography preset="advantagesText">
-            Интенсивная подготовка с ментором
-          </Typography>
-        </div>
-        <div className="w-[calc(33.3% - 160px)] ">
+        ))}
+
+        {/* <div className="w-[calc(33.3% - 160px)] ">
           <div className="w-[110px] mt-0 mx-auto mb-[30px]">
             <Image
               width={93}
@@ -138,7 +142,7 @@ export default function Home() {
             />
           </div>
           <Typography preset="advantagesText">Поддержка сообщества</Typography>
-        </div>
+        </div> */}
       </AdvantagesWrapper>
     </div>
   );
