@@ -2,12 +2,13 @@ import ContentAdvantage from '@/components/atoms/Advantages';
 import Button from '@/components/atoms/Button';
 import Plug from '@/components/atoms/Plug';
 import Typography from '@/components/atoms/Typography';
-import { AdvantagesOfLearning } from '@/constants';
-import { adventuresList } from '@/constants/pages/mainPage';
+import { adventuresList, cardPath } from '@/constants/pages/mainPage';
 import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
 import Image from 'next/image';
 import Link from 'next/link';
 import Prize from '@/components/atoms/Prize';
+import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
+import CardContent from '@/components/atoms/CardsLanguage';
 
 export default function Home() {
   return (
@@ -51,28 +52,28 @@ export default function Home() {
             {/* Plugs */}
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 ">
-                <Link href="/java">
+                <Link href="/java-course">
                   <Plug background="lilac">
                     <Typography color="grayed" preset="plug">
                       Java
                     </Typography>
                   </Plug>
                 </Link>
-                <Link href="/frontend">
+                <Link href="/frontend-course">
                   <Plug background="turquoise">
                     <Typography color="grayed" preset="plug">
                       Frontend
                     </Typography>
                   </Plug>
                 </Link>
-                <Link href="/qa-manual">
+                <Link href="/qa-manual-course">
                   <Plug background="swamp">
                     <Typography color="grayed" preset="plug">
                       QA manual
                     </Typography>
                   </Plug>
                 </Link>
-                <Link href="/golang">
+                <Link href="/golang-course">
                   <Plug background="blue">
                     <Typography color="grayed" preset="plug">
                       Golang
@@ -119,6 +120,70 @@ export default function Home() {
         ))}
       </AdvantagesWrapper>
       <Prize />
+      <div className="subtitle">
+        <div className="container">
+          <h2 className="h2">
+            КАТА инвестирует в твое будущее. Ты можешь <br />
+            <span>сначала учиться, а платить после трудоустройства</span>в
+            Москве или Петербурге.{' '}
+          </h2>
+          <p>
+            Мы на 100% уверены в нашей методике обучения, поэтому не боимся
+            инвестировать в наших студентов.
+          </p>
+        </div>
+      </div>
+      <CardWrapper>
+        {cardPath.map((path) => (
+          <Link key={path.alt} href={path.src}>
+            <div className="group cursor-pointer pt-[30px] px-[40px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
+              <div className="flex flex-wrap mb-[6px] items-start">
+                <div className="w-[calc(100%-160px)]">
+                  <h3 className="h3">{path.name}</h3>
+                </div>
+                {/* Проблемы с динамическим background */}
+                <div
+                  className={`relative w-[140px] h-[140px] ml-[20px] rounded-[50%] bg-[#14b8a6] z-10`}
+                >
+                  <div className="absolute left-[15%] top-[15%]">
+                    <Image
+                      src={`/assets/icons/${path.image}.svg`}
+                      alt={path.alt}
+                      width={100}
+                      height={80}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <ul className="mb-[50px]">
+                  <li>
+                    <p>✓ Оплата после трудоустройства</p>
+                  </li>
+                  <li>
+                    <p>✓ Обучение минимум 25 часов в неделю</p>
+                  </li>
+                  <li>
+                    <p>✓ Трудоустройство в Москве или Санкт-Петербурге</p>
+                  </li>
+                </ul>
+                <p className="mb-[20px]">
+                  Срок обучения: ≈ {path.duration} месяцев
+                </p>
+                <span>
+                  <Image
+                    src="/assets/icons/arrow-right.svg"
+                    alt="arrow-left"
+                    width={47}
+                    height={13}
+                    className="group-hover:ml-[8px] custome-transition"
+                  />
+                </span>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </CardWrapper>
     </div>
   );
 }

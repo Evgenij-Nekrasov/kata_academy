@@ -15,3 +15,22 @@ export const adventuresList = [
     underTitle: 'Поддержка сообщества',
   },
 ] as const;
+
+export const cardPath = [
+  {
+    src: '/java-course',
+    alt: 'java-course',
+    image: 'java',
+    name: 'Java Developer',
+    background: '#14b8a6',
+    duration: '14',
+  },
+  {
+    src: '/frontend-course',
+    alt: 'frontend-course',
+    image: 'frontend',
+    name: 'Frontend Developer',
+    background: '#b45309',
+    duration: '12',
+  },
+] as const;

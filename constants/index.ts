@@ -24,67 +24,6 @@ export const NavLinks2 = [
   },
 ];
 
-export const AdvantagesOfLearning = [
-  {
-    name: 'communication',
-    src: '/assets/icons/communication.svg',
-    content: 'Интенсивная подготовка с ментором',
-  },
-  {
-    name: 'dollar',
-    src: '/assets/icons/dollar.svg',
-    content: 'Опыт в реальном проекте',
-  },
-  {
-    name: 'support',
-    src: '/assets/icons/support.svg',
-    content: 'Поддержка сообщества',
-  },
-];
-
-export const ProgrammingLanguages = [
-  {
-    name: 'java',
-    src: '/assets/icons/java.svg',
-    title: 'Java Developer',
-    content: `
-		Оплата после трудоустройства
-		Обучение минимум 25 часов в неделю 
-		Трудоустройство в Москве или Санкт-Петербурге
-		`,
-  },
-  {
-    name: 'frontend',
-    src: '/assets/icons/frontend.svg',
-    title: 'Frontend Developer',
-    content: `
-		Оплата после трудоустройства
-		Обучение минимум 25 часов в неделю 
-		Трудоустройство в Москве или Санкт-Петербурге
-		`,
-  },
-  {
-    name: 'qa',
-    src: '/assets/icons/qa.svg',
-    title: 'QA Manual',
-    content: `
-		Оплата после трудоустройства
-		Обучение минимум 25 часов в неделю 
-		Трудоустройство в Москве или Санкт-Петербурге
-		`,
-  },
-  {
-    name: 'go',
-    src: '/assets/image/go.png',
-    title: 'Go Backend Developer',
-    content: `
-		Оплата после трудоустройства
-		Обучение минимум 25 часов в неделю 
-		Трудоустройство в Москве или Санкт-Петербурге
-		`,
-  },
-];
-
 export const WhatIsOffered = [
   {
     src: '/assets/icons/interaction.svg',
