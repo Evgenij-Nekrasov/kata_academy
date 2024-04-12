@@ -1,14 +1,13 @@
-import ContentAdvantage from '@/components/atoms/Advantages';
+import Image from 'next/image';
+import Link from 'next/link';
+
 import Button from '@/components/atoms/Button';
 import Plug from '@/components/atoms/Plug';
 import Typography from '@/components/atoms/Typography';
 import { adventuresList, cardPath } from '@/constants/pages/mainPage';
 import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
-import Image from 'next/image';
-import Link from 'next/link';
 import Prize from '@/components/atoms/Prize';
 import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
-import CardContent from '@/components/atoms/CardsLanguage';
 
 export default function Home() {
   return (
@@ -110,7 +109,7 @@ export default function Home() {
                 height={120}
                 src={`/assets/icons/${adventureItem.src}.svg`}
                 alt={adventureItem.alt}
-                className="w-[110px] h-[110px] max-sm:w-[80px] max-lg:w-[90px] max-lg:h-[90px]"
+                className="w-[110px] h-[110px] max-sm:w-[80px] max-md:w-[95px] max-md:h-[95px] max-lg:w-[90px] max-lg:h-[90px]"
               />
             </div>
             <Typography preset="advantagesText">
@@ -121,8 +120,8 @@ export default function Home() {
       </AdvantagesWrapper>
       <Prize />
       <div className="subtitle">
-        <div className="container">
-          <h2 className="h2">
+        <div className="container max-m:px-[10px]">
+          <h2 className="h2 max-md:text-[30px] max-m:text-[20px] max-md:mt-[-70px]">
             КАТА инвестирует в твое будущее. Ты можешь <br />
             <span>сначала учиться, а платить после трудоустройства</span>в
             Москве или Петербурге.{' '}
@@ -136,14 +135,16 @@ export default function Home() {
       <CardWrapper>
         {cardPath.map((path) => (
           <Link key={path.alt} href={path.src}>
-            <div className="group cursor-pointer pt-[30px] px-[40px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
+            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
               <div className="flex flex-wrap mb-[6px] items-start">
-                <div className="w-[calc(100%-160px)]">
-                  <h3 className="h3">{path.name}</h3>
+                <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
+                  <h3 className="h3 max-g:text-[45px] max-md:text-[37px] max-m:text-[30px] max-g:mt-[25px]  max-sm:mt-[15px] ">
+                    {path.name}
+                  </h3>
                 </div>
                 {/* Проблемы с динамическим background */}
                 <div
-                  className={`relative w-[140px] h-[140px] ml-[20px] rounded-[50%] bg-[#14b8a6] z-10`}
+                  className={`relative w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%] bg-[#b45309]`}
                 >
                   <div className="absolute left-[15%] top-[15%]">
                     <Image
@@ -151,12 +152,13 @@ export default function Home() {
                       alt={path.alt}
                       width={100}
                       height={80}
+                      className="max-g:w-[120px] max-md:w-[95px] max-sm:w-[85px] max-m:w-[75px]"
                     />
                   </div>
                 </div>
               </div>
               <div>
-                <ul className="mb-[50px]">
+                <ul className="mb-[50px] max-g:text-[20px] group-has-[li]:max-sm:text-[15px]">
                   <li>
                     <p>✓ Оплата после трудоустройства</p>
                   </li>
@@ -167,7 +169,7 @@ export default function Home() {
                     <p>✓ Трудоустройство в Москве или Санкт-Петербурге</p>
                   </li>
                 </ul>
-                <p className="mb-[20px]">
+                <p className="mb-[20px] max-g:text-[20px] max-sm:text-[15px]">
                   Срок обучения: ≈ {path.duration} месяцев
                 </p>
                 <span>

@@ -6,8 +6,12 @@ type CardProps = {
 
 const CardWrapper: FC<CardProps> = ({ children }) => {
   return (
-    <div className="container mb-[160px]">
-      <div className="grid grid-cols-2 gap-[30px]">{children}</div>
+    <div className="mb-[160px]">
+      <div className="container max-sm:px-[10px]">
+        <div className="grid grid-cols-2 max-g:grid-cols-1 gap-[30px]">
+          {children}
+        </div>
+      </div>
     </div>
   );
 };

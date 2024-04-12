@@ -22,7 +22,7 @@ export const cardPath = [
     alt: 'java-course',
     image: 'java',
     name: 'Java Developer',
-    background: '#14b8a6',
+    background: '[#b45309]',
     duration: '14',
   },
   {
@@ -30,7 +30,7 @@ export const cardPath = [
     alt: 'frontend-course',
     image: 'frontend',
     name: 'Frontend Developer',
-    background: '#b45309',
+    background: '[#14b8a6]',
     duration: '12',
   },
 ] as const;
