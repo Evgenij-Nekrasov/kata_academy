@@ -4,7 +4,11 @@ import Link from 'next/link';
 import Button from '@/components/atoms/Button';
 import Plug from '@/components/atoms/Plug';
 import Typography from '@/components/atoms/Typography';
-import { adventuresList, cardPath } from '@/constants/pages/mainPage';
+import {
+  WhatIsOffered,
+  adventuresList,
+  cardPath,
+} from '@/constants/pages/mainPage';
 import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
 import Prize from '@/components/atoms/Prize';
 import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
@@ -103,7 +107,7 @@ export default function Home() {
       <AdvantagesWrapper>
         {adventuresList.map((adventureItem, index) => (
           <div key={index} className="grid grid-cols-1">
-            <div className="w-[110px] mt-0 mx-auto mb-[30px]">
+            <div className="sizeIcon">
               <Image
                 width={102}
                 height={120}
@@ -134,7 +138,7 @@ export default function Home() {
       </div>
       <CardWrapper>
         {cardPath.map((path) => (
-          <Link key={path.alt} href={path.src}>
+          <Link key={path.alt} href={path.href}>
             <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
               <div className="flex flex-wrap mb-[6px] items-start">
                 <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
@@ -144,7 +148,7 @@ export default function Home() {
                 </div>
                 {/* Проблемы с динамическим background */}
                 <div
-                  className={`relative w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%] bg-[#b45309]`}
+                  className={`relative bg-[#b45309] w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%]`}
                 >
                   <div className="absolute left-[15%] top-[15%]">
                     <Image
@@ -186,6 +190,42 @@ export default function Home() {
           </Link>
         ))}
       </CardWrapper>
+      <div className="subtitle">
+        <div className="container max-m:px-[10px]">
+          <h2 className="h2 max-md:text-[30px] max-m:text-[20px] max-md:mt-[-70px]">
+            <span>Самурайский подход </span> в обучении программированию
+          </h2>
+          <p>
+            Kata Academy — это не просто курсы веб-разработки. Мы готовим
+            самостоятельных бойцов и востребованных специалистов за максимально
+            короткий срок.
+          </p>
+        </div>
+      </div>
+      <div className="mb-[120px]">
+        <div className="container max-lg:px-[20px]">
+          <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 grid-rows-2 gap-x-40 gap-y-28 max-lg:gap-x-16 max-lg:gap-y-12">
+            {WhatIsOffered.map((itemOffer) => (
+              <div key={itemOffer.alt} className="flex flex-col">
+                <div className="sizeIcon">
+                  <Image
+                    src={`/assets/icons/${itemOffer.src}.svg`}
+                    alt={`${itemOffer.alt}`}
+                    width={120}
+                    height={120}
+                  />
+                </div>
+                <div>
+                  <h3 className="text-[24px] mb-[20px] font-semibold leading-[140%] text-center text-[#89e1f3]">
+                    {itemOffer.title}
+                  </h3>
+                  <p className="text-center">{itemOffer.content}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

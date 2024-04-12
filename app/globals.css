@@ -64,3 +64,10 @@ p {
 ul > li > p {
   margin-bottom: 20px;
 }
+
+.sizeIcon {
+  width: 110px;
+  margin-top: 0px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
