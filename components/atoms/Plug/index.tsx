@@ -19,7 +19,7 @@ type PlugProps = {
 const Plug: FC<PlugProps> = ({ children, background, component = 'li' }) => {
   const className = clsx(
     colors[background],
-    'p-[10px] max-lg:p-[8px]  max-md:p-[6px]',
+    'p-[10px] max-lg:p-[8px]  max-md:p-[6px] max-ml:p-[4px]',
   );
 
   return React.createElement(component, { className }, children);

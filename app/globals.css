@@ -71,3 +71,10 @@ ul > li > p {
   margin: 0 auto;
   margin-bottom: 30px;
 }
+
+.backgroundFrontend {
+  background-color: #8c9efb;
+}
+.backgroundJava {
+  background-color: #f25a22;
+}

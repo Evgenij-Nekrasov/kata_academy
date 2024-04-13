@@ -22,7 +22,7 @@ export const cardPath = [
     alt: 'java-course',
     image: 'java',
     name: 'Java Developer',
-    background: '[#b45309]',
+    background: 'backgroundJava',
     duration: '14',
   },
   {
@@ -30,7 +30,7 @@ export const cardPath = [
     alt: 'frontend-course',
     image: 'frontend',
     name: 'Frontend Developer',
-    background: '[#14b8a6]',
+    background: 'backgroundFrontend',
     duration: '12',
   },
 ] as const;
@@ -80,4 +80,26 @@ export const WhatIsOffered = [
   },
 ] as const;
 
-export const sizeIcon = 'w-[110px] mt-0 mx-auto mb-[30px]';
+export const Community = [
+  {
+    src: 'women',
+    alt: 'women',
+    title: 'Столкнувшись с трудностями при поступлении',
+    content:
+      'ты всегда сможешь обратиться в Telegram-чат подготовки. Ребята, которые учатся или делают тестовое, подскажут верный путь.',
+  },
+  {
+    src: 'business',
+    alt: 'business',
+    title: 'Во время обучения',
+    content:
+      'на программе ты будешь окружен командой своих одногруппников. Вместе с ними ты пройдёшь все этапы обучения и никогда не будешь чувствовать себя одиноко.',
+  },
+  {
+    src: 'pretty',
+    alt: 'pretty',
+    title: 'Когда ты закончишь обучение',
+    content:
+      'в Kata и станешь разработчиком, поддержка команды останется с тобой. Выпускники продолжают общаться, участвуют в закрытых мероприятиях IT-сообществ, делятся опытом и знаниями друг с другом.',
+  },
+] as const;

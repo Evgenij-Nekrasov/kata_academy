@@ -15,6 +15,8 @@ const presets = {
     'font-bold text-[12px] leading-[1.4] text-center border-2 border-solid  text-wight max-w-full h-[75px] flex items-center justify-center uppercase max-lg:h-[68px] ',
   advantagesText:
     'leading-[140%] text-center tracking-wide text-white max-w-[290px] mt-0 mb-auto',
+  community:
+    'flex items-center w-full mb-[128px] gap-[48px]  max-md:gap-[25px] max-md:flex-col max-md:mb-[60px]',
 };
 
 type TypographyProps = {

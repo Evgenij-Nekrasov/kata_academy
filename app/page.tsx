@@ -12,6 +12,7 @@ import {
 import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
 import Prize from '@/components/atoms/Prize';
 import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
+import CommunityComponent from '@/components/atoms/Community';
 
 export default function Home() {
   return (
@@ -34,13 +35,13 @@ export default function Home() {
           width={2200}
           height={1275}
           alt="main-background"
-          className="object-cover w-full h-full max-g:w-[900px] max-g:h-[650px] max-sm:w-[800px] max-sm:h-[500px]"
+          className="object-cover w-full h-full max-g:w-[900px] max-g:h-[650px] max-sm:w-[600px] max-sm:h-[450px] max-m:w-[510px] max-m:h-[430px] max-ml:h-[430px] max-l:h-[470px]"
         />
       </div>
       <div className="max-w-[1360px] w-full mx-auto px-[40px] max-sm:px-[20px] absolute  z-[2] max-sm:px-[30px]">
-        <div className="pt-[200px] pb-[263px] flex-wrap items-center max-lg:pt-[120px]  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[250px] ">
+        <div className="pt-[200px] pb-[263px] flex-wrap items-center max-lg:pt-[120px]  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[200px] ">
           <div className="flex flex-col gap-[30px]">
-            <div className="flex flex-col gap-[14px] max-m:mt-[-45px]">
+            <div className="flex flex-col gap-[14px] max-ml:mx-[-20px]">
               <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[45px] max-sm:text-[30px] max-sm:mt-[20px]  max-md:text-left max-sm:leading-[1]">
                 Онлайн-курсы программирования
               </h1>
@@ -54,7 +55,7 @@ export default function Home() {
 
             {/* Plugs */}
             <div className="flex flex-col gap-[60px]">
-              <ul className="flex flex-wrap gap-[10px] mb-0 ">
+              <ul className="flex flex-wrap gap-[10px] mb-0 max-ml:mx-[-20px] ">
                 <Link href="/java-course">
                   <Plug background="lilac">
                     <Typography color="grayed" preset="plug">
@@ -148,7 +149,7 @@ export default function Home() {
                 </div>
                 {/* Проблемы с динамическим background */}
                 <div
-                  className={`relative bg-[#b45309] w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%]`}
+                  className={`relative ${path.background} w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%]`}
                 >
                   <div className="absolute left-[15%] top-[15%]">
                     <Image
@@ -202,7 +203,7 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div className="mb-[120px]">
+      <div className="mb-[100px]">
         <div className="container max-lg:px-[20px]">
           <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 grid-rows-2 gap-x-40 gap-y-28 max-lg:gap-x-16 max-lg:gap-y-12">
             {WhatIsOffered.map((itemOffer) => (
@@ -225,6 +226,16 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </div>
+      <div className="container max-g:px-[20px]">
+        <h1 className="text-white text-[40px] max-lg:text-[34px] max-sm:text-[30px] max-ml:text-[25px] font-bold">
+          Kata Community
+        </h1>
+        <p className="mb-[64px] max-md:mb-[40px] text-2xl max-lg:text-xl max-sm:text-lg  max-ml:text-base">
+          Комфортное пространство для общения и обмена знаниями на каждом из
+          этапов подготовки.
+        </p>
+        <CommunityComponent />
       </div>
     </div>
   );

@@ -14,6 +14,8 @@ const config: Config = {
         md: '769px',
         sm: '510px',
         m: '440px',
+        ml: '418px',
+        l: '363px',
       },
     },
   },
