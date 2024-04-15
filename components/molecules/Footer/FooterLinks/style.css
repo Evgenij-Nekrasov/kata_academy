@@ -1,0 +1,18 @@
+.listStyle {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+}
+
+.blue {
+  background-color: #2787f5;
+}
+.red {
+  background-color: #c4302b;
+}
+.darkBlue {
+  background-color: #0088cc;
+}
+.white {
+  background-color: #ececec;
+}

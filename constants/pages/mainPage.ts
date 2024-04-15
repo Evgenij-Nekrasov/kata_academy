@@ -1,3 +1,5 @@
+import '@/components/molecules/Footer/FooterLinks/style.css';
+
 export const adventuresList = [
   {
     src: 'communication',
@@ -101,5 +103,28 @@ export const Community = [
     title: 'Когда ты закончишь обучение',
     content:
       'в Kata и станешь разработчиком, поддержка команды останется с тобой. Выпускники продолжают общаться, участвуют в закрытых мероприятиях IT-сообществ, делятся опытом и знаниями друг с другом.',
+  },
+] as const;
+
+export const FooterNavigation = [
+  {
+    src: 'main',
+    alt: 'mainPage',
+    title: 'Главная',
+  },
+  {
+    src: 'graduates',
+    alt: 'graduatesPage',
+    title: 'Выпускники',
+  },
+  {
+    src: 'about',
+    alt: 'aboutPage',
+    title: 'Об академии',
+  },
+  {
+    src: 'contacts',
+    alt: 'contactsPage',
+    title: 'Контакты',
   },
 ] as const;

@@ -13,6 +13,9 @@ import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper
 import Prize from '@/components/atoms/Prize';
 import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
 import CommunityComponent from '@/components/atoms/Community';
+import AdmissionButton from '@/components/atoms/AdmissionButton';
+import FooterLinks from '@/components/molecules/Footer/FooterLinks';
+import FooterCompany from '@/components/molecules/Footer/FooterCompany';
 
 export default function Home() {
   return (
@@ -236,6 +239,13 @@ export default function Home() {
           этапов подготовки.
         </p>
         <CommunityComponent />
+      </div>
+      <div className="container max-g:px-[20px]">
+        <AdmissionButton />
+      </div>
+      <div className="container max-g:px-[20px]">
+        <FooterLinks />
+        <FooterCompany />
       </div>
     </div>
   );
