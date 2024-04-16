@@ -6,10 +6,10 @@ import { RxCross2, RxHamburgerMenu } from 'react-icons/rx';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
-import { NavLinks, NavLinks2 } from '@/constants';
-import MobileMenu from './patrials/NavbarMobile';
+import { NavLinks, NavLinks2 } from './constant';
+import MobileMenu from './partial/NavbarMobile';
 
-const NavbarPC = () => {
+const Navbar = () => {
   const [isActive, setIsActive] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -55,7 +55,6 @@ const NavbarPC = () => {
           </div>
 
           {/* Burger Menu */}
-
           <button className="bg-blue-500 hover:bg-blue-700 text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] lg:text-[20px] lg:text-[17px] max-sm:text-[15px] rounded-full custome-transition">
             Наши программы
           </button>
@@ -76,4 +75,4 @@ const NavbarPC = () => {
   );
 };
 
-export default NavbarPC;
+export default Navbar;

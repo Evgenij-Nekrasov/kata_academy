@@ -18,10 +18,14 @@ const FooterCompany = () => {
       <span className="textStyle">© 2024 KATA Programming Academy</span>
 
       <Link href={'/documentation'}>
-        <span className="textStyle">Документация</span>
+        <span className="textStyle hover:text-blue-400 custome-transition">
+          Документация
+        </span>
       </Link>
       <Link href={'/privacy'}>
-        <span className="textStyle">Политика конфиденциальности</span>
+        <span className="textStyle hover:text-blue-400 custome-transition">
+          Политика конфиденциальности
+        </span>
       </Link>
     </div>
   );

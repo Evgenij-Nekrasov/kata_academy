@@ -1,3 +1,37 @@
+export const FooterNavigation = [
+  {
+    src: 'main',
+    alt: 'mainPage',
+    title: 'Главная',
+  },
+  {
+    src: 'graduates',
+    alt: 'graduatesPage',
+    title: 'Выпускники',
+  },
+  {
+    src: 'about',
+    alt: 'aboutPage',
+    title: 'Об академии',
+  },
+  {
+    src: 'contacts',
+    alt: 'contactsPage',
+    title: 'Контакты',
+  },
+] as const;
+
+export const cardPath = [
+  {
+    src: 'java-course',
+    name: 'Java Developer',
+  },
+  {
+    src: 'frontend-course',
+    name: 'Frontend Developer',
+  },
+] as const;
+
 export const socialLinks = [
   {
     bg: 'blue',

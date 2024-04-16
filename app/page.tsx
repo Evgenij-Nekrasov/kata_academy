@@ -14,12 +14,10 @@ import Prize from '@/components/atoms/Prize';
 import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
 import CommunityComponent from '@/components/atoms/Community';
 import AdmissionButton from '@/components/atoms/AdmissionButton';
-import FooterLinks from '@/components/molecules/Footer/FooterLinks';
-import FooterCompany from '@/components/molecules/Footer/FooterCompany';
 
 export default function Home() {
   return (
-    <div className=" w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px] bg-black">
+    <div className=" w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px]">
       {/* <Typography  preset="common1" color="whited" component="p">
             some text
          </Typography>
@@ -150,7 +148,6 @@ export default function Home() {
                     {path.name}
                   </h3>
                 </div>
-                {/* Проблемы с динамическим background */}
                 <div
                   className={`relative ${path.background} w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%]`}
                 >
@@ -242,10 +239,6 @@ export default function Home() {
       </div>
       <div className="container max-g:px-[20px]">
         <AdmissionButton />
-      </div>
-      <div className="container max-g:px-[20px]">
-        <FooterLinks />
-        <FooterCompany />
       </div>
     </div>
   );

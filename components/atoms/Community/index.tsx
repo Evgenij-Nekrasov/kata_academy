@@ -1,4 +1,4 @@
-import { Community } from '@/constants/pages/mainPage';
+import { Community } from './constant';
 import Typography from '../Typography';
 import Image from 'next/image';
 

@@ -6,6 +6,11 @@
   font-family: 'Roboto';
   scrollbar-width: thin;
   scrollbar-color: #53abde #293037;
+  /* background-color: black; */
+}
+
+body {
+  background-color: black;
 }
 
 .custome-transition {
