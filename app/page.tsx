@@ -17,7 +17,7 @@ import AdmissionButton from '@/components/atoms/AdmissionButton';
 
 export default function Home() {
   return (
-    <div className=" w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px]">
+    <div className="w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px]">
       {/* <Typography  preset="common1" color="whited" component="p">
             some text
          </Typography>

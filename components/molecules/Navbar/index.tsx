@@ -16,7 +16,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600">
+    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 right-0 border-gray-200 dark:border-gray-600">
       <div className="max-w-[1240px] mx-auto lg:py-[20px] sm:py-[15px]  sm:p-[15px]  max-sm:p-[13px] ">
         <div className="flex flex-wrap items-center justify-between">
           {/* Icon */}
@@ -39,13 +39,15 @@ const Navbar = () => {
               {NavLinks.map((link) => (
                 <li
                   key={link.name}
-                  className="text-white hover:text-blue-400 custome-transition"
+                  className={`  hover:text-blue-400 custome-transition`}
                 >
                   <Link
                     key={link.name}
                     href={link.link}
-                    onClick={() => setIsActive(link.name)}
-                    className={isActive === link.name ? 'text-black' : ''}
+                    onClick={() => setIsActive(link.link)}
+                    className={`${
+                      pathname === link.link ? 'text-blue-400' : 'text-white'
+                    }`}
                   >
                     {link.icon}
                   </Link>
@@ -55,7 +57,7 @@ const Navbar = () => {
           </div>
 
           {/* Burger Menu */}
-          <button className="bg-blue-500 hover:bg-blue-700 text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] lg:text-[20px] lg:text-[17px] max-sm:text-[15px] rounded-full custome-transition">
+          <button className=" bg-blue-500 hover:bg-blue-700 text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] lg:text-[20px] lg:text-[17px] max-sm:text-[15px] rounded-full custome-transition">
             Наши программы
           </button>
 
