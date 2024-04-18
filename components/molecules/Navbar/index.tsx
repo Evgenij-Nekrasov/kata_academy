@@ -34,7 +34,7 @@ const Navbar = () => {
           ))}
 
           {/* Nav Links */}
-          <div className="max-md:hidden">
+          <div className="max-md:hidden mx-auto">
             <ul className="flex gap-24  m-0 items-center text-xl max-lg:text-lg max-lg:gap-14">
               {NavLinks.map((link) => (
                 <li
