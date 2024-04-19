@@ -13,7 +13,7 @@ const Prize: FC<PrizeProps> = () => {
       <div className="container max-lg:p-0">
         <div className="flex max-md:flex-col pt-[70px] max-sm:pt-[30px] max-sm:px-[10px] px-[60px] pb-[80px] bg-[#434343] rounded-[30px] max-lg:rounded-none gap-x-11">
           <div className="w-[calc(100% - 250px)] grow max-md:order-last">
-            <h2 className="h2 max-md:text-[27px] max-sm:text-[23px] max-sm:text-[20px]">
+            <h2 className="h2 max-md:text-[27px] max-sm:text-[23px] max-sm:text-[20px] md:leading-10">
               <span> Каждый выпускник</span> получает от 3 до 5 офферов и
               <span>устраивается на работу</span>
             </h2>

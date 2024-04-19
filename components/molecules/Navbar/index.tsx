@@ -37,15 +37,12 @@ const Navbar = () => {
           <div className="max-md:hidden mx-auto">
             <ul className="flex gap-24  m-0 items-center text-xl max-lg:text-lg max-lg:gap-14">
               {NavLinks.map((link) => (
-                <li
-                  key={link.name}
-                  className={`  hover:text-blue-400 custome-transition`}
-                >
+                <li key={link.name}>
                   <Link
                     key={link.name}
                     href={link.link}
                     onClick={() => setIsActive(link.link)}
-                    className={`${
+                    className={` hover:text-blue-400 custome-transition ${
                       pathname === link.link ? 'text-blue-400' : 'text-white'
                     }`}
                   >

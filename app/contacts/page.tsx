@@ -6,11 +6,12 @@ import Image from 'next/image';
 const Conacts = () => {
   return (
     <div className="mb-26 mt-28 max-sm:mt-24 ">
+      {/* redefining the width */}
       <div className="container max-sm:px-[20px] !max-w-[1300px] mx-auto">
         <h1 className="text mb-16 max-md:mb-6">Свяжитесь с нами</h1>
-        <div className="grid grid-cols-7 max-g:grid-cols-8 grid-rows-10 max-g:grid-rows-12 max-m:grid-rows-13  h-[940px] max-md:h-[1270px] max-sm:h-[1210px] gap-4">
+        <div className="grid grid-cols-7 max-g:grid-cols-8 grid-rows-10 max-g:grid-rows-12 max-sm:grid-rows-15  h-[940px] max-md:h-[1270px] max-sm:h-[1210px] gap-4">
           {/* Lelf large block */}
-          <div className="row-span-8 max-md:row-span-6  col-span-4 max-g:col-span-8 styleGrid">
+          <div className="group row-span-8 max-md:row-span-6 max-sm:row-span-8  col-span-4 max-g:col-span-8 styleGrid">
             <h2 className="header1">Реквизиты</h2>
             <div className="wrapperParagraphs">
               <p className="paragraph">
@@ -18,33 +19,21 @@ const Conacts = () => {
               </p>
               <p className="paragraph">{'КАТА АКАДЕМИЯ'}</p>
             </div>
-            <div className="wrapperParagraphs">
+            <div className="[&>*:nth-child(even)]:mb-[17px] max-sm:mb-[13px] text-[22px] max-g:text-[17px]">
               <p className="paragraph">ИНН</p>
               <p className="paragraph">654646456</p>
-            </div>
-            <div className="wrapperParagraphs">
               <p className="paragraph">КПП</p>
               <p className="paragraph">5656556</p>
-            </div>
-            <div className="wrapperParagraphs">
               <p className="paragraph">Счёт</p>
               <p className="paragraph">6448898491915</p>
-            </div>
-            <div className="wrapperParagraphs">
               <p className="paragraph">Банк получатель</p>
               <p className="paragraph">ООО {'Мурзилка'}</p>
               <p className="paragraph">ИНН 666666666</p>
               <p className="paragraph">КПП 69696969</p>
-            </div>
-            <div className="wrapperParagraphs">
               <p className="paragraph">Город</p>
               <p className="paragraph">Удольск</p>
-            </div>
-            <div className="wrapperParagraphs">
               <p className="paragraph">БИК</p>
               <p className="paragraph">78787878787</p>
-            </div>
-            <div className="wrapperParagraphs">
               <p className="paragraph">Корр.счёт</p>
               <p className="paragraph">49849843949463161</p>
             </div>
@@ -56,6 +45,7 @@ const Conacts = () => {
             <div className="flex items-center flex-wrap">
               <div className="text-5xl max-lg:text-4xl max-m:text-3xl">👋</div>
               <div className="ml-2">
+                {/* redefining the color */}
                 <p className="text !text-gray-600">Влад Сухих</p>
                 <Link
                   href={'belowunderscor@gmail.com'}
@@ -73,6 +63,7 @@ const Conacts = () => {
             <div className="flex items-center flex-wrap">
               <div className="text-5xl max-lg:text-4xl max-m:text-3xl">👋</div>
               <div className="ml-2">
+                {/* redefining the color */}
                 <p className="text !text-gray-600">Ден Семишкин</p>
                 <Link
                   href={'belowunderscor@gmail.com'}
@@ -86,7 +77,8 @@ const Conacts = () => {
 
           {/* Lower block */}
           <div className="row-span-2 max-md:row-span-2 max-m:row-span-3 col-span-7 max-g:col-span-8 flex max-m:flex-col max-g:gap-x-8 max-m:gap-y-5 styleGrid">
-            <div className="wrapperParagraphs w-[63%] max-sm:w-[100%] !mb-0 flex flex-col justify-between">
+            {/* redefining the margin-bottom */}
+            <div className="wrapperParagraphs w-[63%] max-sm:w-[100%] !mb-0 flex flex-col space-y-[5px]">
               <p className="paragraph">+7 800 855 58 55</p>
               <p className="paragraph">info@kata.academy</p>
               <p className="paragraph">

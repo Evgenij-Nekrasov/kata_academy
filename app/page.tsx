@@ -228,9 +228,12 @@ export default function Home() {
         </div>
       </div>
       <div className="container max-g:px-[20px]">
-        <h1 className="text-white text-[40px] max-lg:text-[34px] max-sm:text-[30px] max-ml:text-[25px] font-bold">
+        <Typography
+          preset="header1"
+          className="max-lg:text-[34px] max-sm:text-[30px] max-ml:text-[25px]"
+        >
           Kata Community
-        </h1>
+        </Typography>
         <p className="mb-[64px] max-md:mb-[40px] text-2xl max-lg:text-xl max-sm:text-lg  max-ml:text-base">
           Комфортное пространство для общения и обмена знаниями на каждом из
           этапов подготовки.
