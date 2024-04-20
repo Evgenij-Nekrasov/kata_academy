@@ -6,20 +6,17 @@ import Image from 'next/image';
 const Conacts = () => {
   return (
     <div className="mb-26 mt-28 max-sm:mt-24 ">
-      {/* redefining the width */}
-      <div className="container max-sm:px-[20px] !max-w-[1300px] mx-auto">
+      <div className="max-w-[1300px] px-10 max-sm:px-[20px] mx-auto">
         <h1 className="text mb-16 max-md:mb-6">Свяжитесь с нами</h1>
-        <div className="grid grid-cols-7 max-g:grid-cols-8 grid-rows-10 max-g:grid-rows-12 max-sm:grid-rows-15  h-[940px] max-md:h-[1270px] max-sm:h-[1210px] gap-4">
+        <div className="grid grid-cols-7 grid-rows-10 max-g:grid-cols-8 max-g:grid-rows-11 max-sm:grid-rows-13 h-[1000px] max-g:h-[1200px] max-md:h-[1500px] max-sm:h-[1450px] gap-4">
           {/* Lelf large block */}
-          <div className="group row-span-8 max-md:row-span-6 max-sm:row-span-8  col-span-4 max-g:col-span-8 styleGrid">
+          <div className="group row-span-8 col-span-4 max-g:col-span-8 max-g:row-span-7 styleGrid">
             <h2 className="header1">Реквизиты</h2>
-            <div className="wrapperParagraphs">
-              <p className="paragraph">
-                Общество с ограниченной ответственностью
-              </p>
-              <p className="paragraph">{'КАТА АКАДЕМИЯ'}</p>
-            </div>
-            <div className="[&>*:nth-child(even)]:mb-[17px] max-sm:mb-[13px] text-[22px] max-g:text-[17px]">
+            <p className="paragraph">
+              Общество с ограниченной ответственностью
+            </p>
+            <p className="paragraph">{'"КАТА АКАДЕМИЯ"'}</p>
+            <div className="[&>*:nth-child(even)]:mb-[15px] [&>*:nth-child(odd)]:font-semibold max-sm:mb-[13px] text-[22px] max-g:text-[20px]">
               <p className="paragraph">ИНН</p>
               <p className="paragraph">654646456</p>
               <p className="paragraph">КПП</p>
@@ -40,10 +37,12 @@ const Conacts = () => {
           </div>
 
           {/* Upper right block */}
-          <div className="row-span-4 max-g:row-span-2 max-md:row-span-2 col-span-3 max-g:col-span-4  max-md:col-span-8 flex flex-col justify-between styleGrid">
+          <div className="row-span-4 col-span-3 max-g:col-span-4 max-g:row-span-2 max-md:row-span-2  max-md:col-span-8 flex flex-col justify-between styleGrid">
             <h2 className="header1">Для СМИ и партнеров</h2>
             <div className="flex items-center flex-wrap">
-              <div className="text-5xl max-lg:text-4xl max-m:text-3xl">👋</div>
+              <span className="text-5xl max-lg:text-4xl max-m:text-3xl">
+                👋
+              </span>
               <div className="ml-2">
                 {/* redefining the color */}
                 <p className="text !text-gray-600">Влад Сухих</p>
@@ -58,10 +57,12 @@ const Conacts = () => {
           </div>
 
           {/*  Right block */}
-          <div className="row-span-4 max-g:row-span-2 max-md:row-span-2 col-span-3 max-g:col-span-4 max-md:col-span-8  flex flex-col justify-between styleGrid">
+          <div className="row-span-4 col-span-3 max-g:col-span-4 max-g:row-span-2  max-md:row-span-2 max-md:col-span-8  flex flex-col justify-between styleGrid">
             <h2 className="header1">По вопросам Community</h2>
             <div className="flex items-center flex-wrap">
-              <div className="text-5xl max-lg:text-4xl max-m:text-3xl">👋</div>
+              <span className="text-5xl max-lg:text-4xl max-m:text-3xl">
+                👋
+              </span>
               <div className="ml-2">
                 {/* redefining the color */}
                 <p className="text !text-gray-600">Ден Семишкин</p>
@@ -76,16 +77,16 @@ const Conacts = () => {
           </div>
 
           {/* Lower block */}
-          <div className="row-span-2 max-md:row-span-2 max-m:row-span-3 col-span-7 max-g:col-span-8 flex max-m:flex-col max-g:gap-x-8 max-m:gap-y-5 styleGrid">
+          <div className="row-span-2 col-span-7 max-g:col-span-8 max-g:row-span-2 max-md:row-span-2 max-md:col-span-8 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid">
             {/* redefining the margin-bottom */}
-            <div className="wrapperParagraphs w-[63%] max-sm:w-[100%] !mb-0 flex flex-col space-y-[5px]">
+            <div className="w-[63%] max-sm:w-full flex flex-col space-y-[5px]">
               <p className="paragraph">+7 800 855 58 55</p>
               <p className="paragraph">info@kata.academy</p>
               <p className="paragraph">
                 Санкт-Петербург, Выборгская набережная, 29
               </p>
             </div>
-            <div className="flex flex-col ">
+            <div className="flex flex-col">
               <p className="header1">Присоединяйтесь</p>
               <ul className="flex gap-[10px] cursor-pointer">
                 {socialLinks.map((socialItem, index) => (
@@ -95,7 +96,7 @@ const Conacts = () => {
                   >
                     <li
                       key={index}
-                      className={`${socialItem.bg} w-[40px] h-[40px] max-sm:h-[35px] max-sm:w-[35px] max-ml:flex   max-ml:flex-wrap rounded-full flex items-center  justify-center`}
+                      className={`${socialItem.bg} w-[40px] h-[40px] max-sm:h-[35px] max-sm:w-[35px] max-sm:flex   max-sm:flex-wrap rounded-full flex items-center  justify-center`}
                     >
                       <Image
                         src={`/assets/icons/${socialItem.src}.svg`}
