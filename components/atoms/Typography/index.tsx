@@ -9,6 +9,8 @@ const colors = {
 const presets = {
   header1:
     'font-semibold text-white text-[38px] leading-[110%] tracking-[-.02em]',
+  header2:
+    'text-white font-semibold text-[32px] leading-[110%] tracking-[-.01em]',
   plug: 'font-semibold leading-[1.2] text-[20px]',
   buttonBig:
     'font-bold text-[12px] leading-[1.4] text-center border-2 border-solid  text-wight max-w-full h-[75px] flex items-center justify-center uppercase max-lg:h-[68px] ',

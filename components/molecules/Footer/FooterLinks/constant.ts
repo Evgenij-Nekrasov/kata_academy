@@ -1,21 +1,21 @@
 export const FooterNavigation = [
   {
-    src: 'main',
+    src: '/',
     alt: 'mainPage',
     title: 'Главная',
   },
   {
-    src: 'graduates',
+    src: '/graduates',
     alt: 'graduatesPage',
     title: 'Выпускники',
   },
   {
-    src: 'about',
+    src: '/about',
     alt: 'aboutPage',
     title: 'Об академии',
   },
   {
-    src: 'contacts',
+    src: '/contacts',
     alt: 'contactsPage',
     title: 'Контакты',
   },

@@ -3,6 +3,9 @@ import Image from 'next/image';
 import { WhatIsOffered, AdvantageCards } from './constans';
 
 import './style.css';
+import Link from 'next/link';
+import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
+import { cardPath } from '@/constants/pages/mainPage';
 
 const About = () => {
   return (
@@ -49,7 +52,7 @@ const About = () => {
       {/* Perks of the job */}
       <div className="mb-[100px]">
         <div className="container max-lg:px-[20px]">
-          <h2 className="h2 !mb-4 max-lg:text-[28px] max-md:text-[25px] max-md:text-[22px]">
+          <h2 className="h2 !mb-4 max-lg:text-[28px] max-md:text-[25px] max-md:text-[22px] max-sm:text-[20px]">
             За 6 лет мы выпустили более 2500 студентов, которые устроились на
             работу в первый месяц после окончания обучения
           </h2>
@@ -90,7 +93,7 @@ const About = () => {
                 className="borderCard max-lg:px-[20px] rounded-3xl"
               >
                 <li className="flex flex-col gap-y-5">
-                  <div className="flex max-lg:flex-col justify-between">
+                  <div className="flex gap-x-2 max-lg:flex-col justify-between">
                     <div className="space-y-5">
                       <span className="littleTitle">{itemOffer.nameCard}</span>
                       <h2 className="h2 max-lg:text-[28px]  max-sm:text-[25px] max-lg:pb-5">
@@ -118,6 +121,103 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      {/* Feedback */}
+      <div className="my-[100px]">
+        <div className="container max-sm:px-5">
+          <div className="flex flex-col items-center">
+            <div className="sizeIcon">
+              <Image
+                src={`/assets/image/smiling-girl.jpeg`}
+                alt={`smiling girl`}
+                width={200}
+                height={200}
+                className="rounded-full"
+              />
+            </div>
+            <p>Татьяна Таран</p>
+            <p>Head of Marketing&PR</p>
+            <Link
+              href={`https://t.me/Evgenie061`}
+              className="text-white my-5 underline text-lg"
+            >
+              Связаться с нами
+            </Link>
+            <div className="max-w-[1000px] max-sm:w-full">
+              <Typography
+                component={'h2'}
+                className="text-center mb-5 max-lg:text-[28px] max-g:text-[26px]  max-md:text-[23px] max-sm:font-medium max-sm:text-[20px]"
+                preset="header2"
+              >
+                Если вам откликается наш подход, вы хотите стать частью нашей
+                команды и предложить что-то интересное — пишите, пообщаемся
+              </Typography>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Our courses */}
+      <Typography
+        component={'div'}
+        className="max-w-[1360px] pl-10 mx-auto mb-10"
+        preset="header2"
+      >
+        Наши курсы
+      </Typography>
+      <CardWrapper>
+        {cardPath.map((path) => (
+          <Link key={path.alt} href={path.href}>
+            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
+              <div className="flex flex-wrap mb-[6px] items-start">
+                <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
+                  <h3 className="h3 max-g:text-[45px] max-md:text-[37px] max-m:text-[30px] max-g:mt-[25px]  max-sm:mt-[15px] ">
+                    {path.name}
+                  </h3>
+                </div>
+                <div
+                  className={`relative ${path.background} w-[140px] h-[140px] max-g:w-[160px] max-g:h-[160px] max-md:w-[130px] max-md:h-[130px] max-sm:w-[110px] max-sm:h-[110px] max-m:w-[95px] max-m:h-[95px] ml-[20px] max-md:ml-[40px] max-sm:ml-[70px] max-m:ml-[100px] rounded-[50%]`}
+                >
+                  <div className="absolute left-[15%] top-[15%]">
+                    <Image
+                      src={`/assets/icons/${path.image}.svg`}
+                      alt={path.alt}
+                      width={100}
+                      height={80}
+                      className="max-g:w-[120px] max-md:w-[95px] max-sm:w-[85px] max-m:w-[75px]"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <ul className="mb-[50px] max-g:text-[20px] group-has-[li]:max-sm:text-[15px]">
+                  <li>
+                    <p>✓ Оплата после трудоустройства</p>
+                  </li>
+                  <li>
+                    <p>✓ Обучение минимум 25 часов в неделю</p>
+                  </li>
+                  <li>
+                    <p>✓ Трудоустройство в Москве или Санкт-Петербурге</p>
+                  </li>
+                </ul>
+                <p className="mb-[20px] max-g:text-[20px] max-sm:text-[15px]">
+                  Срок обучения: ≈ {path.duration} месяцев
+                </p>
+                <span>
+                  <Image
+                    src="/assets/icons/arrow-right.svg"
+                    alt="arrow-left"
+                    width={47}
+                    height={13}
+                    className="group-hover:ml-[8px] custome-transition"
+                  />
+                </span>
+              </div>
+            </div>
+          </Link>
+        ))}
+      </CardWrapper>
     </div>
   );
 };
