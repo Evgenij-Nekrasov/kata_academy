@@ -23,7 +23,7 @@ const FixedMenu = () => {
   }, [isOpenSocialMenu]);
 
   return (
-    <div className="fixed right-[40px] max-sm:right-[30px] bottom-[150px] z-[50] flex flex-col gap-4">
+    <div className="fixed right-[40px] max-sm:right-[20px] bottom-[100px] z-[50] flex flex-col gap-4">
       <button className=" w-[64px]  aspect-square rounded-full cursor-pointer bg-blue-600 opacity-50 hover:opacity-100 custome-transition">
         <Image
           src={'/assets/icons/call.svg'}

@@ -18,18 +18,6 @@ import AdmissionButton from '@/components/atoms/AdmissionButton';
 export default function Home() {
   return (
     <div className="w-full flex flex-col min-h-screen overflow-hidden xl:mt-[80px] lg:mt-[70px] md:mt-[64px]">
-      {/* <Typography  preset="common1" color="whited" component="p">
-            some text
-         </Typography>
-           <Typography  preset="header1" color="whited" component="h1">
-            some text
-         </Typography> */}
-
-      {/* <Plug>
-            <Typography>
-               kekke
-            </Typography>
-         </Plug> */}
       <div className="mb-[80px] max-lg:mt-[0px] relative left-0 top-0 w-full h-full">
         <Image
           src="/assets/image/main-background.jpeg"
@@ -96,7 +84,7 @@ export default function Home() {
         </div>
       </div>
       <div className="subtitle  max-g:mt-[-10px]  max-sm:mt-[30px] max-sm:text-[18px]  max-md:text-[18px]">
-        <div className="container">
+        <div className="container max-sm:px-3">
           <h2 className="h2 max-md:text-[30px]">
             Обучение проходит онлайн и нацелено на результат
           </h2>
