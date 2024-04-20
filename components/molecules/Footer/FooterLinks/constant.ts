@@ -23,11 +23,11 @@ export const FooterNavigation = [
 
 export const cardPath = [
   {
-    src: 'java-course',
+    src: '/java-course',
     name: 'Java Developer',
   },
   {
-    src: 'frontend-course',
+    src: '/frontend-course',
     name: 'Frontend Developer',
   },
 ] as const;
@@ -35,25 +35,25 @@ export const cardPath = [
 export const socialLinks = [
   {
     bg: 'blue',
-    src: 'vk',
+    src: 'https://t.me/Evgenie061',
     width: 19,
     height: 11,
   },
   {
     bg: 'red',
-    src: 'youtube',
+    src: 'https://t.me/Evgenie061',
     width: 16,
     height: 12,
   },
   {
     bg: 'darkBlue',
-    src: 'telegram',
+    src: 'https://t.me/Evgenie061',
     width: 16,
     height: 14,
   },
   {
     bg: 'white',
-    src: 'dzen',
+    src: 'https://t.me/Evgenie061',
     width: 32,
     height: 32,
   },

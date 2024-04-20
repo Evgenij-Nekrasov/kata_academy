@@ -167,7 +167,7 @@ const About = () => {
       </Typography>
       <CardWrapper>
         {cardPath.map((path) => (
-          <Link key={path.alt} href={path.href}>
+          <Link key={path.name} href={path.href}>
             <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
               <div className="flex flex-wrap mb-[6px] items-start">
                 <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
@@ -181,7 +181,7 @@ const About = () => {
                   <div className="absolute left-[15%] top-[15%]">
                     <Image
                       src={`/assets/icons/${path.image}.svg`}
-                      alt={path.alt}
+                      alt={path.name}
                       width={100}
                       height={80}
                       className="max-g:w-[120px] max-md:w-[95px] max-sm:w-[85px] max-m:w-[75px]"

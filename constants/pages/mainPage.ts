@@ -21,7 +21,6 @@ export const adventuresList = [
 export const cardPath = [
   {
     href: '/java-course',
-    alt: 'java-course',
     image: 'java',
     name: 'Java Developer',
     background: 'backgroundJava',
@@ -29,7 +28,6 @@ export const cardPath = [
   },
   {
     href: '/frontend-course',
-    alt: 'frontend-course',
     image: 'frontend',
     name: 'Frontend Developer',
     background: 'backgroundFrontend',

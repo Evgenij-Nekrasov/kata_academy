@@ -21,7 +21,7 @@ const FooterLinks = () => {
       <ul className="listStyle">
         <p className=" mb-2 font-bold ">Оплата после трудоустройства</p>
         {cardPath.map((navItem, index) => (
-          <Link key={index} href={`https://kata.academy/${navItem.src}`}>
+          <Link key={index} href={navItem.src}>
             <li className=" mb-2 hover:text-blue-400 custome-transition">
               {navItem.name}
             </li>
@@ -31,7 +31,7 @@ const FooterLinks = () => {
       <ul className="listStyle">
         <p className=" mb-2 font-bold">Оплата во время учебы</p>
         {cardPath.map((navItem, index) => (
-          <Link key={index} href={`https://kata.academy/${navItem.alt}`}>
+          <Link key={index} href={navItem.src}>
             <li className=" mb-2 hover:text-blue-400 custome-transition">
               {navItem.name}
             </li>
@@ -42,10 +42,7 @@ const FooterLinks = () => {
         <p className="mb-2">info@kata.academy</p>
         <ul className="flex gap-[10px] cursor-pointer">
           {socialLinks.map((socialItem, index) => (
-            <Link
-              key={index}
-              href={`https://${socialItem.src}.com/kata_academy`}
-            >
+            <Link key={index} href={socialItem.src}>
               <li
                 key={index}
                 className={`${socialItem.bg} w-[32px] h-[32px] max-ml:flex   max-ml:flex-wrap rounded-full flex items-center  justify-center`}
