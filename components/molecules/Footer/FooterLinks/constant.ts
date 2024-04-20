@@ -35,25 +35,29 @@ export const cardPath = [
 export const socialLinks = [
   {
     bg: 'blue',
-    src: 'https://t.me/Evgenie061',
+    href: 'https://t.me/Evgenie061',
+    src: 'vk',
     width: 19,
     height: 11,
   },
   {
     bg: 'red',
-    src: 'https://t.me/Evgenie061',
+    href: 'https://t.me/Evgenie061',
+    src: 'youtube',
     width: 16,
     height: 12,
   },
   {
     bg: 'darkBlue',
-    src: 'https://t.me/Evgenie061',
+    href: 'https://t.me/Evgenie061',
+    src: 'telegram',
     width: 16,
     height: 14,
   },
   {
     bg: 'white',
-    src: 'https://t.me/Evgenie061',
+    href: 'https://t.me/Evgenie061',
+    src: 'dzen',
     width: 32,
     height: 32,
   },

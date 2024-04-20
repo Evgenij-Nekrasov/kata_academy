@@ -23,7 +23,7 @@ const About = () => {
 
       {/* Prize component */}
       <div className="container max-lg:px-0">
-        <div className="mb-[120px] mt-[50px]">
+        <div className="mb-[100px] mt-[50px]">
           <div className="flex  max-md:flex-col py-[60px] max-sm:pt-[30px] max-sm:px-[10px] px-[60px] max-md:px-[30px]] max-sm:pb-[30px] bg-[#434343] rounded-[30px] max-lg:rounded-none  gap-x-11">
             <div className="w-[calc(100% - 250px)] grow max-md:order-last">
               <h2 className="h2 max-w-[775px] max-g:text-[27px] max-md:text-[25px] max-sm:text-[20px] max-g:font-medium max-g:leading-8 max-sm:leading-4">
@@ -52,7 +52,7 @@ const About = () => {
       {/* Perks of the job */}
       <div className="mb-[100px]">
         <div className="container max-lg:px-[20px]">
-          <h2 className="h2 !mb-4 max-lg:text-[28px] max-md:text-[25px] max-md:text-[22px] max-sm:text-[20px]">
+          <h2 className="h2 !mb-4 max-lg:text-[28px] max-md:text-[25px] max-md:text-[22px] max-md:text-center max-sm:text-[20px]">
             За 6 лет мы выпустили более 2500 студентов, которые устроились на
             работу в первый месяц после окончания обучения
           </h2>

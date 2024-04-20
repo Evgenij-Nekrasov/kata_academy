@@ -42,7 +42,7 @@ const FooterLinks = () => {
         <p className="mb-2">info@kata.academy</p>
         <ul className="flex gap-[10px] cursor-pointer">
           {socialLinks.map((socialItem, index) => (
-            <Link key={index} href={socialItem.src}>
+            <Link key={index} href={socialItem.href}>
               <li
                 key={index}
                 className={`${socialItem.bg} w-[32px] h-[32px] max-ml:flex   max-ml:flex-wrap rounded-full flex items-center  justify-center`}
