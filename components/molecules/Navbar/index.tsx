@@ -1,19 +1,31 @@
 'use client';
 
-import { useState } from 'react';
-import Link from 'next/link';
+import { useState, useRef, useEffect } from 'react';
 import { RxCross2, RxHamburgerMenu } from 'react-icons/rx';
-import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { NavLinks, NavLinks2 } from './constant';
 import MobileMenu from './partial/NavbarMobile';
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const pathname = usePathname();
+
+  const ref = useRef<HTMLDivElement>();
+  useEffect(() => {
+    const checkIfClickedOutside = (e: Event) => {
+      if (!ref?.current?.contains(e.target as Node)) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    document.addEventListener('click', checkIfClickedOutside);
+    return () => {
+      document.removeEventListener('click', checkIfClickedOutside);
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 right-0 border-gray-200 dark:border-gray-600">
@@ -41,7 +53,6 @@ const Navbar = () => {
                   <Link
                     key={link.name}
                     href={link.link}
-                    onClick={() => setIsActive(link.link)}
                     className={` hover:text-blue-400 custome-transition ${
                       pathname === link.link ? 'text-blue-400' : 'text-white'
                     }`}

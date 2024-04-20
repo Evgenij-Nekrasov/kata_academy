@@ -8,16 +8,13 @@ const SocialMenu = ({ isOpen = false }) => {
   return (
     <>
       <div
-        className={`absolute py-2 w-[196px] h-[115px] rounded-xl top-[58px] left-[-203px] bg-white z-50   ${
+        className={`absolute py-2 w-[210px] h-[125px] rounded-xl top-[50px] left-[-217px] bg-white z-50   ${
           isOpen ? 'flex' : 'hidden'
         }`}
       >
-        <ul className="flex flex-col cursor-pointer">
+        <ul className="flex flex-col justify-evenly cursor-pointer">
           {socialLinks.map((socialItem, index) => (
-            <Link
-              key={index}
-              href={`https://${socialItem.src}.com/kata_academy`}
-            >
+            <Link key={index} href={socialItem.href}>
               <div className="flex items-center hover:bg-blue-100 custome-transition p-2">
                 <li
                   className={`${socialItem.bg} w-[30px] h-[30px] flex  rounded-full items-center  justify-center`}

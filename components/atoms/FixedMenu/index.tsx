@@ -8,7 +8,8 @@ import SocialMenu from './SocialMenu';
 const FixedMenu = () => {
   const [isOpenSocialMenu, setIsOpenSocialMenu] = useState(false);
   const [isOpenModelFeedback, setIsOpenModelFeedback] = useState(false);
-  const ref = useRef<HTMLDivElement | null>();
+
+  const ref = useRef<HTMLDivElement>();
 
   useEffect(() => {
     const checkIfClickedOutside = (e: Event) => {
