@@ -8,15 +8,15 @@ const Conacts = () => {
     <div className="mb-26 mt-28 max-sm:mt-24 ">
       <div className="max-w-[1300px] px-10 max-sm:px-[20px] mx-auto">
         <h1 className="text mb-16 max-md:mb-6">Свяжитесь с нами</h1>
-        <div className="grid grid-cols-7 grid-rows-10 max-g:grid-cols-8 max-g:grid-rows-11 max-sm:grid-rows-13 h-[1000px] max-g:h-[1200px] max-md:h-[1500px] max-sm:h-[1450px] gap-4">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4">
           {/* Lelf large block */}
-          <div className="group row-span-8 col-span-4 max-g:col-span-8 max-g:row-span-7 styleGrid">
+          <div className="row-span-2 col-span-1 max-g:col-span-2 styleGrid">
             <h2 className="header1">Реквизиты</h2>
             <p className="paragraph">
               Общество с ограниченной ответственностью
             </p>
             <p className="paragraph">{'"КАТА АКАДЕМИЯ"'}</p>
-            <div className="[&>*:nth-child(even)]:mb-[15px] [&>*:nth-child(odd)]:font-semibold max-sm:mb-[13px] text-[22px] max-g:text-[20px]">
+            <div className="[&>*:nth-child(even)]:mb-[15px] [&>*:nth-child(odd)]:font-semibold max-sm:mb-[13px] text-[22px] max-lg:text-[20px]">
               <p className="paragraph">ИНН</p>
               <p className="paragraph">654646456</p>
               <p className="paragraph">КПП</p>
@@ -37,7 +37,7 @@ const Conacts = () => {
           </div>
 
           {/* Upper right block */}
-          <div className="row-span-4 col-span-3 max-g:col-span-4 max-g:row-span-2 max-md:row-span-2  max-md:col-span-8 flex flex-col justify-between styleGrid">
+          <div className=" max-md:col-span-2 flex flex-col justify-between styleGrid">
             <h2 className="header1">Для СМИ и партнеров</h2>
             <div className="flex items-center flex-wrap">
               <span className="text-5xl max-lg:text-4xl max-m:text-3xl">
@@ -57,7 +57,7 @@ const Conacts = () => {
           </div>
 
           {/*  Right block */}
-          <div className="row-span-4 col-span-3 max-g:col-span-4 max-g:row-span-2  max-md:row-span-2 max-md:col-span-8  flex flex-col justify-between styleGrid">
+          <div className="max-md:col-span-2 flex flex-col justify-between styleGrid">
             <h2 className="header1">По вопросам Community</h2>
             <div className="flex items-center flex-wrap">
               <span className="text-5xl max-lg:text-4xl max-m:text-3xl">
@@ -77,7 +77,7 @@ const Conacts = () => {
           </div>
 
           {/* Lower block */}
-          <div className="row-span-2 col-span-7 max-g:col-span-8 max-g:row-span-2 max-md:row-span-2 max-md:col-span-8 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid">
+          <div className="col-start-1 col-end-3 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid">
             {/* redefining the margin-bottom */}
             <div className="w-[63%] max-sm:w-full flex flex-col space-y-[5px]">
               <p className="paragraph">+7 800 855 58 55</p>
