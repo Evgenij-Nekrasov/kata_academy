@@ -47,7 +47,9 @@ const Conacts = () => {
               </span>
               <div className="ml-2">
                 {/* redefining the color */}
-                <p className="text !text-gray-600">Влад Сухих</p>
+                <p className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-gray-600">
+                  Влад Сухих
+                </p>
                 <Link
                   href={'belowunderscor@gmail.com'}
                   className="text-xl max-lg:text-lg max-m:text-base font-bold text-gray-700"
@@ -67,7 +69,9 @@ const Conacts = () => {
               </span>
               <div className="ml-2">
                 {/* redefining the color */}
-                <p className="text !text-gray-600">Ден Семишкин</p>
+                <p className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-gray-600">
+                  Ден Семишкин
+                </p>
                 <Link
                   href={'belowunderscor@gmail.com'}
                   className="text-xl max-lg:text-lg max-m:text-base font-bold text-gray-700"
