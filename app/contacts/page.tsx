@@ -7,7 +7,9 @@ const Conacts = () => {
   return (
     <div className="mb-26 mt-28 max-sm:mt-24 ">
       <div className="max-w-[1300px] px-10 max-sm:px-[20px] mx-auto">
-        <h1 className="text mb-16 max-md:mb-6">Свяжитесь с нами</h1>
+        <h1 className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-white  mb-16 max-md:mb-6">
+          Свяжитесь с нами
+        </h1>
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           {/* Lelf large block */}
           <div className="row-span-2 col-span-1 max-g:col-span-2 styleGrid">

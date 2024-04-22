@@ -6,10 +6,10 @@
   line-height: 1.2;
   font-weight: 600;
   color: white;
-  @media all and (max-width: 1070px) {
+  @media (max-width: 1070px) {
     font-size: 27px;
   }
-  @media all and (max-width: 510px) {
+  @media (max-width: 510px) {
     font-size: 21px;
   }
 }
@@ -18,7 +18,7 @@
   background-color: lightblue;
   border-radius: 12px;
   padding: 25px;
-  @media all and (max-width: 440px) {
+  @media (max-width: 440px) {
     padding: 15px;
   }
 }
