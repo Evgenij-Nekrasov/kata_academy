@@ -12,8 +12,10 @@ const Conacts = () => {
         </h1>
         <div className="grid grid-cols-2 grid-rows-2 gap-4">
           {/* Lelf large block */}
-          <div className="row-span-2 col-span-1 max-g:col-span-2 styleGrid">
-            <h2 className="header1">Реквизиты</h2>
+          <div className="row-span-2 col-span-1 max-g:col-span-2 styleGrid p-[25px] max-m:p-[15px]">
+            <h2 className="header1 text-[23px] max-sm:text-[20px]">
+              Реквизиты
+            </h2>
             <p className="paragraph">
               Общество с ограниченной ответственностью
             </p>
@@ -39,8 +41,10 @@ const Conacts = () => {
           </div>
 
           {/* Upper right block */}
-          <div className=" max-md:col-span-2 flex flex-col justify-between styleGrid">
-            <h2 className="header1">Для СМИ и партнеров</h2>
+          <div className=" max-md:col-span-2 flex flex-col justify-between styleGrid p-[25px] max-m:p-[15px]">
+            <h2 className="header1 text-[23px] max-sm:text-[20px]">
+              Для СМИ и партнеров
+            </h2>
             <div className="flex items-center flex-wrap">
               <span className="text-5xl max-lg:text-4xl max-m:text-3xl">
                 👋
@@ -61,8 +65,10 @@ const Conacts = () => {
           </div>
 
           {/*  Right block */}
-          <div className="max-md:col-span-2 flex flex-col justify-between styleGrid">
-            <h2 className="header1">По вопросам Community</h2>
+          <div className="max-md:col-span-2 flex flex-col justify-between styleGrid p-[25px] max-m:p-[15px]">
+            <h2 className="header1 text-[23px] max-sm:text-[20px]">
+              По вопросам Community
+            </h2>
             <div className="flex items-center flex-wrap">
               <span className="text-5xl max-lg:text-4xl max-m:text-3xl">
                 👋
@@ -83,7 +89,7 @@ const Conacts = () => {
           </div>
 
           {/* Lower block */}
-          <div className="col-start-1 col-end-3 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid">
+          <div className="col-start-1 col-end-3 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid p-[25px] max-m:p-[15px]">
             {/* redefining the margin-bottom */}
             <div className="w-[63%] max-sm:w-full flex flex-col space-y-[5px]">
               <p className="paragraph">+7 800 855 58 55</p>
@@ -93,7 +99,9 @@ const Conacts = () => {
               </p>
             </div>
             <div className="flex flex-col">
-              <p className="header1">Присоединяйтесь</p>
+              <p className="header1 text-[23px] max-sm:text-[20px]">
+                Присоединяйтесь
+              </p>
               <ul className="flex gap-[10px] cursor-pointer">
                 {socialLinks.map((socialItem, index) => (
                   <Link
