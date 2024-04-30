@@ -28,12 +28,16 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 right-0 border-gray-200 dark:border-gray-600">
-      <div className="max-w-[1240px] mx-auto lg:py-[20px] sm:py-[15px]  sm:p-[15px]  max-sm:p-[13px] ">
+    <nav className="px-5 bg-[#001529] fixed w-full z-20 top-0 left-0 right-0 ">
+      <div className="max-w-[1240px] mx-auto">
         <div className="flex flex-wrap items-center justify-between">
           {/* Icon */}
           {NavLinks2.map((link) => (
-            <Link key={link.name} href={link.link}>
+            <Link
+              key={link.name}
+              href={link.link}
+              className="py-6 max-lg:py-4  max px-4"
+            >
               <Image
                 key={link.name}
                 src={link.icon}
@@ -47,14 +51,14 @@ const Navbar = () => {
 
           {/* Nav Links */}
           <div className="max-md:hidden mx-auto">
-            <ul className="flex gap-24  m-0 items-center text-xl max-lg:text-lg max-lg:gap-14">
+            <ul className="flex gap-24   items-center text-xl max-lg:text-lg max-g:text-base max-lg:gap-14 max-g:gap-8">
               {NavLinks.map((link) => (
                 <li key={link.name}>
                   <Link
                     key={link.name}
                     href={link.link}
-                    className={` hover:text-blue-400 custome-transition ${
-                      pathname === link.link ? 'text-blue-400' : 'text-white'
+                    className={`py-[30px] max-lg:py-[21px] max-g:py-[22px] px-4 text-white ${
+                      pathname === link.link ? 'bg-[#642ab5]' : 'text-white'
                     }`}
                   >
                     {link.icon}
@@ -65,7 +69,7 @@ const Navbar = () => {
           </div>
 
           {/* Burger Menu */}
-          <button className=" bg-blue-500 hover:bg-blue-700 text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] lg:text-[20px] lg:text-[17px] max-sm:text-[15px] rounded-full custome-transition">
+          <button className=" bg-[#642ab5] hover:bg-[#854dd3] text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] max-lg:text-[18px] max-g:text-[16px] max-sm:text-[14px] rounded-full custome-transition">
             Наши программы
           </button>
 
