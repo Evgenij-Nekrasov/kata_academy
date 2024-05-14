@@ -5,7 +5,7 @@
 * {
   font-family: 'Roboto';
   scrollbar-width: thin;
-  scrollbar-color: #53abde #293037;
+  scrollbar-color: #7f52bf #293037;
 }
 
 body {
@@ -29,9 +29,9 @@ h2 {
 .h2 span,
 h2 span {
   line-height: 34px;
-  color: #29292f;
-  background: #89e1f3;
-  padding-left: 3px;
+  color: #000;
+  background: #7f52bf;
+  margin-right: 5px;
 }
 
 .h3 {

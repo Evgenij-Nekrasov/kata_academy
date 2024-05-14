@@ -1,5 +1,3 @@
-import '@/components/molecules/Footer/FooterLinks/style.css';
-
 export const adventuresList = [
   {
     src: 'communication',

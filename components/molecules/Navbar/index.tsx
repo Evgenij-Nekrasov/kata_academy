@@ -8,9 +8,13 @@ import Link from 'next/link';
 
 import { NavLinks, NavLinks2 } from './constant';
 import MobileMenu from './partial/NavbarMobile';
+// import Modal from '@/components/layouts/modal/Modal';
+import useModal from '@/hooks/useModal';
+import NavbarModal from './partial/NavbarModal';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { isOpen, toggle } = useModal();
 
   const pathname = usePathname();
 
@@ -28,7 +32,7 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className="px-5 bg-[#001529] fixed w-full z-20 top-0 left-0 right-0 ">
+    <nav className="px-5 max-ml:px-2.5 bg-[#001529] fixed w-full z-20 top-0 left-0 right-0 ">
       <div className="max-w-[1240px] mx-auto">
         <div className="flex flex-wrap items-center justify-between">
           {/* Icon */}
@@ -36,7 +40,7 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.link}
-              className="py-6 max-lg:py-4  max px-4"
+              className="min-[1279px]:py-7 py-6 max-lg:py-5  px-4 max-ml:px-1"
             >
               <Image
                 key={link.name}
@@ -57,7 +61,7 @@ const Navbar = () => {
                   <Link
                     key={link.name}
                     href={link.link}
-                    className={`py-[30px] max-lg:py-[21px] max-g:py-[22px] px-4 text-white ${
+                    className={`min-[1279px]:py-8 py-7 max-lg:py-6 max-g:py-[26px] px-4 text-white ${
                       pathname === link.link ? 'bg-[#642ab5]' : 'text-white'
                     }`}
                   >
@@ -69,9 +73,15 @@ const Navbar = () => {
           </div>
 
           {/* Burger Menu */}
-          <button className=" bg-[#642ab5] hover:bg-[#854dd3] text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] max-lg:text-[18px] max-g:text-[16px] max-sm:text-[14px] rounded-full custome-transition">
+          <button
+            onClick={toggle}
+            className=" bg-[#642ab5] hover:bg-[#854dd3] text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] max-lg:text-[18px] max-g:text-[16px] max-sm:text-[14px] rounded-full custome-transition"
+          >
             Наши программы
           </button>
+          {/* <Modal isOpen={isOpen} toggle={toggle}>
+            <NavbarModal />
+          </Modal> */}
 
           <div>
             <button

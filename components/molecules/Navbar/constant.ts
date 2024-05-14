@@ -1,10 +1,5 @@
 export const NavLinks = [
   {
-    name: 'Graduates',
-    icon: 'Выпускники',
-    link: '/graduates',
-  },
-  {
     name: 'About',
     icon: 'Об академии',
     link: '/about',

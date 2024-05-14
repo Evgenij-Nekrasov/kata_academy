@@ -1,9 +1,9 @@
 import Link from 'next/link';
 import './style.css';
-import { socialLinks } from '@/components/molecules/Footer/FooterLinks/constant';
+import { socialLinksInContacts } from '@/components/molecules/Footer/FooterLinks/constant';
 import Image from 'next/image';
 
-const Conacts = () => {
+const Contacts = () => {
   return (
     <div className="mb-26 mt-28 max-sm:mt-24 ">
       <div className="max-w-[1300px] px-10 max-sm:px-[20px] mx-auto">
@@ -16,27 +16,30 @@ const Conacts = () => {
             <h2 className="header1 text-[23px] max-sm:text-[20px]">
               Реквизиты
             </h2>
-            <p className="paragraph">
-              Общество с ограниченной ответственностью
-            </p>
-            <p className="paragraph">{'"КАТА АКАДЕМИЯ"'}</p>
-            <div className="[&>*:nth-child(even)]:mb-[15px] [&>*:nth-child(odd)]:font-semibold max-sm:mb-[13px] text-[22px] max-lg:text-[20px]">
-              <p className="paragraph">ИНН</p>
-              <p className="paragraph">654646456</p>
-              <p className="paragraph">КПП</p>
-              <p className="paragraph">5656556</p>
-              <p className="paragraph">Счёт</p>
-              <p className="paragraph">6448898491915</p>
-              <p className="paragraph">Банк получатель</p>
-              <p className="paragraph">ООО {'Мурзилка'}</p>
-              <p className="paragraph">ИНН 666666666</p>
-              <p className="paragraph">КПП 69696969</p>
-              <p className="paragraph">Город</p>
-              <p className="paragraph">Удольск</p>
-              <p className="paragraph">БИК</p>
-              <p className="paragraph">78787878787</p>
-              <p className="paragraph">Корр.счёт</p>
-              <p className="paragraph">49849843949463161</p>
+            <div className="paragraph">
+              <div className="[&>*:nth-child(even)]:mb-[15px] [&>*:nth-child(odd)]:font-bold max-sm:mb-[13px] text-[22px] max-lg:text-[20px]">
+                <i></i>
+                <p>
+                  Общество с ограниченной ответственностью <br />{' '}
+                  {'"КАТА АКАДЕМИЯ"'}
+                </p>
+                <p>ИНН</p>
+                <p>654646456</p>
+                <p>КПП</p>
+                <p>5656556</p>
+                <p>Счёт</p>
+                <p>6448898491915</p>
+                <p>Банк получатель</p>
+                <p>ООО {'Мурзилка'}</p>
+                <p>ИНН 666666666</p>
+                <p>КПП 69696969</p>
+                <p>Город</p>
+                <p>Удольск</p>
+                <p>БИК</p>
+                <p>78787878787</p>
+                <p>Корр.счёт</p>
+                <p>49849843949463161</p>
+              </div>
             </div>
           </div>
 
@@ -92,18 +95,18 @@ const Conacts = () => {
           <div className="col-start-1 col-end-3 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid p-[25px] max-m:p-[15px]">
             {/* redefining the margin-bottom */}
             <div className="w-[63%] max-sm:w-full flex flex-col space-y-[5px]">
-              <p className="paragraph">+7 800 855 58 55</p>
-              <p className="paragraph">info@kata.academy</p>
-              <p className="paragraph">
-                Санкт-Петербург, Выборгская набережная, 29
-              </p>
+              <div className="paragraph">
+                <p>+7 800 855 58 55</p>
+                <p>info@kata.academy</p>
+                <p>Санкт-Петербург, Выборгская набережная, 29</p>
+              </div>
             </div>
             <div className="flex flex-col">
               <p className="header1 text-[23px] max-sm:text-[20px]">
                 Присоединяйтесь
               </p>
               <ul className="flex gap-[10px] cursor-pointer">
-                {socialLinks.map((socialItem, index) => (
+                {socialLinksInContacts.map((socialItem, index) => (
                   <Link
                     key={index}
                     href={`https://${socialItem.src}.com/kata_academy`}
@@ -130,4 +133,4 @@ const Conacts = () => {
   );
 };
 
-export default Conacts;
+export default Contacts;

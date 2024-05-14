@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { ReactNode, FC } from 'react';
 import Button from '../Button';
-import Typography from '../Typography';
+import Typography from './Typography';
+import Link from 'next/link';
 
 type PrizeProps = {
   children?: ReactNode;
@@ -15,24 +16,26 @@ const Prize: FC<PrizeProps> = () => {
           <div className="w-[calc(100% - 250px)] grow max-md:order-last">
             <h2 className="h2 max-md:text-[27px] max-sm:text-[23px] max-sm:text-[20px] md:leading-10">
               <span> Каждый выпускник</span> получает от 3 до 5 офферов и
-              <span>устраивается на работу</span>
+              <span> устраивается на работу</span>
             </h2>
             <p className="my-[40px] text-white leading-[140%] text-[18px] max-sm:text-[15px]">
               в течение двух месяцев после окончания обучения в школе
               программирования Kata Academy.
             </p>
-            <Button
-              background="transparent"
-              className=" max-md:w-full max-sm:w-full"
-            >
-              <Typography
-                color="whited"
-                preset="buttonBig"
-                className="hover:text-black"
+            <Link href="http://localhost:3000/about">
+              <Button
+                background="transparent"
+                className=" max-md:w-full max-sm:w-full"
               >
-                Истории выпускников
-              </Typography>
-            </Button>
+                <Typography
+                  color="whited"
+                  preset="buttonBig"
+                  className="hover:text-black text-sm"
+                >
+                  Истории выпускников
+                </Typography>
+              </Button>
+            </Link>
           </div>
           <div className="mt-0 mx-auto mb-[45px]">
             <Image

@@ -1,5 +1,5 @@
 import { Community } from './constant';
-import Typography from '../Typography';
+import Typography from '../Prize/Typography';
 import Image from 'next/image';
 
 const CommunityComponent = () => {
@@ -17,7 +17,7 @@ const CommunityComponent = () => {
         className="rounded-2xl"
       />
       <div>
-        <h3 className="font-bold text-[30px] max-lg:text-[26px] max-g:text-[23px] max-ml:text-[21px] max-sm:leading-6 text-blue-300 mb-[17px]">
+        <h3 className="font-bold text-[30px] max-lg:text-[26px] max-g:text-[23px] max-ml:text-[21px] max-sm:leading-6 text-[#a173e2] mb-[17px]">
           {item.title}
         </h3>
         <p className="text-[25px] max-lg:text-[21px] max-g:text-[18px] max-ml:text-[16px] text-white  ">

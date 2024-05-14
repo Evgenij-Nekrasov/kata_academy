@@ -1,10 +1,10 @@
-import Typography from '@/components/atoms/Typography';
+import Typography from '@/components/atoms/Prize/Typography';
 import Image from 'next/image';
 import { WhatIsOffered, AdvantageCards } from './constans';
 
 import './style.css';
 import Link from 'next/link';
-import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
+import CardWrapper from '@/components/layouts/cardLanguage/CardWrapper';
 import { cardPath } from '@/constants/pages/mainPage';
 
 const About = () => {

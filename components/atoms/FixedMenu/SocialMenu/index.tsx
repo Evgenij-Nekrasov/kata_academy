@@ -8,7 +8,7 @@ const SocialMenu = ({ isOpen = false }) => {
   return (
     <>
       <div
-        className={`absolute py-2 w-[210px] h-[125px] rounded-xl top-[50px] left-[-217px] bg-white z-50   ${
+        className={`absolute py-2 w-[210px] h-[125px] rounded-xl top-[-25px] left-[-217px] bg-white z-50   ${
           isOpen ? 'flex' : 'hidden'
         }`}
       >

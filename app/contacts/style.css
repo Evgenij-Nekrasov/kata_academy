@@ -11,7 +11,7 @@
   color: darkslategray;
 }
 
-.paragraph {
+:is(.paragraph) p {
   color: darkslategray;
   font-size: 20px;
   margin-bottom: 5px;

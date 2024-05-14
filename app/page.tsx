@@ -1,19 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Button from '@/components/atoms/Button';
-import Plug from '@/components/atoms/Plug';
-import Typography from '@/components/atoms/Typography';
-import {
-  WhatIsOffered,
-  adventuresList,
-  cardPath,
-} from '@/constants/pages/mainPage';
-import AdvantagesWrapper from '@/components/layouts/Advantages/AdvantagesWrapper';
-import Prize from '@/components/atoms/Prize';
-import CardWrapper from '@/components/layouts/CardLanguage/CardWrapper';
-import CommunityComponent from '@/components/atoms/Community';
-import AdmissionButton from '@/components/atoms/AdmissionButton';
+import * as TreeList from '@/components/index';
 
 export default function Home() {
   return (
@@ -46,39 +34,31 @@ export default function Home() {
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 max-ml:mx-[-20px] ">
                 <Link href="/java-course">
-                  <Plug background="lilac">
-                    <Typography color="grayed" preset="plug">
+                  <TreeList.Plug background="lilac">
+                    <TreeList.Typography color="grayed" preset="plug">
                       Java
-                    </Typography>
-                  </Plug>
+                    </TreeList.Typography>
+                  </TreeList.Plug>
                 </Link>
-                <Link href="/frontend-course">
-                  <Plug background="turquoise">
-                    <Typography color="grayed" preset="plug">
-                      Frontend
-                    </Typography>
-                  </Plug>
-                </Link>
-                <Link href="/qa-manual-course">
-                  <Plug background="swamp">
-                    <Typography color="grayed" preset="plug">
-                      QA manual
-                    </Typography>
-                  </Plug>
-                </Link>
-                <Link href="/golang-course">
-                  <Plug background="blue">
-                    <Typography color="grayed" preset="plug">
-                      Golang
-                    </Typography>
-                  </Plug>
+                <Link href="/big-data-analytics">
+                  <TreeList.Plug background="turquoise">
+                    <TreeList.Typography color="grayed" preset="plug">
+                      Big Data Analytics
+                    </TreeList.Typography>
+                  </TreeList.Plug>
                 </Link>
               </ul>
-              <Button background="swamp">
-                <Typography color="grayed" preset="buttonBig">
-                  Поступить в ката
-                </Typography>
-              </Button>
+              <Link href="https://t.me/Evgenie061" target="_blank">
+                <TreeList.Button background="transparent">
+                  <TreeList.Typography
+                    className="text-sm hover:text-black"
+                    color="whited"
+                    preset="buttonBig"
+                  >
+                    Поступить в ката
+                  </TreeList.Typography>
+                </TreeList.Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -94,8 +74,8 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <AdvantagesWrapper>
-        {adventuresList.map((adventureItem, index) => (
+      <TreeList.AdvantagesWrapper>
+        {TreeList.adventuresList.map((adventureItem, index) => (
           <div key={index} className="grid grid-cols-1">
             <div className="sizeIcon">
               <Image
@@ -106,13 +86,13 @@ export default function Home() {
                 className="w-[110px] h-[110px] max-sm:w-[80px] max-md:w-[95px] max-md:h-[95px] max-lg:w-[90px] max-lg:h-[90px]"
               />
             </div>
-            <Typography preset="advantagesText">
+            <TreeList.Typography preset="advantagesText">
               {adventureItem.underTitle}
-            </Typography>
+            </TreeList.Typography>
           </div>
         ))}
-      </AdvantagesWrapper>
-      <Prize />
+      </TreeList.AdvantagesWrapper>
+      <TreeList.Prize />
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
           <h2 className="h2 max-md:text-[30px] max-m:text-[20px] max-md:mt-[-70px]">
@@ -126,10 +106,10 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <CardWrapper>
-        {cardPath.map((path) => (
+      <TreeList.CardWrapper>
+        {TreeList.cardPath.map((path) => (
           <Link key={path.name} href={path.href}>
-            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
+            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-[#642ab5] custome-transition">
               <div className="flex flex-wrap mb-[6px] items-start">
                 <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
                   <h3 className="h3 max-g:text-[45px] max-md:text-[37px] max-m:text-[30px] max-g:mt-[25px]  max-sm:mt-[15px] ">
@@ -178,7 +158,7 @@ export default function Home() {
             </div>
           </Link>
         ))}
-      </CardWrapper>
+      </TreeList.CardWrapper>
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
           <h2 className="h2 max-md:text-[30px] max-m:text-[20px] max-md:mt-[-70px]">
@@ -194,7 +174,7 @@ export default function Home() {
       <div className="mb-[100px]">
         <div className="container max-lg:px-[20px]">
           <div className="grid grid-cols-3 max-md:grid-cols-2 max-sm:grid-cols-1 grid-rows-2 gap-x-40 gap-y-28 max-lg:gap-x-16 max-lg:gap-y-12">
-            {WhatIsOffered.map((itemOffer) => (
+            {TreeList.WhatIsOffered.map((itemOffer) => (
               <div key={itemOffer.alt} className="flex flex-col">
                 <div className="sizeIcon">
                   <Image
@@ -205,7 +185,7 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-[24px] mb-[20px] font-semibold leading-[140%] text-center text-[#89e1f3]">
+                  <h3 className="text-[24px] mb-[20px] font-semibold leading-[140%] text-center text-[#a173e2]">
                     {itemOffer.title}
                   </h3>
                   <p className="text-center">{itemOffer.content}</p>
@@ -216,20 +196,20 @@ export default function Home() {
         </div>
       </div>
       <div className="container max-g:px-[20px]">
-        <Typography
+        <TreeList.Typography
           preset="header1"
           className="max-lg:text-[34px] max-sm:text-[30px] max-ml:text-[25px]"
         >
           Kata Community
-        </Typography>
+        </TreeList.Typography>
         <p className="mb-[64px] max-md:mb-[40px] text-2xl max-lg:text-xl max-sm:text-lg  max-ml:text-base">
           Комфортное пространство для общения и обмена знаниями на каждом из
           этапов подготовки.
         </p>
-        <CommunityComponent />
+        <TreeList.CommunityComponent />
       </div>
       <div className="container max-g:px-[20px]">
-        <AdmissionButton />
+        <TreeList.AdmissionButton />
       </div>
     </div>
   );
