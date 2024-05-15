@@ -1,11 +1,12 @@
-import Typography from '@/components/atoms/Prize/Typography';
-import Image from 'next/image';
-import { WhatIsOffered, AdvantageCards } from './constans';
-
-import './style.css';
 import Link from 'next/link';
+import Image from 'next/image';
+
+import Typography from '@/components/atoms/Prize/Typography';
+import { WhatIsOffered, AdvantageCards } from './constans';
 import CardWrapper from '@/components/layouts/cardLanguage/CardWrapper';
 import { cardPath } from '@/constants/pages/mainPage';
+
+import './style.css';
 
 const About = () => {
   return (
@@ -56,7 +57,7 @@ const About = () => {
             За 6 лет мы выпустили более 2500 студентов, которые устроились на
             работу в первый месяц после окончания обучения
           </h2>
-          <p>
+          <p className="text-lg">
             Выпускники КАТА получают работу, а не бумажку о том, что их пытались
             учить в онлайн-школе веб-разработки.
           </p>
@@ -72,10 +73,10 @@ const About = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-[24px] mb-[20px] font-semibold leading-[140%] text-center text-[#89e1f3]">
+                  <h3 className="text-2xl mb-[20px] font-semibold leading-[140%] text-center text-[#642ab5]">
                     {itemOffer.title}
                   </h3>
-                  <p className="text-center">{itemOffer.content}</p>
+                  <p className="text-center text-lg">{itemOffer.content}</p>
                 </div>
               </li>
             ))}
@@ -108,11 +109,11 @@ const About = () => {
                       className="mx-auto max-sm:w-[190px] max-sm:h-[150px]"
                     />
                   </div>
-                  <ul className="text-[17px]  max-sm:text-[15px]">
+                  <ul className="text-lg  max-sm:text-[15px]">
                     <li>- повышение квалификации сотрудников</li>
                     <li>- обучение линейного персонала новым технологиям</li>
                   </ul>
-                  <p className="text-[17px] max-sm:text-[15px] !mb-0">
+                  <p className="text-lg max-sm:text-[15px] !mb-0">
                     {itemOffer.subtitle}
                   </p>
                 </li>
@@ -168,7 +169,7 @@ const About = () => {
       <CardWrapper>
         {cardPath.map((path) => (
           <Link key={path.name} href={path.href}>
-            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-blue-700 custome-transition">
+            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-[#642ab5] custome-transition">
               <div className="flex flex-wrap mb-[6px] items-start">
                 <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
                   <h3 className="h3 max-g:text-[45px] max-md:text-[37px] max-m:text-[30px] max-g:mt-[25px]  max-sm:mt-[15px] ">
@@ -190,9 +191,12 @@ const About = () => {
                 </div>
               </div>
               <div>
-                <ul className="mb-[50px] max-g:text-[20px] group-has-[li]:max-sm:text-[15px]">
+                <ul className="mb-[50px] text-lg max-g:text-[20px] group-has-[li]:max-sm:text-[15px]">
                   <li>
                     <p>✓ Оплата после трудоустройства</p>
+                  </li>
+                  <li>
+                    <p>✓ Оплата во время учебы</p>
                   </li>
                   <li>
                     <p>✓ Обучение минимум 25 часов в неделю</p>

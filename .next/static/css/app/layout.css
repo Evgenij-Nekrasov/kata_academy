@@ -504,107 +504,101 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.\!container {
-  width: 100% !important;
-}
 .container {
   width: 100%;
 }
+.\!container {
+  width: 100% !important;
+}
 @media (min-width: 363px) {
-
-  .\!container {
-    max-width: 363px !important;
-  }
 
   .container {
     max-width: 363px;
   }
-}
-@media (min-width: 418px) {
 
   .\!container {
-    max-width: 418px !important;
+    max-width: 363px !important;
   }
+}
+@media (min-width: 418px) {
 
   .container {
     max-width: 418px;
   }
-}
-@media (min-width: 440px) {
 
   .\!container {
-    max-width: 440px !important;
+    max-width: 418px !important;
   }
+}
+@media (min-width: 440px) {
 
   .container {
     max-width: 440px;
   }
-}
-@media (min-width: 510px) {
 
   .\!container {
-    max-width: 510px !important;
+    max-width: 440px !important;
   }
+}
+@media (min-width: 510px) {
 
   .container {
     max-width: 510px;
   }
-}
-@media (min-width: 769px) {
 
   .\!container {
-    max-width: 769px !important;
+    max-width: 510px !important;
   }
+}
+@media (min-width: 769px) {
 
   .container {
     max-width: 769px;
   }
-}
-@media (min-width: 872px) {
 
   .\!container {
-    max-width: 872px !important;
+    max-width: 769px !important;
   }
+}
+@media (min-width: 872px) {
 
   .container {
     max-width: 872px;
   }
-}
-@media (min-width: 1070px) {
 
   .\!container {
-    max-width: 1070px !important;
+    max-width: 872px !important;
   }
+}
+@media (min-width: 1070px) {
 
   .container {
     max-width: 1070px;
   }
-}
-@media (min-width: 1280px) {
 
   .\!container {
-    max-width: 1280px !important;
+    max-width: 1070px !important;
   }
+}
+@media (min-width: 1280px) {
 
   .container {
     max-width: 1280px;
   }
-}
-@media (min-width: 1536px) {
 
   .\!container {
-    max-width: 1536px !important;
+    max-width: 1280px !important;
   }
+}
+@media (min-width: 1536px) {
 
   .container {
     max-width: 1536px;
   }
-}
-.visible {
-  visibility: visible;
-}
-.invisible {
-  visibility: hidden;
+
+  .\!container {
+    max-width: 1536px !important;
+  }
 }
 .fixed {
   position: fixed;
@@ -614,18 +608,6 @@ video {
 }
 .relative {
   position: relative;
-}
-.inset-0 {
-  inset: 0px;
-}
-.-right-2 {
-  right: -0.5rem;
-}
-.-top-2 {
-  top: -0.5rem;
-}
-.bottom-0 {
-  bottom: 0px;
 }
 .bottom-\[100px\] {
   bottom: 100px;
@@ -659,9 +641,6 @@ video {
 }
 .top-\[70px\] {
   top: 70px;
-}
-.z-10 {
-  z-index: 10;
 }
 .z-20 {
   z-index: 20;
@@ -779,9 +758,6 @@ video {
 .mt-28 {
   margin-top: 7rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
 .mt-\[145px\] {
   margin-top: 145px;
 }
@@ -800,17 +776,11 @@ video {
 .grid {
   display: grid;
 }
-.contents {
-  display: contents;
-}
 .hidden {
   display: none;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.h-8 {
-  height: 2rem;
 }
 .h-\[110px\] {
   height: 110px;
@@ -838,9 +808,6 @@ video {
 }
 .min-h-screen {
   min-height: 100vh;
-}
-.w-8 {
-  width: 2rem;
 }
 .w-\[110px\] {
   width: 110px;
@@ -899,19 +866,11 @@ video {
 .max-w-full {
   max-width: 100%;
 }
-.max-w-sm {
-  max-width: 24rem;
-}
 .grow {
   flex-grow: 1;
 }
 .cursor-pointer {
   cursor: pointer;
-}
-.select-none {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
 .list-none {
   list-style-type: none;
@@ -979,6 +938,18 @@ video {
 .gap-\[60px\] {
   gap: 60px;
 }
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-14 {
+  gap: 3.5rem;
+}
+.gap-\[70px\] {
+  gap: 70px;
+}
+.gap-\[170px\] {
+  gap: 170px;
+}
 .gap-x-11 {
   -moz-column-gap: 2.75rem;
        column-gap: 2.75rem;
@@ -1033,9 +1004,6 @@ video {
 .overflow-hidden {
   overflow: hidden;
 }
-.rounded {
-  border-radius: 0.25rem;
-}
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1078,13 +1046,17 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(0 21 41 / var(--tw-bg-opacity));
 }
+.bg-\[\#1C2755\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 39 85 / var(--tw-bg-opacity));
+}
+.bg-\[\#274916\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(39 73 22 / var(--tw-bg-opacity));
+}
 .bg-\[\#434343\] {
   --tw-bg-opacity: 1;
   background-color: rgb(67 67 67 / var(--tw-bg-opacity));
-}
-.bg-\[\#474ce1\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(71 76 225 / var(--tw-bg-opacity));
 }
 .bg-\[\#642ab5\] {
   --tw-bg-opacity: 1;
@@ -1094,48 +1066,13 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(137 225 243 / var(--tw-bg-opacity));
 }
-.bg-\[\#8c9efb\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(140 158 251 / var(--tw-bg-opacity));
-}
-.bg-\[\#8f65ca\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(143 101 202 / var(--tw-bg-opacity));
-}
 .bg-\[\#92c29c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(146 194 156 / var(--tw-bg-opacity));
 }
-.bg-blue-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
-}
-.bg-gray-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 85 99 / var(--tw-bg-opacity));
-}
-.bg-gray-600\/90 {
-  background-color: rgb(75 85 99 / 0.9);
-}
-.bg-gray-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-}
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-\[\#7f52bf\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 82 191 / var(--tw-bg-opacity));
-}
-.bg-\[\#a173e2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 115 226 / var(--tw-bg-opacity));
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1144,17 +1081,17 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
-.p-4 {
-  padding: 1rem;
-}
-.p-8 {
-  padding: 2rem;
-}
 .p-\[10px\] {
   padding: 10px;
 }
 .p-\[25px\] {
   padding: 25px;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.p-10 {
+  padding: 2.5rem;
 }
 .px-10 {
   padding-left: 2.5rem;
@@ -1244,6 +1181,9 @@ video {
 .pt-\[80px\] {
   padding-top: 80px;
 }
+.text-left {
+  text-align: left;
+}
 .text-center {
   text-align: center;
 }
@@ -1257,12 +1197,6 @@ video {
 }
 .text-\[12px\] {
   font-size: 12px;
-}
-.text-\[17px\] {
-  font-size: 17px;
-}
-.text-\[18px\] {
-  font-size: 18px;
 }
 .text-\[20px\] {
   font-size: 20px;
@@ -1306,6 +1240,14 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .font-bold {
   font-weight: 700;
 }
@@ -1317,9 +1259,6 @@ video {
 }
 .uppercase {
   text-transform: uppercase;
-}
-.leading-7 {
-  line-height: 1.75rem;
 }
 .leading-\[1\.2\] {
   line-height: 1.2;
@@ -1345,52 +1284,35 @@ video {
 .tracking-wider {
   letter-spacing: 0.05em;
 }
-.text-\[\#29292f\] {
+.text-\[\#516fe4\] {
   --tw-text-opacity: 1;
-  color: rgb(41 41 47 / var(--tw-text-opacity));
+  color: rgb(81 111 228 / var(--tw-text-opacity));
 }
-.text-\[\#89e1f3\] {
+.text-\[\#52C41A\] {
   --tw-text-opacity: 1;
-  color: rgb(137 225 243 / var(--tw-text-opacity));
+  color: rgb(82 196 26 / var(--tw-text-opacity));
+}
+.text-\[\#642ab5\] {
+  --tw-text-opacity: 1;
+  color: rgb(100 42 181 / var(--tw-text-opacity));
+}
+.text-\[\#a173e2\] {
+  --tw-text-opacity: 1;
+  color: rgb(161 115 226 / var(--tw-text-opacity));
 }
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
-.text-blue-300 {
-  --tw-text-opacity: 1;
-  color: rgb(147 197 253 / var(--tw-text-opacity));
-}
-.text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-.text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
-}
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-\[\#7f52bf\] {
-  --tw-text-opacity: 1;
-  color: rgb(127 82 191 / var(--tw-text-opacity));
-}
-.text-\[\#a173e2\] {
-  --tw-text-opacity: 1;
-  color: rgb(161 115 226 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
 }
 .opacity-60 {
   opacity: 0.6;
-}
-.shadow-xl {
-  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .backdrop-opacity-0 {
   --tw-backdrop-opacity: opacity(0);
@@ -1472,7 +1394,7 @@ ul > li > p {
   margin-bottom: 30px;
 }
 
-.backgroundFrontend {
+.backgroundAnalytics {
   background-color: #8c9efb;
 }
 .backgroundJava {
@@ -1482,33 +1404,21 @@ ul > li > p {
   --tw-border-opacity: 1;
   border-color: rgb(100 42 181 / var(--tw-border-opacity));
 }
-.hover\:border-blue-700:hover {
-  --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
+.hover\:bg-\[\#642ab5\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 42 181 / var(--tw-bg-opacity));
 }
 .hover\:bg-\[\#854dd3\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(133 77 211 / var(--tw-bg-opacity));
 }
-.hover\:bg-\[\#8f65ca\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(143 101 202 / var(--tw-bg-opacity));
-}
 .hover\:bg-blue-100:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(219 234 254 / var(--tw-bg-opacity));
 }
-.hover\:bg-\[\#78b986\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(120 185 134 / var(--tw-bg-opacity));
-}
-.hover\:bg-\[\#7f52bf\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(127 82 191 / var(--tw-bg-opacity));
-}
-.hover\:bg-\[\#a173e2\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(161 115 226 / var(--tw-bg-opacity));
+.hover\:text-\[\#a173e2\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(161 115 226 / var(--tw-text-opacity));
 }
 .hover\:text-black:hover {
   --tw-text-opacity: 1;
@@ -1517,10 +1427,6 @@ ul > li > p {
 .hover\:text-blue-400:hover {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
-}
-.hover\:text-\[\#a173e2\]:hover {
-  --tw-text-opacity: 1;
-  color: rgb(161 115 226 / var(--tw-text-opacity));
 }
 .hover\:opacity-100:hover {
   opacity: 1;
@@ -2372,10 +2278,6 @@ ul > li > p {
 }
 @media not all and (min-width: 363px) {
 
-  .max-l\:h-\[470px\] {
-    height: 470px;
-  }
-
   .max-l\:text-\[15px\] {
     font-size: 15px;
   }
@@ -2475,6 +2377,72 @@ ul > li > p {
 .textStyle {
   font-size: 16px;
   color: gray;
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.4_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.77.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/.pnpm/next@14.1.4_react-dom@18.3.1_react@18.3.1__react@18.3.1_sass@1.77.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./components/layouts/modal/style.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.modal-content {
+  position: relative;
+  border-radius: 25px;
+  width: 70%;
+  height: 70%;
+  background-color: #282c34;
+  color: #fff;
+  animation-name: animatetop;
+  animation-duration: 1.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  display: block;
+  color: #f9f6ee;
+  margin-top: -12px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #642ab5;
+}
+
+.close-btn:hover {
+  background-color: #7b4dbb;
+  transition-duration: 0.7s;
+}
+
+.close:hover {
+  transform: rotate(180deg);
+  transition-duration: 0.7s;
 }
 
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\

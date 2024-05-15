@@ -10,7 +10,7 @@ import { NavLinks, NavLinks2 } from './constant';
 import MobileMenu from './partial/NavbarMobile';
 // import Modal from '@/components/layouts/modal/Modal';
 import useModal from '@/hooks/useModal';
-import NavbarModal from './partial/NavbarModal';
+import { Modal } from '@/components/layouts/modal/Modal';
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -72,17 +72,25 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/* Burger Menu */}
           <button
             onClick={toggle}
             className=" bg-[#642ab5] hover:bg-[#854dd3] text-white max-sm:py-[6px] py-[9px] px-[27px] max-sm:px-[24px] text-[20px] max-lg:text-[18px] max-g:text-[16px] max-sm:text-[14px] rounded-full custome-transition"
           >
             Наши программы
           </button>
-          {/* <Modal isOpen={isOpen} toggle={toggle}>
-            <NavbarModal />
-          </Modal> */}
+          <Modal isOpen={isOpen} handleClose={toggle}>
+            <div className="flex flex-col justify-between p-10">
+              <h2 className="text-white text-4xl">Выбор курса</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem,
+                ipsam laborum accusantium possimus cum quidem eius repellat unde
+                ullam debitis molestias in vero facilis tempore, placeat animi,
+                officia cumque commodi.
+              </p>
+            </div>
+          </Modal>
 
+          {/* Burger Menu */}
           <div>
             <button
               type="button"

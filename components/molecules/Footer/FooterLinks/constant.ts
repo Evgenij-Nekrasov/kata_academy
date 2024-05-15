@@ -18,12 +18,12 @@ export const FooterNavigation = [
 
 export const cardPath = [
   {
-    src: '/java-course',
+    src: 'http://localhost:3000/java',
     name: 'Java Developer',
   },
   {
-    src: '/frontend-course',
-    name: 'Frontend Developer',
+    src: 'http://localhost:3000/analytics',
+    name: 'Big Data Analytics',
   },
 ] as const;
 

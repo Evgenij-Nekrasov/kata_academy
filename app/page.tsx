@@ -12,7 +12,7 @@ export default function Home() {
           width={2200}
           height={1275}
           alt="main-background"
-          className="object-cover w-full h-full max-g:w-[900px] max-g:h-[650px] max-sm:w-[600px] max-sm:h-[450px] max-m:w-[510px] max-m:h-[430px] max-ml:h-[430px] max-l:h-[470px]"
+          className="object-cover w-full h-full max-g:w-[900px] max-g:h-[650px] max-sm:w-[600px] max-sm:h-[450px] max-m:w-[510px] max-m:h-[430px] max-ml:h-[430px]"
         />
       </div>
       <div className="max-w-[1360px] w-full mx-auto px-[40px] max-sm:px-[20px] absolute  z-[2] max-sm:px-[30px]">
@@ -34,15 +34,15 @@ export default function Home() {
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 max-ml:mx-[-20px] ">
                 <Link href="/java-course">
-                  <TreeList.Plug background="lilac">
-                    <TreeList.Typography color="grayed" preset="plug">
+                  <TreeList.Plug background="darkBlue">
+                    <TreeList.Typography color="lightBlue" preset="plug">
                       Java
                     </TreeList.Typography>
                   </TreeList.Plug>
                 </Link>
                 <Link href="/big-data-analytics">
-                  <TreeList.Plug background="turquoise">
-                    <TreeList.Typography color="grayed" preset="plug">
+                  <TreeList.Plug background="green">
+                    <TreeList.Typography color="lightGreen" preset="plug">
                       Big Data Analytics
                     </TreeList.Typography>
                   </TreeList.Plug>
@@ -68,7 +68,7 @@ export default function Home() {
           <h2 className="h2 max-md:text-[30px]">
             Обучение проходит онлайн и нацелено на результат
           </h2>
-          <p>
+          <p className="text-xl">
             У нас с тобой общие цели: твоё трудоустройство веб-разработчиком и
             твой карьерный рост.
           </p>
@@ -100,7 +100,7 @@ export default function Home() {
             <span>сначала учиться, а платить после трудоустройства</span>в
             Москве или Петербурге.{' '}
           </h2>
-          <p>
+          <p className="text-xl">
             Мы на 100% уверены в нашей методике обучения, поэтому не боимся
             инвестировать в наших студентов.
           </p>
@@ -131,9 +131,12 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <ul className="mb-[50px] max-g:text-[20px] group-has-[li]:max-sm:text-[15px]">
+                <ul className="mb-[50px] text-xl max-g:text-[20px] group-has-[li]:max-sm:text-[15px]">
                   <li>
                     <p>✓ Оплата после трудоустройства</p>
+                  </li>
+                  <li>
+                    <p>✓ Оплата во время учебы</p>
                   </li>
                   <li>
                     <p>✓ Обучение минимум 25 часов в неделю</p>

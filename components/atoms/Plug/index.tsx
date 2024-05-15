@@ -3,15 +3,14 @@ import React from 'react';
 import { ReactNode, FC } from 'react';
 
 const colors = {
-  lilac: 'bg-[#8c9efb]',
+  darkBlue: 'bg-[#1C2755]',
   turquoise: 'bg-[#89e1f3]',
-  swamp: 'bg-[#92c29c]',
-  blue: 'bg-[#474ce1]',
+  green: 'bg-[#274916]',
 };
 
 type PlugProps = {
   component?: React.ElementType;
-
+  className?: string;
   children: ReactNode;
   background: keyof typeof colors;
 };

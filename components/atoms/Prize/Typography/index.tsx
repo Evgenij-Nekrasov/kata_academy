@@ -2,8 +2,9 @@ import React, { CSSProperties, ReactNode } from 'react';
 import { clsx } from 'clsx';
 
 const colors = {
-  grayed: 'text-[#29292f]',
+  lightBlue: 'text-[#516fe4]',
   whited: 'text-white',
+  lightGreen: 'text-[#52C41A]',
 };
 
 const presets = {
@@ -15,7 +16,7 @@ const presets = {
   buttonBig:
     'font-bold text-[12px] leading-[1.4] text-center border-2 border-solid  text-wight max-w-full h-[75px] flex items-center justify-center uppercase max-lg:h-[68px] ',
   advantagesText:
-    'leading-[140%] text-center tracking-wide text-white max-w-[290px] mt-0 mb-auto',
+    'leading-[140%] text-center text-xl tracking-wide text-white max-w-[290px] mt-0 mb-auto',
   community:
     'flex items-center w-full mb-[128px] gap-[48px]  max-md:gap-[25px] max-md:flex-col max-md:mb-[60px]',
 };
@@ -32,7 +33,7 @@ type TypographyProps = {
 
 const Typography: React.FC<TypographyProps> = ({
   children,
-  color = 'grayed',
+  color = 'lightBlue',
   component = 'span',
   preset = 'plug',
   style,

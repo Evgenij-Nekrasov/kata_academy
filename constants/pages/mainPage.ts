@@ -25,10 +25,10 @@ export const cardPath = [
     duration: '14',
   },
   {
-    href: '/frontend-course',
+    href: '/big-data-analytics',
     image: 'frontend',
-    name: 'Frontend Developer',
-    background: 'backgroundFrontend',
+    name: 'Big Data Analytics',
+    background: 'backgroundAnalytics',
     duration: '12',
   },
 ] as const;

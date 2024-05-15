@@ -18,7 +18,7 @@ const Prize: FC<PrizeProps> = () => {
               <span> Каждый выпускник</span> получает от 3 до 5 офферов и
               <span> устраивается на работу</span>
             </h2>
-            <p className="my-[40px] text-white leading-[140%] text-[18px] max-sm:text-[15px]">
+            <p className="my-[40px] text-white leading-[140%] text-2xl max-sm:text-[15px]">
               в течение двух месяцев после окончания обучения в школе
               программирования Kata Academy.
             </p>

@@ -1,22 +1,62 @@
-.modal-overlay {
-  z-index: 9999;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
 }
 
-.modal-box {
-  display: block;
-  background: #1f1f1f;
+.modal-content {
+  position: relative;
+  border-radius: 25px;
   width: 70%;
   height: 70%;
-  padding: 1rem;
-  border-radius: 1rem;
-  position: relative;
+  background-color: #282c34;
+  color: #fff;
+  animation-name: animatetop;
+  animation-duration: 1.4s;
+}
+
+/* Add Animation */
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.close {
+  display: block;
+  color: #f9f6ee;
+  margin-top: -12px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  background-color: #642ab5;
+}
+
+.close-btn:hover {
+  background-color: #7b4dbb;
+  transition-duration: 0.7s;
+}
+
+.close:hover {
+  transform: rotate(180deg);
+  transition-duration: 0.7s;
 }

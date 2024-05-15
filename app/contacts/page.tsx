@@ -18,7 +18,6 @@ const Contacts = () => {
             </h2>
             <div className="paragraph">
               <div className="[&>*:nth-child(even)]:mb-[15px] [&>*:nth-child(odd)]:font-bold max-sm:mb-[13px] text-[22px] max-lg:text-[20px]">
-                <i></i>
                 <p>
                   Общество с ограниченной ответственностью <br />{' '}
                   {'"КАТА АКАДЕМИЯ"'}
@@ -54,12 +53,12 @@ const Contacts = () => {
               </span>
               <div className="ml-2">
                 {/* redefining the color */}
-                <p className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-gray-600">
+                <p className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-black">
                   Влад Сухих
                 </p>
                 <Link
                   href={'belowunderscor@gmail.com'}
-                  className="text-xl max-lg:text-lg max-m:text-base font-bold text-gray-700"
+                  className="text-xl max-lg:text-lg max-m:text-base font-bold text-black"
                 >
                   belowunderscor@gmail.com
                 </Link>
@@ -78,12 +77,12 @@ const Contacts = () => {
               </span>
               <div className="ml-2">
                 {/* redefining the color */}
-                <p className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-gray-600">
+                <p className="text-[32px] max-lg:text-[27px] max-sm:text-[21px] leading-[1.2] font-semibold text-black">
                   Ден Семишкин
                 </p>
                 <Link
                   href={'belowunderscor@gmail.com'}
-                  className="text-xl max-lg:text-lg max-m:text-base font-bold text-gray-700"
+                  className="text-xl max-lg:text-lg max-m:text-base font-bold text-black"
                 >
                   belowunderscor@gmail.com
                 </Link>
