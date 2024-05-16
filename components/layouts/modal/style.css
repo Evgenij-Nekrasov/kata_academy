@@ -21,6 +21,17 @@
   animation-duration: 1.4s;
 }
 
+@media (max-width: 872px) {
+  .modal-content {
+    height: 85%;
+  }
+}
+@media (max-width: 510px) {
+  .modal-content {
+    width: 85%;
+  }
+}
+
 /* Add Animation */
 @keyframes animatetop {
   from {
@@ -59,4 +70,11 @@
 .close:hover {
   transform: rotate(180deg);
   transition-duration: 0.7s;
+}
+
+.colorAnalytics {
+  color: #33b1ff;
+}
+.colorJava {
+  color: #df4549;
 }

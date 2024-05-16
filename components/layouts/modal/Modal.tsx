@@ -19,6 +19,15 @@ export function Modal({ children, isOpen, handleClose }: ModalProp) {
     };
   }, [handleClose]);
 
+  //disable scrolling when model is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add('overflow-y-hidden');
+    } else {
+      document.body.classList.remove('overflow-y-hidden');
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return (

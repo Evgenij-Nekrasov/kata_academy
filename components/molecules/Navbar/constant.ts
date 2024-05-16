@@ -18,3 +18,20 @@ export const NavLinks2 = [
     link: '/',
   },
 ];
+
+export const cardModal = [
+  {
+    href: '/java',
+    name: 'Java\nDeveloper',
+    shortname: 'JD',
+    duration: '14',
+    color: 'colorJava',
+  },
+  {
+    href: '/analytics',
+    name: 'Big Data Analytics',
+    shortname: 'BDA',
+    duration: '12',
+    color: 'colorAnalytics',
+  },
+] as const;
