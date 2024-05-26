@@ -44,14 +44,6 @@
   }
 }
 
-.close {
-  display: block;
-  color: #f9f6ee;
-  margin-top: -12px;
-  font-size: 40px;
-  font-weight: bold;
-}
-
 .close-btn {
   position: absolute;
   top: 12px;
@@ -62,14 +54,15 @@
   background-color: #642ab5;
 }
 
-.close-btn:hover {
-  background-color: #7b4dbb;
-  transition-duration: 0.7s;
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .close:hover {
   transform: rotate(180deg);
-  transition-duration: 0.7s;
+  transition-duration: 1s;
 }
 
 .colorAnalytics {

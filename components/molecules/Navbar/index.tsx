@@ -78,7 +78,7 @@ const Navbar = () => {
           >
             Наши программы
           </button>
-          <Modal isOpen={isOpen} handleClose={toggle}>
+          <Modal isScroll={isOpen} handleClose={toggle}>
             <div className="flex flex-col h-full justify-around max-g:justify-evenly p-10 max-sm:p-7">
               <h2 className="text-white text-[40px] max-md:text-4xl max-ml:text-[26px] tracking-wide">
                 Выбор курса
@@ -86,13 +86,13 @@ const Navbar = () => {
               <div className="grid grid-cols-2 max-g:grid-cols-1 gap-4 max-md:gap-6">
                 {cardModal.map((card) => (
                   <Link key={card.name} href={`${card.href}`}>
-                    <div className="flex flex-col justify-between bg-gray-700 px-6 py-4 rounded-3xl w-full h-[250px] max-g:h-[150px]">
+                    <div className="border-2 hover:border-[#642ab5] custome-transition flex flex-col justify-between bg-gray-700  px-6 py-4 rounded-3xl w-full h-[250px] max-g:h-[150px]">
                       <span className="text-xl max-md:text-lg max-ml:text-base">
                         {card.duration} месяцев
                       </span>
                       <div className="flex justify-between gap-x-5">
                         <span
-                          className={`whitespace-pre-wrap text-[35px] max-lg:text-3xl max-md:text-[26px] max-ml:text-[22px] font-bold ${card.color}`}
+                          className={`text-[35px] max-lg:text-3xl max-md:text-[26px] max-ml:text-[22px] font-bold ${card.color}`}
                         >
                           {card.name}
                         </span>

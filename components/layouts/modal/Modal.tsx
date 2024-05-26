@@ -1,15 +1,14 @@
-import React, { ReactNode, useRef } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import './style.css';
-
-import { useEffect } from 'react';
+import Image from 'next/image';
 
 interface ModalProp {
   children: ReactNode;
-  isOpen: boolean;
+  isScroll: boolean;
   handleClose: () => void;
 }
 
-export function Modal({ children, isOpen, handleClose }: ModalProp) {
+export function Modal({ children, isScroll, handleClose }: ModalProp) {
   useEffect(() => {
     const closeOnEscapeKey = (e: any) =>
       e.key === 'Escape' ? handleClose() : null;
@@ -21,20 +20,27 @@ export function Modal({ children, isOpen, handleClose }: ModalProp) {
 
   //disable scrolling when model is open
   useEffect(() => {
-    if (isOpen) {
+    if (isScroll) {
       document.body.classList.add('overflow-y-hidden');
     } else {
       document.body.classList.remove('overflow-y-hidden');
     }
-  }, [isOpen]);
+  }, [isScroll]);
 
-  if (!isOpen) return null;
+  if (!isScroll) return null;
 
   return (
     <div onClick={handleClose} className="modal">
       <div onClick={(e) => e.stopPropagation()} className="modal-content">
         <button onClick={handleClose} className="close-btn">
-          <span className="close">&times;</span>
+          <span className="close">
+            <Image
+              width={20}
+              height={20}
+              src="./assets/icons/icon-close-menu.svg"
+              alt="icon-close-menu"
+            />
+          </span>
         </button>
         {children}
       </div>
