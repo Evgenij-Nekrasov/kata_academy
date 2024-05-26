@@ -8,7 +8,6 @@ import Link from 'next/link';
 
 import { NavLinks, NavLinks2, cardModal } from './constant';
 import MobileMenu from './partial/NavbarMobile';
-// import Modal from '@/components/layouts/modal/Modal';
 import useModal from '@/hooks/useModal';
 import { Modal } from '@/components/layouts/modal/Modal';
 

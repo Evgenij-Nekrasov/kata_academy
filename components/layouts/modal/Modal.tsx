@@ -1,6 +1,10 @@
+'use client';
+
 import React, { ReactNode, useEffect } from 'react';
-import './style.css';
+import { usePathname } from 'next/navigation';
 import Image from 'next/image';
+
+import './style.css';
 
 interface ModalProp {
   children: ReactNode;
@@ -9,6 +13,9 @@ interface ModalProp {
 }
 
 export function Modal({ children, isScroll, handleClose }: ModalProp) {
+  const pathname = usePathname();
+
+  //hiding the modal window when a key is pressed
   useEffect(() => {
     const closeOnEscapeKey = (e: any) =>
       e.key === 'Escape' ? handleClose() : null;
@@ -26,6 +33,13 @@ export function Modal({ children, isScroll, handleClose }: ModalProp) {
       document.body.classList.remove('overflow-y-hidden');
     }
   }, [isScroll]);
+
+  //hiding the modal window when switching to another page
+  useEffect(() => {
+    if (pathname && isScroll) {
+      handleClose();
+    }
+  }, [pathname]);
 
   if (!isScroll) return null;
 
