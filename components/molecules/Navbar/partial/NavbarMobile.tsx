@@ -10,11 +10,11 @@ const NavbarMobile = ({ isOpen = false }) => {
 
   return (
     <div
-      className={`md:hidden  fixed right-2 bg-[#642ab5] top-[70px] max-sm:top-[65px] rounded-xl z-20 items-center justify-center w-[160px] h-[150px] py-[8px]  ${
+      className={`md:hidden  fixed right-2 bg-[#642ab5] top-[75px]  rounded-xl z-20 items-center justify-center w-[160px] h-[130px] py-[8px]  ${
         isOpen ? 'flex' : 'hidden'
       }`}
     >
-      <nav className="md:hidden  mx-5 space-y-3 text-lg w-full list-none">
+      <nav className="md:hidden  mx-5 space-y-5 text-lg w-full list-none">
         {NavLinks.map((link) => (
           <li
             key={link.name}

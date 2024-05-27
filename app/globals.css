@@ -2,13 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 * {
-  font-family: 'Roboto';
   scrollbar-width: thin;
   scrollbar-color: #7f52bf #293037;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -19,7 +24,6 @@ body {
   transition-duration: 300ms;
 }
 
-.h2,
 h2 {
   margin: 0;
   font-weight: 600;
@@ -58,8 +62,17 @@ h2 span {
   margin-bottom: 70px;
 }
 
-.subtitle .h2 {
-  margin-bottom: 12px;
+.h2 {
+  font-size: 30px;
+  @media (max-width: 1070px) {
+    font-size: 25px;
+  }
+  @media (max-width: 759px) {
+    font-size: 23px;
+  }
+  @media (max-width: 510px) {
+    font-size: 20px;
+  }
 }
 
 p {
@@ -77,6 +90,13 @@ ul > li > p {
   margin-top: 0px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.paragraph {
+  font-size: 20px;
+  @media (max-width: 510px) {
+    font-size: 17px;
+  }
 }
 
 .backgroundAnalytics {

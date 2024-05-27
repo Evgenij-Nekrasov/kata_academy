@@ -39,16 +39,22 @@ const Navbar = () => {
             <Link
               key={link.name}
               href={link.link}
-              className="min-[1279px]:py-7 py-6 max-lg:py-5  px-4 max-ml:px-1"
+              className="py-4  max-lg:py-3"
             >
-              <Image
-                key={link.name}
-                src={link.icon}
-                alt={link.name}
-                width={104}
-                height={54}
-                className="cursor-pointer  max-md:w-[95px] max-md:h-[30px] max-sm:w-[70px]  max-sm:h-[23px] max-sm:ml-[7px]"
-              />
+              <div className="flex flex-row gap-x-3 items-center justify-center">
+                <Image
+                  key={link.name}
+                  src={link.icon}
+                  alt={link.name}
+                  width={50}
+                  height={50}
+                  className="cursor-pointer flex flex-row justify-items-center  max-md:w-[45px] max-md:h-[45px]"
+                />
+
+                <span className="max-m:hidden h2 text-white font-bold ">
+                  Dev Guru
+                </span>
+              </div>
             </Link>
           ))}
 
@@ -60,7 +66,7 @@ const Navbar = () => {
                   <Link
                     key={link.name}
                     href={link.link}
-                    className={`min-[1279px]:py-8 py-7 max-lg:py-6 max-g:py-[26px] px-4 text-white ${
+                    className={`py-8 max-lg:py-[30px] px-4 text-white ${
                       pathname === link.link ? 'bg-[#642ab5]' : 'text-white'
                     }`}
                   >

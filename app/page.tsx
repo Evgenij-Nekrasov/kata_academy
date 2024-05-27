@@ -19,11 +19,11 @@ export default function Home() {
         <div className="pt-[200px] pb-[263px] flex-wrap items-center max-lg:pt-[120px]  max-md:pt-[150px] max-md:pt-[190px] max-sm:pt-[200px] ">
           <div className="flex flex-col gap-[30px]">
             <div className="flex flex-col gap-[14px] max-ml:mx-[-20px]">
-              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[45px] max-sm:text-[30px] max-sm:mt-[20px]  max-md:text-left max-sm:leading-[1]">
+              <h1 className="font-semibold text-[60px] leading-[1.2] text-white mb-0 max-lg:text-[45px] max-sm:text-[30px] max-sm:mt-[19px]  max-md:text-left max-sm:leading-[1]">
                 Онлайн-курсы программирования
               </h1>
               <div>
-                <p className="font-normal text-[26px]  leading-[1.4] text-white mb-0 max-md:text-[23px] max-sm:text-[18px]  max-sm:text-[18px] tracking-wider">
+                <p className="font-normal text-[26px]  leading-[1.4] text-white mb-0 max-md:text-[23px] max-sm:text-[18px]  max-ml:text-[15px] tracking-wider">
                   {' '}
                   с последующим трудоустройством в Москве или Санкт-Петербурге
                 </p>
@@ -63,12 +63,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="subtitle  max-g:mt-[-10px]  max-sm:mt-[30px] max-sm:text-[18px]  max-md:text-[18px]">
+      <div className="subtitle  max-g:mt-[-10px]  max-sm:mt-[30px] max-md:text-[18px] max-sm:text-[18px]">
         <div className="container max-sm:px-3">
-          <h2 className="h2 max-md:text-[30px]">
+          <h2 className="h3">
             Обучение проходит онлайн и нацелено на результат
           </h2>
-          <p className="text-xl">
+          <p className="paragraph">
             У нас с тобой общие цели: твоё трудоустройство веб-разработчиком и
             твой карьерный рост.
           </p>
@@ -95,12 +95,12 @@ export default function Home() {
       <TreeList.Prize />
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
-          <h2 className="h2 max-md:text-[30px] max-m:text-[20px] max-md:mt-[-70px]">
+          <h2 className="h2  max-md:mt-[-70px]">
             КАТА инвестирует в твое будущее. Ты можешь <br />
             <span>сначала учиться, а платить после трудоустройства</span>в
             Москве или Петербурге.{' '}
           </h2>
-          <p className="text-xl">
+          <p className="paragraph">
             Мы на 100% уверены в нашей методике обучения, поэтому не боимся
             инвестировать в наших студентов.
           </p>
@@ -164,10 +164,10 @@ export default function Home() {
       </TreeList.CardWrapper>
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
-          <h2 className="h2 max-md:text-[30px] max-m:text-[20px] max-md:mt-[-70px]">
+          <h2 className="h2 max-m:text-[20px] max-md:mt-[-70px]">
             <span>Самурайский подход </span> в обучении программированию
           </h2>
-          <p>
+          <p className="text-lg">
             Kata Academy — это не просто курсы веб-разработки. Мы готовим
             самостоятельных бойцов и востребованных специалистов за максимально
             короткий срок.
@@ -188,10 +188,10 @@ export default function Home() {
                   />
                 </div>
                 <div>
-                  <h3 className="text-[24px] mb-[20px] font-semibold leading-[140%] text-center text-[#a173e2]">
+                  <h3 className="text-[26px] mb-[20px] font-semibold leading-[140%] text-center text-[#a173e2]">
                     {itemOffer.title}
                   </h3>
-                  <p className="text-center">{itemOffer.content}</p>
+                  <p className="text-center text-lg">{itemOffer.content}</p>
                 </div>
               </div>
             ))}

@@ -14,7 +14,7 @@ export const NavLinks = [
 export const NavLinks2 = [
   {
     name: 'Home',
-    icon: '/assets/image/kata-nav.png',
+    icon: '/assets/icons/dev-guru.svg',
     link: '/',
   },
 ];
