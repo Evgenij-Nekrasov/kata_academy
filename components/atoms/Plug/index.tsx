@@ -4,7 +4,6 @@ import { ReactNode, FC } from 'react';
 
 const colors = {
   darkBlue: 'bg-[#1C2755]',
-  turquoise: 'bg-[#89e1f3]',
   green: 'bg-[#274916]',
 };
 

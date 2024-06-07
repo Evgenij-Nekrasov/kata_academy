@@ -17,6 +17,10 @@ const config: Config = {
         ml: '418px',
         l: '363px',
       },
+      backgroundColor: {
+        darkOrange: '#e57700',
+        lilac: '#a681a6',
+      },
     },
   },
 };

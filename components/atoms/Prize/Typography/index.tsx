@@ -4,6 +4,7 @@ import { clsx } from 'clsx';
 const colors = {
   lightBlue: 'text-[#516fe4]',
   whited: 'text-white',
+  blacked: 'text-black',
   lightGreen: 'text-[#52C41A]',
 };
 

@@ -18,14 +18,14 @@ export const adventuresList = [
 
 export const cardPath = [
   {
-    href: '/java-course',
+    href: '/java',
     image: 'java',
     name: 'Java Developer',
     background: 'backgroundJava',
     duration: '14',
   },
   {
-    href: '/big-data-analytics',
+    href: '/analytics',
     image: 'frontend',
     name: 'Big Data Analytics',
     background: 'backgroundAnalytics',

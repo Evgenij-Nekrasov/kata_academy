@@ -33,14 +33,14 @@ export default function Home() {
             {/* Plugs */}
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 max-ml:mx-[-20px] ">
-                <Link href="/java-course">
+                <Link href="/java">
                   <TreeList.Plug background="darkBlue">
                     <TreeList.Typography color="lightBlue" preset="plug">
                       Java
                     </TreeList.Typography>
                   </TreeList.Plug>
                 </Link>
-                <Link href="/big-data-analytics">
+                <Link href="/analytics">
                   <TreeList.Plug background="green">
                     <TreeList.Typography color="lightGreen" preset="plug">
                       Big Data Analytics
@@ -92,7 +92,53 @@ export default function Home() {
           </div>
         ))}
       </TreeList.AdvantagesWrapper>
-      <TreeList.Prize />
+      <TreeList.Prize
+        title={
+          <>
+            <span> Каждый выпускник</span> получает от 3 до 5 офферов и
+            <span> устраивается на работу</span>
+          </>
+        }
+        paragraph={
+          <>
+            <p className="my-[40px] text-white leading-[140%] text-2xl max-sm:text-[15px]">
+              в течение двух месяцев после окончания обучения в школе
+              программирования Kata Academy.
+            </p>
+          </>
+        }
+        button={
+          <>
+            <Link href="http://localhost:3000/about">
+              <TreeList.Button
+                background="transparent"
+                className=" max-md:w-full max-sm:w-full"
+              >
+                <TreeList.Typography
+                  color="whited"
+                  preset="buttonBig"
+                  className="hover:text-black text-sm"
+                >
+                  Истории выпускников
+                </TreeList.Typography>
+              </TreeList.Button>
+            </Link>
+          </>
+        }
+        image={
+          <>
+            <div className="mt-0 mx-auto mb-[45px]">
+              <Image
+                src="/assets/icons/award.svg"
+                alt="award"
+                width={250}
+                height={250}
+                className="max-md:w-[190px] max-md:h-[190px] max-sm:w-[160px] max-sm:h-[160px] "
+              />
+            </div>
+          </>
+        }
+      />
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
           <h2 className="h2  max-md:mt-[-70px]">

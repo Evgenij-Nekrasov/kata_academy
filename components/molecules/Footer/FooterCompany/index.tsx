@@ -5,14 +5,13 @@ import './style.css';
 
 const FooterCompany = () => {
   return (
-    <div className="flex justify-between items-center max-g:grid max-g:place-items-center  max-g:gap-3 max-g:grid-cols-1 pt-[50px] pb-[80px] max-g:pb-[40px] border-t-[1px] border-solid border-gray-500">
+    <div className="flex justify-around items-center max-g:grid max-g:place-items-center  max-g:gap-3 max-g:grid-cols-1 pt-[50px] pb-[80px] max-g:pb-[40px] border-t-[1px] border-solid border-gray-500">
       <Link href={'/'}>
         <Image
-          src={'/assets/image/kata-nav.png'}
+          src={'/assets/icons/dev-guru.svg'}
           alt="kata"
-          width={200}
-          height={100}
-          className="max-w-[160px]"
+          width={50}
+          height={50}
         />
       </Link>
       <span className="textStyle">© 2024 KATA Programming Academy</span>
