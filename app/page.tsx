@@ -74,29 +74,25 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <TreeList.AdvantagesWrapper>
-        {TreeList.adventuresList.map((adventureItem, index) => (
-          <div key={index} className="grid grid-cols-1">
-            <div className="sizeIcon">
-              <Image
-                width={102}
-                height={120}
-                src={`/assets/icons/${adventureItem.src}.svg`}
-                alt={adventureItem.alt}
-                className="w-[110px] h-[110px] max-sm:w-[80px] max-md:w-[95px] max-md:h-[95px] max-lg:w-[90px] max-lg:h-[90px]"
-              />
-            </div>
-            <TreeList.Typography preset="advantagesText">
-              {adventureItem.underTitle}
-            </TreeList.Typography>
-          </div>
+      <TreeList.WrapperAdvantages>
+        {TreeList.adventuresList.map((adventureItem, i) => (
+          <TreeList.Advantages
+            key={i}
+            image={`${adventureItem.src}`}
+            alt={`${adventureItem.alt}`}
+            paragraph={`${adventureItem.underTitle}`}
+          />
         ))}
-      </TreeList.AdvantagesWrapper>
+      </TreeList.WrapperAdvantages>
+
       <TreeList.Prize
+        background="bg-[#434343]"
         title={
           <>
-            <span> Каждый выпускник</span> получает от 3 до 5 офферов и
-            <span> устраивается на работу</span>
+            <h2 className="h2 max-md:text-[27px] max-sm:text-[23px] max-sm:text-[20px] md:leading-10">
+              <span> Каждый выпускник</span> получает от 3 до 5 офферов и
+              <span> устраивается на работу</span>
+            </h2>
           </>
         }
         paragraph={

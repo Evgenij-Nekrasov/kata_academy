@@ -14,7 +14,7 @@ export const adventuresList = [
     alt: 'support',
     underTitle: 'Поддержка сообщества',
   },
-] as const;
+];
 
 export const cardPath = [
   {

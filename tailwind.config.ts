@@ -18,8 +18,11 @@ const config: Config = {
         l: '363px',
       },
       backgroundColor: {
-        darkOrange: '#e57700',
+        darkOrange: '#d86c00',
         lilac: '#a681a6',
+      },
+      colors: {
+        violet: '#642ab5',
       },
     },
   },

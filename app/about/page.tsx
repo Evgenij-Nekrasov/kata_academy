@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import Typography from '@/components/atoms/Prize/Typography';
+import Typography from '@/components/globalTypography';
 import { WhatIsOffered, AdvantageCards } from './constans';
 import CardWrapper from '@/components/layouts/cardLanguage/CardWrapper';
 import { cardPath } from '@/constants/pages/mainPage';

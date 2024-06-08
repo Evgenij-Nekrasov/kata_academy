@@ -1,12 +1,13 @@
 import Button from '@/components/atoms/Button';
 import Plug from '@/components/atoms/Plug';
-import Typography from '@/components/atoms/Prize/Typography';
+import Typography from '@/components/globalTypography';
 import {
   WhatIsOffered,
   adventuresList,
   cardPath,
 } from '@/constants/pages/mainPage';
-import AdvantagesWrapper from '@/components/layouts/advantages/AdvantagesWrapper';
+import WrapperAdvantages from './layouts/advantages/WrapperAdvantages';
+import Advantages from './layouts/advantages/Advantages';
 import Prize from '@/components/atoms/Prize';
 import CardWrapper from '@/components/layouts/cardLanguage/CardWrapper';
 import CommunityComponent from '@/components/atoms/Community';
@@ -19,9 +20,10 @@ export {
   WhatIsOffered,
   adventuresList,
   cardPath,
-  AdvantagesWrapper,
+  Advantages,
   Prize,
   CardWrapper,
+  WrapperAdvantages,
   CommunityComponent,
   AdmissionButton,
 };

@@ -90,6 +90,9 @@ ul > li > p {
   margin-top: 0px;
   margin: 0 auto;
   margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .paragraph {

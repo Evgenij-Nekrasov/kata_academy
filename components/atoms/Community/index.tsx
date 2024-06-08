@@ -1,5 +1,5 @@
 import { Community } from './constant';
-import Typography from '../Prize/Typography';
+import Typography from '../../globalTypography';
 import Image from 'next/image';
 
 const CommunityComponent = () => {
