@@ -7,7 +7,7 @@ type AdvantagesProps = {
 const WrapperAdvantages: FC<AdvantagesProps> = ({ children }) => {
   return (
     <div className="container">
-      <div className="flex justify-between max-md:flex-col gap-x-4 items-center max-md:gap-y-11 mb-[145px] max-md:mb-[100px]">
+      <div className="flex justify-evenly max-md:flex-col gap-x-6 items-start max-md:gap-y-11 mb-[145px] max-md:mb-[100px]">
         {children}
       </div>
     </div>

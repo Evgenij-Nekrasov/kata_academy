@@ -10,7 +10,8 @@ import {
   WrapperAdvantages,
 } from '@/components';
 
-import { adventagesList } from './constant';
+import { adventagesList, graduatesOfCourses } from './constant';
+import Graduates from '@/components/layouts/graduates/Graduates';
 
 const Java = () => {
   return (
@@ -52,14 +53,14 @@ const Java = () => {
               </Button>
             </Link>
           </div>
-          <div className="max-g:hidden flex justify-end max-g:justify-center">
-            <div className="flex items-center  justify-center bg-lilac h-auto max-lg:h-[80%]  w-[90%] max-g:w-[50%]  rounded-[50%]">
+          <div className="max-g:hidden flex justify-end">
+            <div className="flex items-center  justify-center bg-lilac h-auto max-lg:h-[80%]  w-[110%] max-g:w-[50%]  rounded-[50%]">
               <Image
                 src={`/assets/icons/java.svg`}
                 alt="java-course"
                 width={0}
                 height={0}
-                style={{ width: '80%', height: 'auto' }}
+                style={{ width: '75%', height: 'auto' }}
               />
             </div>
           </div>
@@ -114,18 +115,17 @@ const Java = () => {
       </WrapperAdvantages>
 
       <Prize
-        wrapperStyle={'mb-[140px]'}
         background="bg-violet"
         title={
           <>
-            <h2 className="h2 max-md:text-[27px] max-sm:text-[23px] max-sm:text-[20px] md:leading-10">
+            <h2 className="h2 max-md:text-center max-md:text-[27px] max-sm:text-[23px] md:leading-10">
               Kata Academy - это новый подход к обучению программистов
             </h2>
           </>
         }
         paragraph={
           <>
-            <p className="my-[40px] text-white leading-[140%] text-2xl max-sm:text-[15px]">
+            <p className="my-[40px] max-md:text-center text-white leading-[140%] text-2xl max-sm:text-[17px]">
               С нашей поддержкой ты 100% устроишься на работу и станешь крутым
               Frontend-разработчиком уже в этом году.
             </p>
@@ -149,7 +149,7 @@ const Java = () => {
       {/* Header of money*/}
       <Typography
         preset="header1"
-        className="container flex justify-center mb-10"
+        className="container max-sm:px-5 flex justify-center max-lg:text-3xl max-md:text-2xl max-m:text-xl"
       >
         Оплата после трудоустройства или во время обучения
       </Typography>
@@ -158,12 +158,41 @@ const Java = () => {
         background="bg-violet"
         title={
           <>
-            <h2 className="h2  max-md:text-[27px] max-sm:text-[23px] max-sm:text-[20px] md:leading-10">
+            <h2 className="text-[27px] max-md:text-[23px] max-sm:text-[20px] max-m:text-[16px] md:leading-10">
               Минимальная гарантированная зарплата по договору — 80 000 рублей
             </h2>
           </>
         }
       />
+
+      {/* Graduates of courses */}
+      <div className="container [&>*]:mb-5">
+        <h2 className="h2">
+          <span className="bg-lilac">Эти ребята смогли - сможешь и ты!</span>
+        </h2>
+        <p>
+          Сомневаешься? Тогда скорее читай отзывы наших выпускников, которые
+          успешно работают на позициях Frontend Developer и Backend Developer.
+          За 6 лет мы выпустили более 2500 программистов в разных странах:
+          России, СНГ, Европе, США и Канаде.
+        </p>
+        <p>
+          Еще больше отзывов об обучении в KATA Academy (ex-Java Mentor) — в
+          нашей группе
+        </p>
+      </div>
+
+      <WrapperAdvantages>
+        {graduatesOfCourses.map((adventageItem, i) => (
+          <Graduates
+            key={i}
+            image={`${adventageItem.src}`}
+            alt={`${adventageItem.alt}`}
+            title={`${adventageItem.name}`}
+            paragraph={`${adventageItem.text}`}
+          />
+        ))}
+      </WrapperAdvantages>
     </>
   );
 };

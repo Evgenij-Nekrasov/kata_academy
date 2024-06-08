@@ -18,10 +18,10 @@ const Prize: FC<PrizeProps> = ({
   background,
 }) => {
   return (
-    <div className={`mb-[120px]  ${wrapperStyle}`}>
+    <div className={`mb-[100px]  ${wrapperStyle}`}>
       <div className="container max-lg:p-0">
         <div
-          className={`flex items-center max-md:flex-col py-[50px] max-sm:pt-[30px] max-sm:px-[10px] px-[60px]  ${background} rounded-[30px] max-lg:rounded-none gap-x-11`}
+          className={`flex items-center max-md:flex-col py-[50px] max-md:py-[40px] max-sm:pt-[30px] max-sm:px-[10px] px-[60px]  ${background} rounded-[30px] max-lg:rounded-none gap-x-11`}
         >
           <div className="max-md:order-last">
             {title}
