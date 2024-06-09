@@ -18,7 +18,7 @@ const Graduates: FC<AdvantagesProps> = ({
   title,
 }) => {
   return (
-    <div key={key} className="flex flex-col justify-center mt-14">
+    <div key={key} className="flex flex-col justify-center">
       <div className="flex gap-x-5 mb-5">
         <Image
           width={445}

@@ -254,7 +254,35 @@ export default function Home() {
         <TreeList.CommunityComponent />
       </div>
       <div className="container max-g:px-[20px]">
-        <TreeList.AdmissionButton />
+        <TreeList.AdmissionButton
+          link="https://t.me/Evgenie061"
+          background="bg-violet"
+          title={
+            <h2 className="h2 max-md:text-[26px] max-sm:text-[20px] max-l:text-[15px]">
+              Поступить в KATA
+            </h2>
+          }
+          imageUnderTitle={
+            <div>
+              <Image
+                src="/assets/icons/arrow-right.svg"
+                alt="arrow-right"
+                width={47}
+                height={13}
+                className="group-hover:ml-[8px] custome-transition"
+              />
+            </div>
+          }
+          imageBig={
+            <Image
+              src="/assets/icons/kata.svg"
+              alt="kata"
+              width={318}
+              height={113}
+              className="max-md:w-[280px] max-md:h-[90px] max-md:h-[70px] max-m:h-[50px] max-m:w-[170px]"
+            />
+          }
+        />
       </div>
     </div>
   );

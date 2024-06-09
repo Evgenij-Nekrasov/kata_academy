@@ -20,6 +20,7 @@ const config: Config = {
       backgroundColor: {
         darkOrange: '#d86c00',
         lilac: '#a681a6',
+        lightRed: '#ec5353',
       },
       colors: {
         violet: '#642ab5',

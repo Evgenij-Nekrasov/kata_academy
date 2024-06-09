@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import {
+  AdmissionButton,
   Advantages,
   Button,
   CardWrapper,
@@ -10,8 +11,10 @@ import {
   WrapperAdvantages,
 } from '@/components';
 
-import { adventagesList, graduatesOfCourses } from './constant';
+import { adventagesList, courseFeatures, graduatesOfCourses } from './constant';
 import Graduates from '@/components/layouts/graduates/Graduates';
+import Accordion from '@/components/molecules/Accordion/Accordion';
+import { accordionItems } from '@/components/molecules/Accordion/constant';
 
 const Java = () => {
   return (
@@ -149,7 +152,7 @@ const Java = () => {
       {/* Header of money*/}
       <Typography
         preset="header1"
-        className="container max-sm:px-5 flex justify-center max-lg:text-3xl max-md:text-2xl max-m:text-xl"
+        className="container max-sm:px-2 flex justify-center max-lg:text-3xl max-md:text-2xl"
       >
         Оплата после трудоустройства или во время обучения
       </Typography>
@@ -166,7 +169,7 @@ const Java = () => {
       />
 
       {/* Graduates of courses */}
-      <div className="container [&>*]:mb-5">
+      <div className="container max-sm:px-5 [&>*]:mb-5">
         <h2 className="h2">
           <span className="bg-lilac">Эти ребята смогли - сможешь и ты!</span>
         </h2>
@@ -193,6 +196,36 @@ const Java = () => {
           />
         ))}
       </WrapperAdvantages>
+
+      {/* Employment opportunities */}
+      <h2 className="container max-sm:px-2 max-lg:text-3xl max-md:text-2xl">
+        Готов играть по нашим правилам? Тогда отсчитывай {}
+        <span className="bg-violet">9 месяцев</span> до трудоустройства {}
+        <span className="bg-violet"> Java-разработчиком</span>, и поехали!
+      </h2>
+
+      <WrapperAdvantages>
+        <div className="grid grid-cols-2 max-md:grid-cols-1 max-w-full gap-7">
+          {courseFeatures.map((feature, i) => (
+            <AdmissionButton
+              key={i}
+              title={<h2 className="h2 text-black">{feature.title}</h2>}
+              imageUnderTitle={
+                <p className="paragraph">{feature.description}</p>
+              }
+              background={feature.background}
+            />
+          ))}
+        </div>
+      </WrapperAdvantages>
+
+      {/* Training program */}
+      <h2 className="container mb-5  max-sm:px-2 max-lg:text-3xl max-md:text-2xl">
+        Программа обучения
+      </h2>
+      <div className="container">
+        <Accordion items={accordionItems} />
+      </div>
     </>
   );
 };

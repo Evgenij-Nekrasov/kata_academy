@@ -16,7 +16,7 @@ const presets = {
   titleAdvantages: 'mb-5 font-semibold text-2xl leading-[110%] text-center',
   plug: 'font-semibold leading-[1.2] text-[20px]',
   buttonBig:
-    'font-bold text-[12px] leading-[1.4] text-center border-2 border-solid  text-wight max-w-full h-[75px] flex items-center justify-center uppercase max-lg:h-[68px] ',
+    'font-bold text-[12px] leading-[1.4] text-center border-2 border-solid  max-w-full h-[75px] flex items-center justify-center uppercase max-lg:h-[68px] ',
   advantagesText:
     'leading-[140%] text-center text-xl tracking-wide text-white max-w-[290px] mt-0 mb-auto',
   community:
