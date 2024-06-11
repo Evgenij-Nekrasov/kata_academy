@@ -11,10 +11,16 @@ import {
   WrapperAdvantages,
 } from '@/components';
 
-import { adventagesList, courseFeatures, graduatesOfCourses } from './constant';
+import {
+  adventagesList,
+  courseFeatures,
+  graduatesOfCourses,
+  programsConditions,
+} from './constant';
 import Graduates from '@/components/layouts/graduates/Graduates';
 import Accordion from '@/components/molecules/Accordion/Accordion';
 import { accordionItems } from '@/components/molecules/Accordion/constant';
+import Circle from '@/components/atoms/CircleTechnology';
 
 const Java = () => {
   return (
@@ -152,7 +158,7 @@ const Java = () => {
       {/* Header of money*/}
       <Typography
         preset="header1"
-        className="container max-sm:px-2 flex justify-center max-lg:text-3xl max-md:text-2xl"
+        className="container max-sm:px-5 flex justify-center max-lg:text-3xl max-md:text-2xl  max-md:text-center max-m:text-xl"
       >
         Оплата после трудоустройства или во время обучения
       </Typography>
@@ -198,7 +204,7 @@ const Java = () => {
       </WrapperAdvantages>
 
       {/* Employment opportunities */}
-      <h2 className="container max-sm:px-2 max-lg:text-3xl max-md:text-2xl">
+      <h2 className="container max-sm:px-5 max-lg:text-3xl max-md:text-2xl">
         Готов играть по нашим правилам? Тогда отсчитывай {}
         <span className="bg-violet">9 месяцев</span> до трудоустройства {}
         <span className="bg-violet"> Java-разработчиком</span>, и поехали!
@@ -220,12 +226,103 @@ const Java = () => {
       </WrapperAdvantages>
 
       {/* Training program */}
-      <h2 className="container mb-5  max-sm:px-2 max-lg:text-3xl max-md:text-2xl">
+      <h2 className="container max-sm:px-5 max-lg:text-3xl max-md:text-2xl">
         Программа обучения
       </h2>
-      <div className="container">
+      <div className="container max-sm:px-5">
         <Accordion items={accordionItems} />
       </div>
+
+      {/* Circle */}
+      <h2 className="container max-sm:px-5 max-lg:text-3xl max-md:text-2xl">
+        Технологии, которыми ты будешь владеть
+      </h2>
+      <div className="container">
+        <div className="flex flex-wrap max-sm:justify-center gap-8 mt-10 mb-40 max-md:mb-28">
+          <Circle border="violet">
+            <Image
+              width={70}
+              height={70}
+              className="object-cover max-g:w-[60px] max-g:h-[60px]"
+              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              alt="Fapache-tomcat"
+            />
+          </Circle>
+          <Circle border="violet">
+            <Image
+              width={70}
+              height={70}
+              className="object-cover max-g:w-[60px] max-g:h-[60px]"
+              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              alt="Fapache-tomcat"
+            />
+          </Circle>
+          <Circle border="violet">
+            <Image
+              width={70}
+              height={70}
+              className="object-cover max-g:w-[60px] max-g:h-[60px]"
+              src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+              alt="Fapache-tomcat"
+            />
+          </Circle>
+        </div>
+      </div>
+
+      {/* Program conditions */}
+      <Typography
+        component="div"
+        preset="header1"
+        className="text-center max-lg:text-3xl max-md:text-2xl "
+      >
+        <p className="container">Условия участия в программе</p>
+      </Typography>
+
+      <ul className="container">
+        <div className="mx-56 max-lg:mx-44 max-md:mx-20 max-sm:mx-0 mt-7">
+          {programsConditions.map((program, index) => (
+            <li key={index} className="flex items-center gap-x-5 mb-6">
+              <Image
+                alt="icons-check-mark"
+                src="https://p1.hiclipart.com/preview/887/375/732/check-mark-symbol-checkbox-violet-purple-logo-line-circle-material-property-png-clipart.jpg"
+                width={40}
+                height={40}
+              />
+              <Typography preset="plug" className="max-lg:text-base">
+                <p>{program.text}</p>
+              </Typography>
+            </li>
+          ))}
+        </div>
+      </ul>
+
+      <Prize
+        wrapperStyle={'mt-40 max-md:mt-28 justify-center'}
+        background="bg-violet"
+        title={
+          <>
+            <h2 className="text-center text-[27px] max-lg:text-[23px] max-md:text-[20px] max-m:text-[16px] md:leading-10">
+              Для участия необходимо пройти входное тестирование
+            </h2>
+          </>
+        }
+        button={
+          <Link href="https://t.me/Evgenie061">
+            <Button
+              className=" min-w-full max-sm:mt-[20px] max-m:mt-[30px] mt-5"
+              background="orange"
+            >
+              <Typography
+                className="text-base max-lg:text-sm  max-md:text-xs  max-sm:h-10 hover:border-black hover:text-black"
+                color="whited"
+                preset="buttonBig"
+              >
+                Отправить заявку
+              </Typography>
+            </Button>
+          </Link>
+        }
+      />
     </>
   );
 };

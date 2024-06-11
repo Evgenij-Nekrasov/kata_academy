@@ -48,8 +48,8 @@ export default function Home() {
                   </TreeList.Plug>
                 </Link>
               </ul>
-              <Link href="https://t.me/Evgenie061" target="_blank">
-                <TreeList.Button background="transparent">
+              <TreeList.Button background="transparent">
+                <Link href="https://t.me/Evgenie061" target="_blank">
                   <TreeList.Typography
                     className="text-sm hover:text-black"
                     color="whited"
@@ -57,8 +57,8 @@ export default function Home() {
                   >
                     Поступить в ката
                   </TreeList.Typography>
-                </TreeList.Button>
-              </Link>
+                </Link>
+              </TreeList.Button>
             </div>
           </div>
         </div>
