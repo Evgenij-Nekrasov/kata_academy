@@ -16,11 +16,14 @@ import {
   courseFeatures,
   graduatesOfCourses,
   programsConditions,
+  steps,
 } from './constant';
 import Graduates from '@/components/layouts/graduates/Graduates';
 import Accordion from '@/components/molecules/Accordion/Accordion';
 import { accordionItems } from '@/components/molecules/Accordion/constant';
 import Circle from '@/components/atoms/CircleTechnology';
+import ApplicationDeveloper from '@/components/atoms/ApplicationDeveloper';
+import { Step } from '@/components/atoms/StepLearn';
 
 const Java = () => {
   return (
@@ -158,7 +161,7 @@ const Java = () => {
       {/* Header of money*/}
       <Typography
         preset="header1"
-        className="container max-sm:px-5 flex justify-center max-lg:text-3xl max-md:text-2xl  max-md:text-center max-m:text-xl"
+        className="container  flex justify-center max-lg:text-3xl max-md:text-2xl  max-md:text-center max-m:text-xl"
       >
         Оплата после трудоустройства или во время обучения
       </Typography>
@@ -175,7 +178,7 @@ const Java = () => {
       />
 
       {/* Graduates of courses */}
-      <div className="container max-sm:px-5 [&>*]:mb-5">
+      <div className="container  [&>*]:mb-5">
         <h2 className="h2">
           <span className="bg-lilac">Эти ребята смогли - сможешь и ты!</span>
         </h2>
@@ -204,7 +207,7 @@ const Java = () => {
       </WrapperAdvantages>
 
       {/* Employment opportunities */}
-      <h2 className="container max-sm:px-5 max-lg:text-3xl max-md:text-2xl">
+      <h2 className="container  max-lg:text-3xl max-md:text-2xl">
         Готов играть по нашим правилам? Тогда отсчитывай {}
         <span className="bg-violet">9 месяцев</span> до трудоустройства {}
         <span className="bg-violet"> Java-разработчиком</span>, и поехали!
@@ -226,19 +229,19 @@ const Java = () => {
       </WrapperAdvantages>
 
       {/* Training program */}
-      <h2 className="container max-sm:px-5 max-lg:text-3xl max-md:text-2xl">
-        Программа обучения
-      </h2>
-      <div className="container max-sm:px-5">
-        <Accordion items={accordionItems} />
+      <div className="container ">
+        <h2 className="max-lg:text-3xl max-md:text-2xl">Программа обучения</h2>
+        <div>
+          <Accordion items={accordionItems} />
+        </div>
       </div>
 
       {/* Circle */}
-      <h2 className="container max-sm:px-5 max-lg:text-3xl max-md:text-2xl">
-        Технологии, которыми ты будешь владеть
-      </h2>
       <div className="container">
-        <div className="flex flex-wrap max-sm:justify-center gap-8 mt-10 mb-40 max-md:mb-28">
+        <h2 className="mt-24 max-lg:text-3xl max-md:text-2xl">
+          Технологии, которыми ты будешь владеть
+        </h2>
+        <div className="mt-12 flex flex-wrap max-sm:justify-center gap-8 mt-10 mb-40 max-md:mb-28">
           <Circle border="violet">
             <Image
               width={70}
@@ -323,6 +326,33 @@ const Java = () => {
           </Link>
         }
       />
+
+      {/* whatDeveloperDo */}
+      <div className="container max-sm:p-5">
+        <h2 className="h2 max-sm:text-center mb-16">
+          Что разрабатывет Frontend Developer?
+        </h2>
+        <ApplicationDeveloper />
+      </div>
+
+      <div className="container">
+        <h2 className="h2 max-sm:text-center mb-16">Как устроено обучение</h2>
+        <div className="max-w-2xl mx-auto p-4 max-sm:p-0 mt-10 mb-28 relative">
+          {steps.map((step, index) => (
+            <Step
+              key={index}
+              number={step.number}
+              description={step.description}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Training program */}
+      <div className="container">
+        <h2 className="max-lg:text-3xl max-md:text-2xl">FAQ</h2>
+        <Accordion items={accordionItems} />
+      </div>
     </>
   );
 };

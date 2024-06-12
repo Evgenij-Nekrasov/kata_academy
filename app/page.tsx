@@ -63,7 +63,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="subtitle  max-g:mt-[-10px]  max-sm:mt-[30px] max-md:text-[18px] max-sm:text-[18px]">
+      <div className="subtitle max-sm:mt-[50px] max-md:text-[18px] max-sm:text-[18px]">
         <div className="container max-sm:px-3">
           <h2 className="h3">
             Обучение проходит онлайн и нацелено на результат

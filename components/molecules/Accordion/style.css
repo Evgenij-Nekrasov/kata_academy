@@ -2,13 +2,11 @@
   border-radius: 30px;
   background-color: #642ab5;
   margin-top: 40px;
-  margin-bottom: 120px;
   padding: 20px 30px;
   @media (max-width: 769px) {
     border-radius: 20px;
     margin-top: 20px;
     padding: 10px 20px;
-    margin-bottom: 100px;
   }
 }
 

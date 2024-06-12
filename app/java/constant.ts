@@ -72,3 +72,42 @@ export const programsConditions = [
     text: 'Гражданство, ПМЖ или ВНЖ (со сроком действия более двух лет) РФ или Гражданство Беларуси.',
   },
 ];
+
+export const whatFrontendDo = [
+  {
+    title: 'Веб-интерфейсы',
+    description: 'Microsoft, Gmail, Dropbox, WhatsApp, Netflix',
+    turn: 'left',
+  },
+  {
+    title: 'Прогрессивные веб-приложения',
+    description: 'Microsoft, Gmail, Dropbox, WhatsApp, Netflix',
+  },
+  {
+    title: 'Нагруженные сервера на node.js',
+    description: 'Microsoft, Gmail, Dropbox, WhatsApp, Netflix',
+    turn: 'left',
+  },
+  {
+    title: 'Приложения для ПК',
+    description: 'Microsoft, Gmail, Dropbox, WhatsApp, Netflix',
+  },
+];
+
+export const steps = [
+  {
+    number: '01',
+    description:
+      'Ты прошёл отбор и подписал договор. Мы добавляем тебя в канал твоего набора в Mattermost, в тематические каналы и общий чат студентов, даём доступ к учебной платформе.',
+  },
+  {
+    number: '02',
+    description:
+      'Ты приступаешь к изучению JavaScript: осваиваешь теорию, выполняешь практические задания, пишешь код небольшими фрагментами от простого к сложному.',
+  },
+  {
+    number: '03',
+    description:
+      'Тебя поддерживает ментор и сообщество студентов. После прохождения каждой темы ментор проводит проверку знаний и ревью кода. Раз в 2 недели.',
+  },
+];
