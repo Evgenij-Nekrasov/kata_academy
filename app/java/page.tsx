@@ -65,16 +65,14 @@ const Java = () => {
               </Button>
             </Link>
           </div>
-          <div className="max-g:hidden flex justify-end">
-            <div className="flex items-center  justify-center bg-lilac h-auto max-lg:h-[80%]  w-[110%] max-g:w-[50%]  rounded-[50%]">
-              <Image
-                src={`/assets/icons/java.svg`}
-                alt="java-course"
-                width={0}
-                height={0}
-                style={{ width: '75%', height: 'auto' }}
-              />
-            </div>
+          <div className="max-g:hidden flex items-center  justify-center bg-lilac relative w-[40vw] h-[40vw] rounded-[50%]">
+            <Image
+              src={`/assets/icons/java.svg`}
+              alt="java-course"
+              width={180}
+              height={180}
+              style={{ height: '80%', width: '75%', position: 'absolute' }}
+            />
           </div>
         </CardWrapper>
       </div>
