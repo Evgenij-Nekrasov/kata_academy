@@ -86,12 +86,12 @@ const About = () => {
 
       {/* Cards */}
       <div className="mb-[80px]">
-        <div className="container max-lg:px-[20px]">
+        <div className="container max-lg:px-5 max-sm:px-2">
           <div className="grid grid-cols-2 max-md:grid-cols-1 mt-[70px] gap-x-8 max-md:gap-y-8">
             {AdvantageCards.map((itemOffer) => (
               <ul
                 key={itemOffer.alt}
-                className="borderCard max-lg:px-[20px] rounded-3xl"
+                className="borderCard max-lg:px-5 max-sm:px-2 rounded-3xl"
               >
                 <li className="flex flex-col gap-y-5">
                   <div className="flex gap-x-2 max-lg:flex-col justify-between">

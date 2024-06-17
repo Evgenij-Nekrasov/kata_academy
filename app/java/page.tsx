@@ -54,7 +54,10 @@ const Java = () => {
               10 июня 2024
             </Typography>
             <Link href="https://t.me/Evgenie061" target="_blank">
-              <Button className="hover:bg-lilac" background="transparent">
+              <Button
+                className="hover:bg-lilac max-sm:w-full"
+                background="transparent"
+              >
                 <Typography
                   className="text-sm hover:text-black"
                   color="whited"
@@ -159,7 +162,7 @@ const Java = () => {
       {/* Header of money*/}
       <Typography
         preset="header1"
-        className="container  flex justify-center max-lg:text-3xl max-md:text-2xl  max-md:text-center max-m:text-xl"
+        className="container flex justify-center max-lg:text-3xl max-md:text-2xl  max-md:text-center max-m:text-xl"
       >
         Оплата после трудоустройства или во время обучения
       </Typography>
@@ -176,17 +179,17 @@ const Java = () => {
       />
 
       {/* Graduates of courses */}
-      <div className="container  [&>*]:mb-5">
-        <h2 className="h2">
+      <div className="container max-sm:px-5  [&>*]:mb-5">
+        <h2 className="h2 max-sm:text-center">
           <span className="bg-lilac">Эти ребята смогли - сможешь и ты!</span>
         </h2>
-        <p>
+        <p className="paragraph">
           Сомневаешься? Тогда скорее читай отзывы наших выпускников, которые
           успешно работают на позициях Frontend Developer и Backend Developer.
           За 6 лет мы выпустили более 2500 программистов в разных странах:
           России, СНГ, Европе, США и Канаде.
         </p>
-        <p>
+        <p className="paragraph">
           Еще больше отзывов об обучении в KATA Academy (ex-Java Mentor) — в
           нашей группе
         </p>
@@ -285,9 +288,9 @@ const Java = () => {
             <li key={index} className="flex items-center gap-x-5 mb-6">
               <Image
                 alt="icons-check-mark"
-                src="https://p1.hiclipart.com/preview/887/375/732/check-mark-symbol-checkbox-violet-purple-logo-line-circle-material-property-png-clipart.jpg"
-                width={40}
-                height={40}
+                src="/assets/image/checkmark.png"
+                width={100}
+                height={100}
               />
               <Typography preset="plug" className="max-lg:text-base">
                 <p>{program.text}</p>
@@ -299,7 +302,7 @@ const Java = () => {
 
       <Prize
         wrapperStyle={'mt-40 max-md:mt-28 justify-center'}
-        background="bg-violet"
+        background="border-violet  lg:border-2 max-lg:border-t-2 max-lg:border-b-2"
         title={
           <>
             <h2 className="text-center text-[27px] max-lg:text-[23px] max-md:text-[20px] max-m:text-[16px] md:leading-10">

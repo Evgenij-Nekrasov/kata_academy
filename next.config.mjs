@@ -10,13 +10,6 @@ const nextConfig = {
         port: '',
         pathname: '/images/logos/downloads/Git-Icon-1788C.png',
       },
-      {
-        protocol: 'https',
-        hostname: 'p1.hiclipart.com',
-        port: '',
-        pathname:
-          '/preview/887/375/732/check-mark-symbol-checkbox-violet-purple-logo-line-circle-material-property-png-clipart.jpg',
-      },
     ],
   },
 };

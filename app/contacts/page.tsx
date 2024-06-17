@@ -91,25 +91,22 @@ const Contacts = () => {
           </div>
 
           {/* Lower block */}
-          <div className="col-start-1 col-end-3 flex items-center max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid p-[25px] max-m:p-[15px]">
+          <div className="col-start-1 col-end-3 flex items-center gap-5 max-md:gap-x-4 max-sm:items-start max-sm:flex-col  max-g:gap-x-8 max-sm:gap-y-7 styleGrid p-[25px] max-m:p-[15px]">
             {/* redefining the margin-bottom */}
-            <div className="w-[63%] max-sm:w-full flex flex-col space-y-[5px]">
+            <div className="w-[55%] max-sm:w-full flex flex-col space-y-[5px]">
               <div className="paragraph">
                 <p>+7 800 855 58 55</p>
                 <p>info@kata.academy</p>
                 <p>Санкт-Петербург, Выборгская набережная, 29</p>
               </div>
             </div>
-            <div className="flex flex-col">
-              <p className="header1 text-[23px] max-sm:text-[20px]">
+            <div className="flex flex-wrap gap-x-5 items-baseline">
+              <p className="header1 mb-0 text-[23px] max-md:text-[20px]">
                 Присоединяйтесь
               </p>
-              <ul className="flex gap-[10px] cursor-pointer">
+              <ul className="flex cursor-pointer">
                 {socialLinksInContacts.map((socialItem, index) => (
-                  <Link
-                    key={index}
-                    href={`https://${socialItem.src}.com/kata_academy`}
-                  >
+                  <Link key={index} href={`${socialItem.href}`}>
                     <li
                       key={index}
                       className={`${socialItem.bg} w-[40px] h-[40px] max-sm:h-[35px] max-sm:w-[35px] max-sm:flex   max-sm:flex-wrap rounded-full flex items-center  justify-center`}

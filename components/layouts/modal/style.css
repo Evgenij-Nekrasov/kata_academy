@@ -18,7 +18,7 @@
   background-color: #282c34;
   color: #fff;
   animation-name: animatetop;
-  animation-duration: 1.4s;
+  animation-duration: 1s;
 }
 
 @media (max-width: 872px) {
@@ -61,7 +61,7 @@
 }
 
 .close:hover {
-  transform: rotate(180deg);
+  transform: rotate(90deg);
   transition-duration: 1s;
 }
 
