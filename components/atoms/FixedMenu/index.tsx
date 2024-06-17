@@ -23,7 +23,7 @@ const FixedMenu = () => {
   }, [isOpenSocialMenu]);
 
   return (
-    <div className="fixed right-[40px] max-sm:right-[20px] bottom-[100px] z-[10] flex flex-col gap-4">
+    <div className="fixed right-[50px] bottom-[50px]  max-sm:right-[20px] z-[10] flex flex-col gap-4">
       <button
         onClick={() => setIsOpenSocialMenu(!isOpenSocialMenu)}
         className="relative w-[64px]  aspect-square rounded-full cursor-pointer bg-[#642ab5] opacity-60 hover:opacity-100 custome-transition"
