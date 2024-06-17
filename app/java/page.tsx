@@ -282,10 +282,10 @@ const Java = () => {
         <p className="container">Условия участия в программе</p>
       </Typography>
 
-      <ul className="container">
-        <div className="mx-56 max-lg:mx-44 max-md:mx-20 max-sm:mx-0 mt-7">
+      <ul className="container max-sm:px-0">
+        <div className="mx-56 max-lg:mx-40 max-md:mx-0 mt-7">
           {programsConditions.map((program, index) => (
-            <li key={index} className="flex items-center gap-x-5 mb-6">
+            <li key={index} className="flex items-center mb-6">
               <Image
                 alt="icons-check-mark"
                 src="/assets/image/checkmark.png"
