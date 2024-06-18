@@ -14,18 +14,12 @@
   position: relative;
   border-radius: 25px;
   width: 70%;
-  height: 70%;
   background-color: #282c34;
   color: #fff;
   animation-name: animatetop;
   animation-duration: 1s;
 }
 
-@media (max-width: 872px) {
-  .modal-content {
-    height: 85%;
-  }
-}
 @media (max-width: 510px) {
   .modal-content {
     width: 85%;

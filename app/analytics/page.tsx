@@ -282,7 +282,7 @@ const Analytics = () => {
         <p className="container">Условия участия в программе</p>
       </Typography>
 
-      <ul className="container max-sm:px-0">
+      <ul className="container max-sm:px-3">
         <div className="mx-56 max-lg:mx-40 max-md:mx-0 mt-7">
           {programsConditions.map((program, index) => (
             <li key={index} className="flex items-center gap-x-5 mb-6">
@@ -291,6 +291,7 @@ const Analytics = () => {
                 src="/assets/image/checkmark.png"
                 width={100}
                 height={100}
+                className="max-sm:w-20 max-sm:h-10"
               />
               <Typography preset="plug" className="max-lg:text-base">
                 <p>{program.text}</p>

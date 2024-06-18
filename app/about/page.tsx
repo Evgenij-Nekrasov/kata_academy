@@ -17,7 +17,7 @@ const About = () => {
           className="max-lg:text-[33px] max-md:text-[28px] max-sm:text-[24px] max-sm:font-medium max-m:text-[20px] "
         >
           <span className="spanHeader">KATA</span> — это единственная в России
-          школа программирования, которая{' '}
+          школа программирования, которая
           <span className="spanHeader">инвестирует в своих студентов</span>
         </Typography>
       </div>
@@ -26,8 +26,8 @@ const About = () => {
       <div className="container max-lg:px-0">
         <div className="mb-[100px] mt-[50px]">
           <div className="flex  max-md:flex-col py-[60px] max-sm:pt-[30px] max-sm:px-[10px] px-[60px] max-md:px-[30px]] max-sm:pb-[30px] bg-[#434343] rounded-[30px] max-lg:rounded-none  gap-x-11">
-            <div className="w-[calc(100% - 250px)] grow max-md:order-last">
-              <h2 className="h2 max-w-[775px] max-g:text-[27px] max-md:text-[25px] max-sm:text-[20px] max-g:font-medium max-g:leading-8 max-sm:leading-4">
+            <div className="w-full max-md:order-last">
+              <h2 className="h2 max-g:text-[27px] max-md:text-[25px] max-sm:text-[20px] max-g:font-medium leading-10 max-sm:leading-7">
                 Миссия Kata — дать возможность{' '}
                 <span className="spanHeader">
                   каждому человеку за короткий срок

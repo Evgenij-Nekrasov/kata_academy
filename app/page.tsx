@@ -48,7 +48,10 @@ export default function Home() {
                   </TreeList.Plug>
                 </Link>
               </ul>
-              <TreeList.Button background="transparent">
+              <TreeList.Button
+                background="transparent"
+                className="max-m:w-full"
+              >
                 <Link href="https://t.me/Evgenie061" target="_blank">
                   <TreeList.Typography
                     className="text-sm hover:text-black"
@@ -65,9 +68,13 @@ export default function Home() {
       </div>
       <div className="subtitle max-sm:mt-[50px] max-md:text-[18px] max-sm:text-[18px]">
         <div className="container max-sm:px-3">
-          <h2 className="h3">
+          <TreeList.Typography
+            preset="header2"
+            component="h2"
+            className=" mb-3 max-md:text-3xl max-sm:text-2xl max-md:text-center"
+          >
             Обучение проходит онлайн и нацелено на результат
-          </h2>
+          </TreeList.Typography>
           <p className="paragraph">
             У нас с тобой общие цели: твоё трудоустройство веб-разработчиком и
             твой карьерный рост.
@@ -137,10 +144,10 @@ export default function Home() {
       />
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
-          <h2 className="h2  max-md:mt-[-70px]">
-            КАТА инвестирует в твое будущее. Ты можешь <br />
-            <span>сначала учиться, а платить после трудоустройства</span>в
-            Москве или Петербурге.{' '}
+          <h2 className="h2 mb-5 max-md:mt-[-70px] max-sm:text-center">
+            КАТА инвестирует в твое будущее. Ты можешь{' '}
+            <span>сначала учиться, а платить после трудоустройства</span> в
+            Москве или Петербурге.
           </h2>
           <p className="paragraph">
             Мы на 100% уверены в нашей методике обучения, поэтому не боимся
@@ -151,7 +158,7 @@ export default function Home() {
       <TreeList.CardWrapper>
         {TreeList.cardPath.map((path) => (
           <Link key={path.name} href={path.href}>
-            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-[20px] pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-[#642ab5] custome-transition">
+            <div className="group cursor-pointer pt-[30px] px-[40px] max-m:px-3 pb-[35px] rounded-[30px] border-[2px] border-solid border-white hover:border-[#642ab5] custome-transition">
               <div className="flex flex-wrap mb-[6px] items-start">
                 <div className="w-[calc(100%-160px)] max-g:w-[calc(100%-180px)] max-m:w-[calc(100%-195px)]">
                   <h3 className="h3 max-g:text-[45px] max-md:text-[37px] max-m:text-[30px] max-g:mt-[25px]  max-sm:mt-[15px] ">
@@ -206,7 +213,7 @@ export default function Home() {
       </TreeList.CardWrapper>
       <div className="subtitle">
         <div className="container max-m:px-[10px]">
-          <h2 className="h2 max-m:text-[20px] max-md:mt-[-70px]">
+          <h2 className="h2  mb-4 max-m:text-[20px] max-md:mt-[-70px]">
             <span>Самурайский подход </span> в обучении программированию
           </h2>
           <p className="text-lg">

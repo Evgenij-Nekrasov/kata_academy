@@ -84,11 +84,11 @@ const Navbar = () => {
             Наши программы
           </button>
           <Modal isScroll={isOpen} handleClose={toggle}>
-            <div className="flex flex-col h-full justify-around max-g:justify-evenly p-10 max-sm:p-7">
+            <div className="flex flex-col gap-y-7 p-10 max-sm:p-7">
               <h2 className="text-white text-[40px] max-md:text-4xl max-ml:text-[26px] tracking-wide">
                 Выбор курса
               </h2>
-              <div className="grid grid-cols-2 max-g:grid-cols-1 gap-4 max-md:gap-6">
+              <div className="grid grid-cols-2 max-g:grid-cols-1 gap-x-4 max-g:gap-y-6">
                 {cardModal.map((card) => (
                   <Link key={card.name} href={`${card.href}`}>
                     <div className="border-2 hover:border-[#642ab5] custome-transition flex flex-col justify-between bg-gray-700  px-6 py-4 rounded-3xl w-full h-[250px] max-g:h-[150px]">
