@@ -2,6 +2,13 @@ import Link from 'next/link';
 import './style.css';
 import { socialLinksInContacts } from '@/components/molecules/Footer/FooterLinks/constant';
 import Image from 'next/image';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Contacts',
+  description:
+    'The "Contacts" page of online programming courses will give you information on how to contact the Dev Guru management',
+};
 
 const Contacts = () => {
   return (
@@ -106,19 +113,19 @@ const Contacts = () => {
               </p>
               <ul className="flex cursor-pointer">
                 {socialLinksInContacts.map((socialItem, index) => (
-                  <Link key={index} href={`${socialItem.href}`}>
-                    <li
-                      key={index}
-                      className={`${socialItem.bg} w-[40px] h-[40px] max-sm:h-[35px] max-sm:w-[35px] max-sm:flex   max-sm:flex-wrap rounded-full flex items-center  justify-center`}
-                    >
+                  <li
+                    key={index}
+                    className={`${socialItem.bg} w-[40px] h-[40px] max-sm:h-[35px] max-sm:w-[35px] max-sm:flex   max-sm:flex-wrap rounded-full flex items-center  justify-center`}
+                  >
+                    <Link href={`${socialItem.href}`}>
                       <Image
                         src={`/assets/icons/${socialItem.src}.svg`}
                         alt={`${socialItem.src}`}
                         width={`${socialItem.width}`}
                         height={`${socialItem.height}`}
                       />
-                    </li>
-                  </Link>
+                    </Link>
+                  </li>
                 ))}
               </ul>
             </div>

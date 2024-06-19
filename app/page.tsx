@@ -33,34 +33,38 @@ export default function Home() {
             {/* Plugs */}
             <div className="flex flex-col gap-[60px]">
               <ul className="flex flex-wrap gap-[10px] mb-0 max-ml:mx-[-20px] ">
-                <Link href="/java">
-                  <TreeList.Plug background="darkBlue">
-                    <TreeList.Typography color="lightBlue" preset="plug">
-                      Java
-                    </TreeList.Typography>
-                  </TreeList.Plug>
-                </Link>
-                <Link href="/analytics">
-                  <TreeList.Plug background="green">
-                    <TreeList.Typography color="lightGreen" preset="plug">
-                      Big Data Analytics
-                    </TreeList.Typography>
-                  </TreeList.Plug>
-                </Link>
+                <TreeList.Plug background="darkBlue">
+                  <TreeList.Typography
+                    color="lightBlue"
+                    component="li"
+                    preset="plug"
+                  >
+                    <Link href="/java">Java</Link>
+                  </TreeList.Typography>
+                </TreeList.Plug>
+                <TreeList.Plug background="green">
+                  <TreeList.Typography
+                    color="lightGreen"
+                    component="li"
+                    preset="plug"
+                  >
+                    <Link href="/analytics">Big Data Analytics</Link>
+                  </TreeList.Typography>
+                </TreeList.Plug>
               </ul>
               <TreeList.Button
                 background="transparent"
                 className="max-m:w-full"
               >
-                <Link href="https://t.me/Evgenie061" target="_blank">
-                  <TreeList.Typography
-                    className="text-sm hover:text-black"
-                    color="whited"
-                    preset="buttonBig"
-                  >
+                <TreeList.Typography
+                  className="text-sm hover:text-black"
+                  color="whited"
+                  preset="buttonBig"
+                >
+                  <Link href="https://t.me/Evgenie061" target="_blank">
                     Поступить в ката
-                  </TreeList.Typography>
-                </Link>
+                  </Link>
+                </TreeList.Typography>
               </TreeList.Button>
             </div>
           </div>
@@ -112,20 +116,18 @@ export default function Home() {
         }
         button={
           <>
-            <Link href="http://localhost:3000/about">
-              <TreeList.Button
-                background="transparent"
-                className=" max-md:w-full max-sm:w-full"
+            <TreeList.Button
+              background="transparent"
+              className=" max-md:w-full max-sm:w-full"
+            >
+              <TreeList.Typography
+                color="whited"
+                preset="buttonBig"
+                className="hover:text-black text-sm"
               >
-                <TreeList.Typography
-                  color="whited"
-                  preset="buttonBig"
-                  className="hover:text-black text-sm"
-                >
-                  Истории выпускников
-                </TreeList.Typography>
-              </TreeList.Button>
-            </Link>
+                <Link href="/about">Истории выпускников</Link>
+              </TreeList.Typography>
+            </TreeList.Button>
           </>
         }
         image={

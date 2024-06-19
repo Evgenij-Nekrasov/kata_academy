@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -8,6 +9,12 @@ import { cardPath } from '@/constants/pages/mainPage';
 
 import './style.css';
 
+export const metadata: Metadata = {
+  title: 'About',
+  description:
+    'The "About" page of online programming courses tells you all about education at Dev Guru',
+};
+
 const About = () => {
   return (
     <div className="mt-[145px] max-sm:mt-[100px]">
@@ -17,7 +24,7 @@ const About = () => {
           className="max-lg:text-[33px] max-md:text-[28px] max-sm:text-[24px] max-sm:font-medium max-m:text-[20px] "
         >
           <span className="spanHeader">KATA</span> — это единственная в России
-          школа программирования, которая
+          школа программирования, которая{' '}
           <span className="spanHeader">инвестирует в своих студентов</span>
         </Typography>
       </div>

@@ -14,21 +14,23 @@ const NavbarMobile = ({ isOpen = false }) => {
         isOpen ? 'flex' : 'hidden'
       }`}
     >
-      <nav className="md:hidden  mx-5 space-y-5 text-lg w-full list-none">
-        {NavLinks.map((link) => (
-          <li
-            key={link.name}
-            className="text-white hover:text-blue-400 custome-transition"
-          >
-            <Link
+      <nav className="md:hidden">
+        <ul className="mx-5 space-y-5 text-lg w-full list-none">
+          {NavLinks.map((link) => (
+            <li
               key={link.name}
-              href={link.link}
-              onClick={() => setIsActive(link.name)}
+              className="text-white hover:text-blue-400 custome-transition"
             >
-              {link.icon}
-            </Link>
-          </li>
-        ))}
+              <Link
+                key={link.name}
+                href={link.link}
+                onClick={() => setIsActive(link.name)}
+              >
+                {link.icon}
+              </Link>
+            </li>
+          ))}
+        </ul>
       </nav>
     </div>
   );

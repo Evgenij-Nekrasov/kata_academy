@@ -24,6 +24,12 @@ import { accordionItems } from '@/components/molecules/Accordion/constant';
 import Circle from '@/components/atoms/CircleTechnology';
 import ApplicationDeveloper from '@/components/atoms/ApplicationDeveloper';
 import { Step } from '@/components/atoms/StepLearn';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Analytics',
+  description: 'The page of the online Analytics programming course',
+};
 
 const Analytics = () => {
   return (

@@ -1,7 +1,9 @@
 {
+  "/not-found": "app/not-found.js",
   "/page": "app/page.js",
+  "/java/page": "app/java/page.js",
+  "/analytics/page": "app/analytics/page.js",
   "/about/page": "app/about/page.js",
   "/contacts/page": "app/contacts/page.js",
-  "/java/page": "app/java/page.js",
-  "/analytics/page": "app/analytics/page.js"
+  "/sitemap.xml/[[...__metadata_id__]]/route": "app/sitemap.xml/[[...__metadata_id__]]/route.js"
 }
